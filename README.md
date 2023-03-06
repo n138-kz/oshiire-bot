@@ -11,8 +11,10 @@ credential:
   endpoint: https://discord.com/api/webhooks/xxxxxxxxxxxxxxxxxxx?wait=true
 ```
 
-[`?wait=true`][waitEqTrue] : 200OK の時 Responceを返すようになる。（デフォルトでは付いてない→ 204Nothingになる）
+[`?wait=true`][waitEqTrue] : [200OK][http200] の時 Responceを返すようになる。（デフォルトでは付いてない→ [204NoContent][http204]になる）
 
+[http200]: https://developer.mozilla.org/ja/docs/Web/HTTP/Status/200
+[http204]: https://developer.mozilla.org/ja/docs/Web/HTTP/Status/204
 [waitEqTrue]: https://discord.com/developers/docs/resources/webhook#execute-webhook
 
 ## Refs links
