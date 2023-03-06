@@ -12,6 +12,7 @@ credential:
 ```
 
 [`?wait=true`][waitEqTrue] : 200OK の時 Responceを返すようになる。（デフォルトでは付いてない→ 204Nothingになる）
+
 [waitEqTrue]: https://discord.com/developers/docs/resources/webhook#execute-webhook
 
 ## Refs links
