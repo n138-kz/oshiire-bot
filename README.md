@@ -1,5 +1,16 @@
 # 押入れBOT
 
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/n138-kz/oshiire-bot)
+![GitHub last commit](https://img.shields.io/github/last-commit/n138-kz/oshiire-bot)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/n138-kz/oshiire-bot/dev.yml)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/n138-kz/oshiire-bot)
+![GitHub repo file count](https://img.shields.io/github/directory-file-count/n138-kz/oshiire-bot)
+![GitHub repo size](https://img.shields.io/github/repo-size/n138-kz/oshiire-bot)
+![GitHub issues](https://img.shields.io/github/issues-raw/n138-kz/oshiire-bot)
+![GitHub](https://img.shields.io/github/license/n138-kz/oshiire-bot)
+![GitHub language count](https://img.shields.io/github/languages/count/n138-kz/oshiire-bot)
+![GitHub top language](https://img.shields.io/github/languages/top/n138-kz/oshiire-bot)
+
 ```bash:docker-build
 docker build -t n138-kz/oshiire-bot:dev dev/
 docker build -t n138-kz/oshiire-bot latest/
