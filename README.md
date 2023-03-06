@@ -12,3 +12,7 @@ credential:
 ```
 
 `?wait=true` : 200OK の時 Responceを返すようになる。（デフォルトでは付いてない→ 204Nothingになる）
+
+## Refs links
+- https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
+- https://qiita.com/ABBBB/items/e6bdf7fc94b8f6f72a01
