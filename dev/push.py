@@ -2,10 +2,23 @@ import requests
 import json
 import random
 import datetime
+import os
+import sys
+import yaml
+
 # refs docs: https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
 # refs docs: https://discord.com/channels/394476575581798400/1079832126142296144/1079846440349741077
 
-api_url = 'https://discord.com/api/webhooks/1079832168697700482/nQRoGHGnt7HerNsGr9Twevq65VVJZw4LdPrzGHACpR4T2YaEMYzPoeaY3jikFTzZTdmm?wait=true'
+config = { 'credential': 'endpoint': '' }
+if not os.path.isfile('config.yml'):
+    with open('config.yml', 'w') as yml:
+        yaml.dump(config, yml)
+    sys.exit(1)
+
+with open('config.yml', 'r') as yml:
+    config = yaml.safe_load(yml)
+    
+api_url = config['credential']['endpoint']
 
 msg_text = ''
 msg_text += '\n'
