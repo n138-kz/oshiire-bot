@@ -18,5 +18,7 @@ credential:
 [waitEqTrue]: https://discord.com/developers/docs/resources/webhook#execute-webhook
 
 ## Refs links
-- https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
-- https://qiita.com/ABBBB/items/e6bdf7fc94b8f6f72a01
+
+https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
+
+https://qiita.com/ABBBB/items/e6bdf7fc94b8f6f72a01
