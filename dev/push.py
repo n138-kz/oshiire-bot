@@ -46,6 +46,7 @@ msg_text += '[act.hoyolab.com/event](https://act.hoyolab.com/ys/event/signin-sea
 
 payload2 = {
     "payload_json" : {
+        "username": "みんなのまま",
         "content" : "",
         "embeds": [
             {
