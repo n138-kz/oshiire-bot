@@ -2,10 +2,24 @@ import requests
 import json
 import random
 import datetime
-# refs docs: https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
-# refs docs: https://discord.com/channels/394476575581798400/1079832126142296144/1079846440349741077
+import os
+import sys
+import yaml
 
-api_url = 'https://discord.com/api/webhooks/1079793428751196222/KEPqIy2hiaGH3QaTLpqvgPlWShlR4q7HGG86D5D_A7mgdqD2er601LOBRA7UoEIavse1?wait=true'
+# refs docs: https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
+# refs docs: https://qiita.com/ABBBB/items/e6bdf7fc94b8f6f72a01
+
+config = { 'credential': { 'endpoint': '' } }
+if not os.path.isfile('config.yml'):
+    print('Error: NoSuchFileOrDirectory: config.yml')
+    with open('config.yml', 'w') as yml:
+        yaml.dump(config, yml)
+    sys.exit(1)
+
+with open('config.yml', 'r') as yml:
+    config = yaml.safe_load(yml)
+    
+api_url = config['credential']['endpoint']
 
 msg_text = ''
 msg_text += '\n'
@@ -22,10 +36,11 @@ arr_text.append(
 msg_text += arr_text[random.randint(0,(len(arr_text)-1))]
 
 msg_text += '[原神 (Genshin Impact)]\n'
-msg_text += '[act.hoyolab.com](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n'
+msg_text += '[act.hoyolab.com/event](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n'
 
 payload2 = {
     "payload_json" : {
+        "username": "みんなのまま",
         "content" : "",
         "embeds": [
             {
