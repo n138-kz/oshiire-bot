@@ -19,6 +19,5 @@ credential:
 
 ## Refs links
 
-https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
-
-https://qiita.com/ABBBB/items/e6bdf7fc94b8f6f72a01
+- [Discord Webhooks Guide | Structure of Webhook](https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html)
+- https://qiita.com/ABBBB/items/e6bdf7fc94b8f6f72a01
