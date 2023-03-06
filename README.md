@@ -20,6 +20,13 @@ docker build -t n138-kz/oshiire-bot latest/
 docker run n138-kz/oshiire-bot:dev
 ```
 
+## Items
+
+- Dockerfile   -- Dockerfile
+- images_001.png   -- 添付画像ファイル
+- push.py   -- Script本体
+- secret.yml   -- Discord API エンドポイント
+
 ## config.yml (gitignore)
 
 ```yaml:config.yml
