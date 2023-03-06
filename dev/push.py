@@ -7,7 +7,7 @@ import sys
 import yaml
 
 # refs docs: https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
-# refs docs: https://discord.com/channels/394476575581798400/1079832126142296144/1079846440349741077
+# refs docs: https://qiita.com/ABBBB/items/e6bdf7fc94b8f6f72a01
 
 config = { 'credential': { 'endpoint': '' } }
 if not os.path.isfile('config.yml'):
