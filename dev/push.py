@@ -10,13 +10,13 @@ import yaml
 # refs docs: https://qiita.com/ABBBB/items/e6bdf7fc94b8f6f72a01
 
 config = { 'credential': { 'endpoint': '' } }
-if not os.path.isfile('config.yml'):
-    print('Error: NoSuchFileOrDirectory: config.yml')
-    with open('config.yml', 'w') as yml:
+if not os.path.isfile('secret.yml'):
+    print('Error: NoSuchFileOrDirectory: secret.yml')
+    with open('secret.yml', 'w') as yml:
         yaml.dump(config, yml)
     sys.exit(1)
 
-with open('config.yml', 'r') as yml:
+with open('secret.yml', 'r') as yml:
     config = yaml.safe_load(yml)
     
 api_url = config['credential']['endpoint']
