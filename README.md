@@ -25,7 +25,7 @@ docker run n138-kz/oshiire-bot:dev
 - Dockerfile   -- Dockerfile
 - images_001.png   -- 添付画像ファイル
 - push.py   -- Script本体
-- [secret.yml](https://github.com/n138-kz/oshiire-bot/blob/main/README.md#configyml-gitignore)   -- Discord API エンドポイント
+- [secret.yml](https://github.com/n138-kz/oshiire-bot/blob/main/README.md#secretyml-gitignore)   -- Discord API エンドポイント
 
 ## secret.yml (gitignore)
 
