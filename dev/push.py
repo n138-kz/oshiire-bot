@@ -5,7 +5,6 @@ import datetime
 # refs docs: https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
 # refs docs: https://discord.com/channels/394476575581798400/1079832126142296144/1079846440349741077
 
-api_url = 'https://discord.com/api/webhooks/1079793428751196222/KEPqIy2hiaGH3QaTLpqvgPlWShlR4q7HGG86D5D_A7mgdqD2er601LOBRA7UoEIavse1?wait=true'
 api_url = 'https://discord.com/api/webhooks/1079832168697700482/nQRoGHGnt7HerNsGr9Twevq65VVJZw4LdPrzGHACpR4T2YaEMYzPoeaY3jikFTzZTdmm?wait=true'
 
 msg_text = ''
