@@ -9,7 +9,7 @@ import yaml
 # refs docs: https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
 # refs docs: https://discord.com/channels/394476575581798400/1079832126142296144/1079846440349741077
 
-config = { 'credential': 'endpoint': '' }
+config = { 'credential': { 'endpoint': '' } }
 if not os.path.isfile('config.yml'):
     with open('config.yml', 'w') as yml:
         yaml.dump(config, yml)
