@@ -20,4 +20,4 @@ credential:
 ## Refs links
 
 - [Discord Webhooks Guide | Structure of Webhook](https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html)
-- https://qiita.com/ABBBB/items/e6bdf7fc94b8f6f72a01
+- [pythonからDiscordのwebhookでメッセージ投稿する備忘録](https://qiita.com/ABBBB/items/e6bdf7fc94b8f6f72a01)
