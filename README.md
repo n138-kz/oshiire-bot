@@ -11,10 +11,23 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/n138-kz/oshiire-bot)
 ![GitHub top language](https://img.shields.io/github/languages/top/n138-kz/oshiire-bot)
 
+## How to run
+
+1. Install the Docker (https://docs.docker.jp/docker-for-windows/install.html)
+1. Get Webhook URI (https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
+1. Create [`secret.yml`](#secretyml-gitignore) file to under `dev/` or `latest/`.
+1. Run command the below ([#docker-build](#docker-build))
+1. Run command the below ([#docker-run](#docker-run))
+
+
+## Docker Build
+
 ```bash:docker-build
 docker build -t n138-kz/oshiire-bot:dev dev/
 docker build -t n138-kz/oshiire-bot latest/
 ```
+
+## Docker Run
 
 ```bash:docker-run
 docker run n138-kz/oshiire-bot:dev
@@ -25,7 +38,7 @@ docker run n138-kz/oshiire-bot:dev
 - Dockerfile   -- Dockerfile
 - images_001.png   -- 添付画像ファイル
 - push.py   -- Script本体
-- [secret.yml](https://github.com/n138-kz/oshiire-bot/blob/main/README.md#secretyml-gitignore)   -- Discord API エンドポイント
+- [secret.yml](#secretyml-gitignore)   -- Discord API エンドポイント
 
 ## secret.yml (gitignore)
 
