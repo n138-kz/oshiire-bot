@@ -11,6 +11,7 @@ import yaml
 
 config = { 'credential': { 'endpoint': '' } }
 if not os.path.isfile('config.yml'):
+    print('Error: NoSuchFileOrDirectory: config.yml')
     with open('config.yml', 'w') as yml:
         yaml.dump(config, yml)
     sys.exit(1)
