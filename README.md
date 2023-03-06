@@ -1,8 +1,12 @@
 # 押入れBOT
 
-```bash
+```bash:docker-build
 docker build -t n138-kz/oshiire-bot:dev dev/
 docker build -t n138-kz/oshiire-bot latest/
+```
+
+```bash:docker-run
+docker run n138-kz/oshiire-bot:dev
 ```
 
 ## config.yml (gitignore)
