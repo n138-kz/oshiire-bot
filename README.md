@@ -11,7 +11,8 @@ credential:
   endpoint: https://discord.com/api/webhooks/xxxxxxxxxxxxxxxxxxx?wait=true
 ```
 
-`?wait=true` : 200OK の時 Responceを返すようになる。（デフォルトでは付いてない→ 204Nothingになる）
+[`?wait=true`][waitEqTrue] : 200OK の時 Responceを返すようになる。（デフォルトでは付いてない→ 204Nothingになる）
+[waitEqTrue]: https://discord.com/developers/docs/resources/webhook#execute-webhook
 
 ## Refs links
 - https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
