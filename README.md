@@ -11,16 +11,38 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/n138-kz/oshiire-bot)
 ![GitHub top language](https://img.shields.io/github/languages/top/n138-kz/oshiire-bot)
 
+## How to run
+
+1. Install the Docker (https://docs.docker.jp/docker-for-windows/install.html)
+1. Get Webhook URI (https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
+![Images](https://support.discord.com/hc/article_attachments/1500000463501/Screen_Shot_2020-12-15_at_4.41.53_PM.png)
+![Images](https://support.discord.com/hc/article_attachments/360101553853/Screen_Shot_2020-12-15_at_4.51.38_PM.png)
+1. Create [`secret.yml`](#secretyml-gitignore) file to under `dev/` or `latest/`.
+1. Run command the below ([#docker-build](#docker-build))
+1. Run command the below ([#docker-run](#docker-run))
+
+
+## Docker Build
+
 ```bash:docker-build
 docker build -t n138-kz/oshiire-bot:dev dev/
 docker build -t n138-kz/oshiire-bot latest/
 ```
 
+## Docker Run
+
 ```bash:docker-run
 docker run n138-kz/oshiire-bot:dev
 ```
 
-## config.yml (gitignore)
+## Items
+
+- Dockerfile   -- Dockerfile
+- images_001.png   -- 添付画像ファイル
+- push.py   -- Script本体
+- [secret.yml](#secretyml-gitignore)   -- Discord API エンドポイント
+
+## secret.yml (gitignore)
 
 ```yaml:config.yml
 credential:
@@ -39,3 +61,4 @@ credential:
 
 - [Discord Webhooks Guide | Structure of Webhook](https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html)
 - [pythonからDiscordのwebhookでメッセージ投稿する備忘録](https://qiita.com/ABBBB/items/e6bdf7fc94b8f6f72a01)
+- [Discord Developer Portal — Documentation — Webhook][waitEqTrue]
