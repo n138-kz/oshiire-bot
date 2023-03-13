@@ -22,7 +22,6 @@ with open('secret.yml', 'r') as yml:
 api_url = config['credential']['endpoint']
 
 msg_text = ''
-msg_text += '@here'
 msg_text += '\n'
 
 arr_text = []
@@ -48,7 +47,7 @@ msg_text += '- [hoyolab daily login bounus](https://act.hoyolab.com/ys/event/sig
 payload2 = {
     "payload_json" : {
         "username": "みんなのまま",
-        "content" : "",
+        "content" : "@here",
         "embeds": [
             {
                 "description"   : msg_text,
