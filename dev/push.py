@@ -43,7 +43,6 @@ msg_text += arr_text[random.randint(0,(len(arr_text)-1))]
 
 msg_text += '原神 (Genshin Impact)\n'
 msg_text += '- [hoyolab daily login bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n'
-msg_text += '- [Prime Bundle 5(Amazon Prime Gaming)](https://gaming.amazon.com/dp/amzn1.pg.item.c0c891e7-b0dd-44e9-871a-b817c2ebb898?ingress=amzn&ref_=SM_GI02_P4)\n'
 
 payload2 = {
     "payload_json" : {
