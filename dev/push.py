@@ -22,6 +22,7 @@ with open('secret.yml', 'r') as yml:
 api_url = config['credential']['endpoint']
 
 msg_text = ''
+msg_text += '@here'
 msg_text += '\n'
 
 arr_text = []
