@@ -47,7 +47,7 @@ msg_text += '- [hoyolab daily login bounus](https://act.hoyolab.com/ys/event/sig
 payload2 = {
     "payload_json" : {
         "username": "みんなのまま",
-        "content" : "@here",
+        "content" : "@here \<@768119883283169300>",
         "embeds": [
             {
                 "description"   : msg_text,
