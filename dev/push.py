@@ -45,6 +45,12 @@ arr_text.append(
 	+ 'あらら〜まだ受け取ってないの〜？へなちょこめ〜\n'
 	+ '\n'
 )
+arr_text.append(
+	''
+	+ '相棒！ログボは受け取った？早くしないと無くなっちゃうよ〜？\n'
+	+ '事件の予感がする…！ログボを受け取るのは君に任せたよ！\n'
+	+ '\n'
+)
 
 msg_text += arr_text[random.randint(0,(len(arr_text)-1))]
 
