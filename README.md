@@ -1,6 +1,6 @@
 # 押入れBOT
 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/w/n138-kz/oshiire-bot)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/w/n138-kz/oshiire-bot)](/../../)
 ![GitHub last commit](https://img.shields.io/github/last-commit/n138-kz/oshiire-bot)
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/n138-kz/oshiire-bot/dev.yml)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/n138-kz/oshiire-bot)
