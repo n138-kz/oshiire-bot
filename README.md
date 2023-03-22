@@ -6,7 +6,7 @@
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/n138-kz/oshiire-bot)](/../../)
 [![GitHub repo file count](https://img.shields.io/github/directory-file-count/n138-kz/oshiire-bot)](/../../)
 [![GitHub repo size](https://img.shields.io/github/repo-size/n138-kz/oshiire-bot)](/../../)
-[![GitHub issues](https://img.shields.io/github/issues-raw/n138-kz/oshiire-bot)](/../../)
+[![GitHub issues](https://img.shields.io/github/issues-raw/n138-kz/oshiire-bot)](/../../issues)
 [![GitHub](https://img.shields.io/github/license/n138-kz/oshiire-bot)](/../../)
 [![GitHub language count](https://img.shields.io/github/languages/count/n138-kz/oshiire-bot)](/../../)
 [![GitHub top language](https://img.shields.io/github/languages/top/n138-kz/oshiire-bot)](/../../)
