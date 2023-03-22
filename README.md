@@ -42,7 +42,7 @@ docker run n138-kz/oshiire-bot:dev
 - push.py   -- Script本体
 - [secret.yml](#secretyml-gitignore)   -- Discord API エンドポイント
   
-[![image](https://user-images.githubusercontent.com/8064928/226808884-8b3f4700-e703-4f99-bb3b-60b0d4c06b19.png)](/../../)
+[![image](https://user-images.githubusercontent.com/8064928/226809337-e63f68b8-a846-4511-868f-f3c5f3e5bd5e.png)](/../../)
 
 
 ## secret.yml (gitignore)
