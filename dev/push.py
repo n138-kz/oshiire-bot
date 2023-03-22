@@ -73,7 +73,7 @@ msg_text += '\n'
 payload2 = {
     "payload_json" : {
         "username": "みんなのまま",
-        "content" : "@here \<@768119883283169300>",
+        "content" : "@here",
         "embeds": [
             {
                 "description"   : msg_text,
