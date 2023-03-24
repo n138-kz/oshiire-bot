@@ -1,4 +1,4 @@
-name: Docker Image CI for almalinux8
+name: Docker Image CI for almalinux8 (dev)
 
 on:
   push:
