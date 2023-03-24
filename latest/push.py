@@ -62,14 +62,6 @@ msg_text += 'HoYoLAB × Prime Gaming\n'
 msg_text += '- [HoYoLAB: 原神（Genshin）公式](http://hoyo.link/1eyUCEAd)\n'
 msg_text += '- [Prime Gaming: 原神コラム#6](https://gaming.amazon.com/genshin-impact-6?ref_=SM_GI02_P6_IGP)\n'
 msg_text += '\n'
-msg_text += '> 旅人の皆さん、こんにちは！\n'
-msg_text += '> 今回皆さんがお会いするのは脆弱樹脂×1と仕上げ用魔鉱×8とモラ×20,000です！\n'
-msg_text += '> ぜひトピックキャンペーンにご参加ください！\n'
-msg_text += '> \n'
-msg_text += '> 【ギフトパック#6キャンペーン期間】2023/3/22 09:00～2023/4/13 08:59 (JST)\n'
-msg_text += '> 【ギフトパック#6の内容】脆弱樹脂×1、仕上げ用魔鉱×8、モラ×20,000\n'
-msg_text += '> [\>\>\> リンク <<<](https://gaming.amazon.com/genshin-impact-6?ref_=SM_GI02_P6_IGP)\n'
-msg_text += '\n'
 
 payload2 = {
     "payload_json" : {
