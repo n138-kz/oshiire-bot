@@ -51,7 +51,11 @@ arr_text.append(
 	+ '事件の予感がする…！ログボを受け取るのは君に任せたよ！\n'
 	+ '\n'
 )
-
+arr_text.append(
+	''
+	+ 旅人じゃないか、お前も1杯飲みに来たか？…そうか、違うのか。まぁ今度時間がある時にでも飲もう。あぁそうだ、悪いことは言わない、ログインボーナスは受け取って行けよ。\n'
+	+ '\n'
+)
 msg_text += arr_text[random.randint(0,(len(arr_text)-1))]
 
 msg_text += '原神 (Genshin Impact)\n'
