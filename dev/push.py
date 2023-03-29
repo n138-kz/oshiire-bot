@@ -93,7 +93,7 @@ payload2 = {
                     "url"       : "attachment://images_001.png"
                 },
                 "footer": {
-                    "text"      : "Rev: "+str( math.floor(os.path.getmtime(os.getcwd())) ),
+                    "text"      : "Rev: "+str( math.floor( os.path.getmtime(os.getcwd()) ) ),
                 },
                 "fields": [
                     {
