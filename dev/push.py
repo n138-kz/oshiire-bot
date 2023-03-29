@@ -91,6 +91,9 @@ payload2 = {
                 "image": {
                     "url"       : "attachment://images_001.png"
                 },
+                "footer": {
+                    "text"      : "Rev: xxxxx",
+                },
                 "fields": [
                     {
                         "name"  : "",
