@@ -43,7 +43,7 @@ jobs:
     - name: Prepare the secret
       working-directory: ./dev/
       run: |
-        touch secret.yaml
+        touch secret.yml
     - name: Test with pytest
       working-directory: ./dev/
       run: |
