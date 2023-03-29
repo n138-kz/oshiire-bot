@@ -5,6 +5,7 @@ import datetime
 import os
 import sys
 import yaml
+import math
 
 # refs docs: https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
 # refs docs: https://qiita.com/ABBBB/items/e6bdf7fc94b8f6f72a01
@@ -90,6 +91,9 @@ payload2 = {
                 "timestamp"     : datetime.datetime.now().isoformat(),
                 "image": {
                     "url"       : "attachment://images_001.png"
+                },
+                "footer": {
+                    "text"      : "Rev: "+str( math.floor( os.path.getmtime( __file__ ) ) ),
                 },
                 "fields": [
                     {
