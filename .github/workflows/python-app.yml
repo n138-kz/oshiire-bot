@@ -46,7 +46,11 @@ jobs:
         touch secret.yml
         echo 'credential:' > secret.yml
         echo '   endpoint: https://discord.com/api/webhooks/xxxxxxxxxxxxxxxxxxx?wait=true' >> secret.yml
+    - name: Prepare the python
+      working-directory: ./dev/
+      run: |
+        cp push.py test_push.py
     - name: Test with pytest
       working-directory: ./dev/
       run: |
-        pytest push.py
+        pytest
