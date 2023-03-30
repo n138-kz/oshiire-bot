@@ -141,6 +141,9 @@ def main():
 
     return curl_res
 
+def test_main():
+    main()
+
 main_result = main()
 if(False):
     pass
