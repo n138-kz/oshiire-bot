@@ -125,7 +125,7 @@ main_result = main()
 if(False):
     pass
 elif( main_result.status_code >= 200 and main_result.status_code < 300 ):
-    print(main_result.text)
+    print( json.dumps( json.loads( main_result.text ), indent=4, separators=(',', ': ') ) )
     pass
 elif( main_result.status_code >= 300 and main_result.status_code < 400 ):
     pass
