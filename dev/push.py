@@ -164,6 +164,7 @@ def main():
             ]
         }
     }
+    print(payload2['payload_json']['embeds'])
 
     ### embed付き
     files_images = {}
