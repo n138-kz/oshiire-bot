@@ -101,22 +101,22 @@ def main():
                         {
                             'inline': True,
                             'name'  : "原神 (Genshin Impact)",
-                            'value' : "[HoYoLAB: Daily Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n",
+                            'value' : "- [HoYoLAB: Daily Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n",
                         },
                         {
                             'inline': True,
                             'name'  : "HoYoLAB × Prime Gaming",
-                            'value' : '[HoYoLAB: 原神(Genshin)公式](http://hoyo.link/1eyUCEAd)\n'
-                                    + '[Prime Gaming: 原神コラム#6](https://gaming.amazon.com/genshin-impact-6?ref_=SM_GI02_P6_IGP)\n'
+                            'value' : '- [HoYoLAB: 原神(Genshin)公式](http://hoyo.link/1eyUCEAd)\n'
+                                    + '- [Prime Gaming: 原神コラム#6](https://gaming.amazon.com/genshin-impact-6?ref_=SM_GI02_P6_IGP)\n'
                                     + 'Until: 2023年4月19日 24:59 (JST)\n',
                         },
                         {
                             'inline': True,
                             'name'  : "予告番組最新情報",
-                            'value' : '[HoYoLAB: Ver.3.6](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
-                                    + '[Youtube: @Genshin_JP](https://youtu.be/uda3T168Wpg)\n'
-                                    + '[bilibili](http://live.bilibili.com/21987615)\n'
-                                    + '[twitch](https://www.twitch.tv/genshinimpactofficial)\n'
+                            'value' : '- [HoYoLAB: Ver.3.6](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
+                                    + '- [Youtube: @Genshin_JP](https://youtu.be/uda3T168Wpg)\n'
+                                    + '- [bilibili](http://live.bilibili.com/21987615)\n'
+                                    + '- [twitch](https://www.twitch.tv/genshinimpactofficial)\n'
                                     + 'Time: 3月31日(金) 21:00 (JST)\n',
                         },
                         {
