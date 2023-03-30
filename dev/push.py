@@ -124,19 +124,4 @@ def main():
 main_result = main()
 if(False):
     pass
-elif( main_result.status_code >= 200 and main_result.status_code < 300 ):
-    print( json.dumps( json.loads( main_result.text ), indent=4, separators=(',', ': '), ensure_ascii=False ) )
-    pass
-elif( main_result.status_code >= 300 and main_result.status_code < 400 ):
-    pass
-elif( main_result.status_code >= 400 ):
-    print(main_result.status_code)
-    print(main_result.text)
-elif( main_result.status_code >= 400 and main_result.status_code < 500 ):
-    pass
-elif( main_result.status_code >= 500 ):
-    pass
-
-def test_main():
-    main()
 
