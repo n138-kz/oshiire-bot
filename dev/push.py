@@ -113,7 +113,8 @@ def main():
                             'name'  : "HoYoLAB × Prime Gaming",
                             'value' : '- [HoYoLAB: 原神(Genshin)公式](http://hoyo.link/1eyUCEAd)\n'
                                     + '- [Prime Gaming: 原神コラム#6](https://gaming.amazon.com/genshin-impact-6?ref_=SM_GI02_P6_IGP)\n'
-                                    + 'Until: 4月19日 24:59 (JST)\n',
+                                    + 'Until: 4月19日 24:59 (JST)\n'
+                                    + '',
                         },
                         {
                             'inline': False,
