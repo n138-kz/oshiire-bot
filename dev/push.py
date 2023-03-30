@@ -147,4 +147,8 @@ def test_main():
 main_result = main()
 if(False):
     pass
+elif( main_result.status_code < 400 ):
+    sys.exit(0)
+else:
+    sys.exit(1)
 
