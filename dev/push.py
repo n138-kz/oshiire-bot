@@ -106,15 +106,15 @@ def main():
                             'name'  : "HoYoLAB × Prime Gaming",
                             'value' : '[HoYoLAB: 原神(Genshin)公式](http://hoyo.link/1eyUCEAd)\n'
                                     + '[Prime Gaming: 原神コラム#6](https://gaming.amazon.com/genshin-impact-6?ref_=SM_GI02_P6_IGP)\n'
-                                    + 'Until: 2023年4月19日 24:59 (JST)',
+                                    + 'Until: 2023年4月19日 24:59 (JST)\n',
                         },
                         {
                             'inline': True,
                             'name'  : "Ver.3.6予告番組最新情報",
                             'value' : '[HoYoLAB: 原神(Genshin)公式](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
-                                    + '[Youtube channel](https://youtu.be/uda3T168Wpg)'
+                                    + '[Youtube channel](https://youtu.be/uda3T168Wpg)\n'
                                     + 'https://webstatic.hoyoverse.com/upload/op-public/2023/03/29/46662c4742b02e88e218384adf395f3b_8860534905048955210.jpg\n'
-                                    + 'Time: 3月31日(金) 21:00 (JST)',
+                                    + 'Time: 3月31日(金) 21:00 (JST)\n',
                         },
                         {
                             'inline': False,
