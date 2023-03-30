@@ -116,7 +116,7 @@ def main():
                             'value' : '[HoYoLAB: Ver.3.6](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
                                     + '[Youtube: @Genshin_JP](https://youtu.be/uda3T168Wpg)\n'
                                     + '[bilibili](http://live.bilibili.com/21987615)\n'
-                                    + '[twitch: @Genshin_JP](https://www.twitch.tv/genshinimpactofficial)\n'
+                                    + '[twitch](https://www.twitch.tv/genshinimpactofficial)\n'
                                     + 'Time: 3月31日(金) 21:00 (JST)\n',
                         },
                         {
