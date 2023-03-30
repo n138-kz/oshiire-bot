@@ -106,8 +106,8 @@ def main():
                     },
                     "fields": [
                         {
-                            "name"  : "",
-                            "value" : "",
+                            "name"  : "md5",
+                            "value" : md5calc(__file__),
                         },
                     ],
                 }
