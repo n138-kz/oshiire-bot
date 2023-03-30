@@ -13,7 +13,7 @@ import math
 def md5calc(file):
     import hashlib
     with open(file, 'rb') as fp:
-        fileData = file.read()
+        fileData = fp.read()
         hash = hashlib.md5(fileData).hexdigest()
     return hash
 
