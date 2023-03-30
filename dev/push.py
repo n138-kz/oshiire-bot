@@ -112,9 +112,9 @@ def main():
                         },
                         {
                             'inline': True,
-                            'value' : '[HoYoLAB: 原神(Genshin)公式](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
                                     + '[Youtube channel](https://youtu.be/uda3T168Wpg)\n'
                             'name'  : "予告番組最新情報",
+                            'value' : '[HoYoLAB: Ver.3.6](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
                                     + 'Time: 3月31日(金) 21:00 (JST)\n',
                         },
                         {
