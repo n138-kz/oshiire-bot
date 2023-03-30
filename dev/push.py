@@ -178,7 +178,6 @@ def main():
                 }
         else:
             print('NOT Exist', file=sys.stderr)
-    print(files_images, file=sys.stderr)
 
 
 
