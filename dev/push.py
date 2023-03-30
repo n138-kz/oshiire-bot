@@ -94,7 +94,8 @@ def main():
                         "url"       : "attachment://images_001.png"
                     },
                     "footer": {
-                        "text"      : "Rev: " + str( math.floor( os.path.getmtime( __file__ ) ) ) + "(" + str( datetime.datetime.fromtimestamp( math.floor( os.path.getmtime( __file__ ) ), datetime.timezone(datetime.timedelta(hours=9)) ) ) + ")",
+                        "text"      : "Rev: " + str( math.floor( os.path.getmtime( __file__ ) ) ) 
+                                        + "(" + str( datetime.datetime.fromtimestamp( math.floor( os.path.getmtime( __file__ ) ), datetime.timezone(datetime.timedelta(hours=9)) ) ) + ")",
                     },
                     "fields": [
                         {
