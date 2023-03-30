@@ -116,7 +116,7 @@ def main():
                             'inline': True,
                             'name'  : '( ๑╹⌓╹ )',
                             'value' : '[' + 'DevOps Server' + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
-                                    + '[n138-kz/oshiire-bot](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_dev.yml)\n',
+                                    + '[' + 'Build Status' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_dev.yml)\n',
                         },
                         {
                             'inline': True,
