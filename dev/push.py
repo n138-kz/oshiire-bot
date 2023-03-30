@@ -173,7 +173,7 @@ def main():
             with open("images_001.png", 'rb') as f:
                 file_bin_logoeffect = f.read()
                 files_images  = {
-                    'logo_effect' + i : ( file_name, file_bin_logoeffect ),
+                    'logo_effect' + str(i) : ( file_name, file_bin_logoeffect ),
                 }
 
     payload2['payload_json'] = json.dumps( payload2['payload_json'], ensure_ascii=False )
