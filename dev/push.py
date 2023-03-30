@@ -119,6 +119,26 @@ def main():
     curl_res = requests.post(api_url, files = files_images  , data = payload2 )
     #print(curl_res.status_code) # HTTPのステータスコード取得
     #print(curl_res.text)        # レスポンスのHTMLを文字列で取得
+
+    if(False):
+        pass
+    elif( curl_res.status_code >= 200 and curl_res.status_code < 300 ):
+        # OK
+        print( json.dumps( json.loads( curl_res.text ), indent=4, separators=(',', ': '), ensure_ascii=False ) )
+    elif( curl_res.status_code >= 300 and curl_res.status_code < 400 ):
+        # Redirected
+        print( curl_res.status_code )
+    elif( curl_res.status_code >= 400 ):
+        # All errors
+        print( curl_res.status_code)
+        print( curl_res.text)
+    elif( curl_res.status_code >= 400 and curl_res.status_code < 500 ):
+        # Client errors
+        pass
+    elif( curl_res.status_code >= 500 ):
+        # Server errors
+        pass
+
     return curl_res
 
 main_result = main()
