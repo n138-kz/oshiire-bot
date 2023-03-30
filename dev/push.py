@@ -167,13 +167,13 @@ def main():
         }
     for i in range(100):
         file_name = 'images_{num}.png'
-        file_name = file_name.replace('{num}', str(i).zfill(3))
+        file_name = file_name.replace('{num}', str(i+1).zfill(3))
         print(file_name, file=sys.stderr)
         if os.path.isfile(file_name):
             with open("images_001.png", 'rb') as f:
                 file_bin_logoeffect = f.read()
                 files_images  = {
-                    'logo_effect' + str(i) : ( file_name, file_bin_logoeffect ),
+                    'logo_effect' + str(i+1) : ( file_name, file_bin_logoeffect ),
                 }
 
     payload2['payload_json'] = json.dumps( payload2['payload_json'], ensure_ascii=False )
