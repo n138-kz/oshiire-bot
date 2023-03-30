@@ -167,9 +167,11 @@ def main():
             print(file_name, file=sys.stderr, end=': ')
             with open(file_name, 'rb') as f:
                 file_binary = f.read()
-                files_images[file_name] = {
-                     ( file_name, file_binary ),
-                }
+                files_images.update(
+                    {
+                        file_name: ( file_name, file_binary ),
+                    }
+                )
 
 
 
