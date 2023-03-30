@@ -93,8 +93,7 @@ def main():
                     },
                     "footer": {
                         'text'      : 'Version: ' + '3.5'
-                                    + '#' + str( math.floor( os.path.getmtime( __file__ ) ) ) + '\n'
-                                    + 'Update:' + str( datetime.datetime.fromtimestamp( math.floor( os.path.getmtime( __file__ ) ), datetime.timezone(datetime.timedelta(hours=9)) ) ) + "\n ",
+                                    + '#' + str( math.floor( os.path.getmtime( __file__ ) ) ) + '\n',
                     },
                     "fields": [
                         {
