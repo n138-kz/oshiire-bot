@@ -92,8 +92,9 @@ def main():
                         "url"       : "attachment://images_001.png"
                     },
                     "footer": {
-                        "text"      : "Rev: " + str( math.floor( os.path.getmtime( __file__ ) ) ) + ""
-                                        + "/" + str( datetime.datetime.fromtimestamp( math.floor( os.path.getmtime( __file__ ) ), datetime.timezone(datetime.timedelta(hours=9)) ) ) + "\n ",
+                        'text'      : 'Version: ' + '1.0' + '\n'
+                                    + 'Revision: ' + str( math.floor( os.path.getmtime( __file__ ) ) ) + '\n'
+                                    + 'Update:' + str( datetime.datetime.fromtimestamp( math.floor( os.path.getmtime( __file__ ) ), datetime.timezone(datetime.timedelta(hours=9)) ) ) + "\n ",
                     },
                     "fields": [
                         {
