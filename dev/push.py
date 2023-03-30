@@ -114,7 +114,7 @@ def main():
                         },
                         {
                             'inline': True,
-                            'name'  : "Debug Info",
+                            'name'  : 'Debug Info',
                             'value' : '[' + md5calc(__file__) + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
                                     + '[n138-kz/oshiire-bot](https://github.com/n138-kz/oshiire-bot/actions/workflows/dev.yml)\n',
                         },
