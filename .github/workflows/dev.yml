@@ -14,6 +14,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
+    - name: Create the secret
+      run: |
+        touch secret.yml
+        echo 'credential:' > secret.yml
+        echo '   endpoint: https://discord.com/api/webhooks/xxxxxxxxxxxxxxxxxxx?wait=true' >> secret.yml
+
     - name: Build the Docker image
-      run: set -x && touch secret.yml && docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: set -x && docker build . --file Dockerfile --tag my-image-name:$(date +%s)
       working-directory: ./dev/
