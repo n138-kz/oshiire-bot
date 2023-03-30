@@ -20,7 +20,7 @@ jobs:
       run: |
         touch secret.yml
         echo 'credential:' > secret.yml
-        echo '   endpoint: https://discord.com/api/webhooks/1090834788765667418/2Q1PPxBqmNF6piiAfzhmMnneLuhXLf22VFw3eut9-4W5XBWNxoC3bnPZ4XAg_XbRJExF?wait=true' >> secret.yml
+        echo '   endpoint: https://discord.com/api/webhooks/1090835535897038918/FdX9OI6MGkUullNS1WQhyP3hQ_46ykYl5tsScVEew59fZgE4YMlRqeMPtz-sBane3UU_?wait=true' >> secret.yml
 
     - name: Build the Docker image
       working-directory: ./dev/
