@@ -174,7 +174,7 @@ def main():
 
 
     payload2['payload_json'] = json.dumps( payload2['payload_json'], ensure_ascii=False )
-    curl_res = requests.post(api_url, files = files_images  , data = payload2 )
+    curl_res = requests.post(api_url, files = files_images, data = payload2 )
     #print(curl_res.status_code) # HTTPのステータスコード取得
     #print(curl_res.text)        # レスポンスのHTMLを文字列で取得
 
