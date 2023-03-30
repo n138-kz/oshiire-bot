@@ -96,6 +96,9 @@ def main():
                     "image": {
                         "url"       : "attachment://images_001.png"
                     },
+                    "image": {
+                        "url"       : "attachment://images_002.png"
+                    },
                     "footer": {
                         'text'      : 'Version: ' + '3.5'
                                     + '#' + str( math.floor( os.path.getmtime( __file__ ) ) ) + '\n',
