@@ -169,7 +169,7 @@ def main():
             with open("images_001.png", 'rb') as f:
                 file_bin_logoeffect = f.read()
                 files_images  = {
-                    'logo_effect' + str(i+1) : ( file_name, file_bin_logoeffect ),
+                    'logo_effect' : ( file_name, file_bin_logoeffect ),
                 }
         else:
             print('NOT Exist', file=sys.stderr)
