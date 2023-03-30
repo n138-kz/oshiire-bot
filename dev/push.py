@@ -109,6 +109,14 @@ def main():
                                     + 'Until: 2023年4月19日 24:59 (JST)',
                         },
                         {
+                            'inline': True,
+                            'name'  : "Ver.3.6予告番組最新情報",
+                            'value' : '[HoYoLAB: 原神(Genshin)公式](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
+                                    + '[Youtube channel](https://youtu.be/uda3T168Wpg)'
+                                    + 'https://webstatic.hoyoverse.com/upload/op-public/2023/03/29/46662c4742b02e88e218384adf395f3b_8860534905048955210.jpg\n'
+                                    + 'Time: 3月31日(金) 21:00 (JST)',
+                        },
+                        {
                             'inline': False,
                             'name'  : '',
                             'value' : '',
