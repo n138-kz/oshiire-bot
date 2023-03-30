@@ -120,9 +120,17 @@ def main():
                         },
                         {
                             'inline': True,
-                            'name'  : ".",
-                            'value' : '[' + md5calc(__file__) + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
-                                    + '[n138-kz/oshiire-bot](https://github.com/n138-kz/oshiire-bot/actions/workflows/dev.yml)\n',
+                            'name'  : 'ヾ(๑╹◡╹)ﾉ"',
+                            'value' : '(๑•̀ㅂ•́)و✧\n'
+                                    + '(๑•̀ㅂ•́)و✧\n'
+                                    + '(๑•̀ㅂ•́)و✧\n',
+                        },
+                        {
+                            'inline': True,
+                            'name'  : '(๑•̀ㅂ•́)و✧',
+                            'value' : 'ヾ(๑╹◡╹)ﾉ"\n'
+                                    + 'ヾ(๑╹◡╹)ﾉ"\n'
+                                    + 'ヾ(๑╹◡╹)ﾉ"\n',
                         },
                         {
                             'inline': False,
