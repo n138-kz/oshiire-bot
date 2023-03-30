@@ -159,6 +159,7 @@ def main():
     }
 
     ### embed付き
+    files_images = {}
     with open("images_001.png", 'rb') as f:
         file_bin_logoeffect = f.read()
         files_images  = {
