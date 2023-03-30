@@ -77,6 +77,9 @@ def main():
     ) # Thoma
 
     msg_text += arr_text[random.randint(0,(len(arr_text)-1))]
+
+    msg_text += 'https://webstatic.hoyoverse.com/upload/op-public/2023/03/29/46662c4742b02e88e218384adf395f3b_8860534905048955210.jpg'
+
     for i in range(5):
         msg_text += '\n'
 
