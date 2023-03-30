@@ -172,7 +172,6 @@ def main():
         file_name = 'images_{num}.png'
         file_name = file_name.replace('{num}', str(i+1).zfill(3))
         if os.path.isfile(file_name):
-            print(file_name, file=sys.stderr, end=': ')
             with open(file_name, 'rb') as f:
                 file_binary = f.read()
                 files_images.update(
