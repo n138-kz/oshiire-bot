@@ -97,26 +97,26 @@ def main():
                     },
                     "fields": [
                         {
-                            "name"  : "原神 (Genshin Impact)",
-                            "value" : "[HoYoLAB: Daily Login Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n",
-                            "inline": True
+                            'inline': True,
+                            'name'  : "原神 (Genshin Impact)",
+                            'value' : "[HoYoLAB: Daily Login Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n",
                         },
                         {
-                            "name"  : "HoYoLAB × Prime Gaming",
-                            "value" : '[HoYoLAB: 原神（Genshin）公式](http://hoyo.link/1eyUCEAd)\n'
+                            'inline': True,
+                            'name'  : "HoYoLAB × Prime Gaming",
+                            'value' : '[HoYoLAB: 原神（Genshin）公式](http://hoyo.link/1eyUCEAd)\n'
                                     + '[Prime Gaming: 原神コラム#6](https://gaming.amazon.com/genshin-impact-6?ref_=SM_GI02_P6_IGP)\n',
-                            "inline": True
                         },
                         {
+                            'inline': False,
                             'name'  : '',
                             'value' : '',
-                            'inline': False
                         },
                         {
-                            "name"  : "Debug Info",
-                            "value" : '[' + md5calc(__file__) + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
+                            'inline': True,
+                            'name'  : "Debug Info",
+                            'value' : '[' + md5calc(__file__) + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
                                     + '[n138-kz/oshiire-bot](https://github.com/n138-kz/oshiire-bot/actions/workflows/dev.yml)\n',
-                            'inline': True
                         },
                     ],
                 }
