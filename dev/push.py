@@ -162,7 +162,7 @@ def main():
     }
     print(payload2['payload_json']['embeds'])
 
-    ### embed付き
+    # 画像ファイル
     files_images = {}
     for i in range(100):
         file_name = 'images_{num}.png'
