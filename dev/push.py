@@ -78,11 +78,6 @@ def main():
 
     msg_text += arr_text[random.randint(0,(len(arr_text)-1))]
 
-    msg_text += 'HoYoLAB × Prime Gaming\n'
-    msg_text += '- \n'
-    msg_text += '- [Prime Gaming: 原神コラム#6](https://gaming.amazon.com/genshin-impact-6?ref_=SM_GI02_P6_IGP)\n'
-    msg_text += '\n'
-
     payload2 = {
         "payload_json" : {
             "username": "みんなのまま",
