@@ -83,7 +83,7 @@ def main():
     payload2 = {
         "payload_json" : {
             'username': 'みんなのまま',
-            'content' : '@here ',
+            'content' : 'here ',
             "embeds": [
                 {
                     "description"   : msg_text,
