@@ -163,6 +163,12 @@ def main():
                         "url"       : "attachment://images_002.png"
                     },
                 }
+                {
+                    "color"         : 5620992,
+                    "image": {
+                        "url"       : "attachment://images_003.png"
+                    },
+                }
             ]
         }
     }
