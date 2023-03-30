@@ -95,7 +95,7 @@ def main():
                     },
                     "footer": {
                         "text"      : "Rev: " + str( math.floor( os.path.getmtime( __file__ ) ) ) + ""
-                                        + "/" + str( datetime.datetime.fromtimestamp( math.floor( os.path.getmtime( __file__ ) ), datetime.timezone(datetime.timedelta(hours=9)) ) ) + "\n",
+                                        + "/" + str( datetime.datetime.fromtimestamp( math.floor( os.path.getmtime( __file__ ) ), datetime.timezone(datetime.timedelta(hours=9)) ) ) + "\n ",
                     },
                     "fields": [
                         {
