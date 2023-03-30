@@ -93,11 +93,9 @@ def main():
                     "url"           : "https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp\n",
                     "color"         : 5620992,
                     "timestamp"     : datetime.datetime.now().isoformat(),
-                    "image": [
-                        {
-                            "url"       : "attachment://images_001.png"
-                        }
-                    ],
+                    "image": {
+                        "url"       : ["attachment://images_001.png"]
+                    },
                     "footer": {
                         'text'      : 'Version: ' + '3.5'
                                     + '#' + str( math.floor( os.path.getmtime( __file__ ) ) ) + '\n',
