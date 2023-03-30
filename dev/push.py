@@ -119,5 +119,7 @@ def main():
     curl_res = requests.post(api_url, files = files_images  , data = payload2 )
     #print(curl_res.status_code) # HTTPのステータスコード取得
     #print(curl_res.text)        # レスポンスのHTMLを文字列で取得
+    return curl_res
 
-main()
+main_result = main()
+if(False):
