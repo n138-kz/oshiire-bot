@@ -125,6 +125,7 @@ main_result = main()
 if(False):
     pass
 elif( main_result.status_code >= 200 and main_result.status_code < 300 ):
+    print(main_result.text)
     pass
 elif( main_result.status_code >= 300 and main_result.status_code < 400 ):
     pass
