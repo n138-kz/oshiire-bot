@@ -89,30 +89,76 @@ def main():
             'content' : 'here ',
             "embeds": [
                 {
-                    "embeds": [
+                    "description"   : msg_text,
+                    "url"           : "https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp\n",
+                    "color"         : 5620992,
+                    "timestamp"     : datetime.datetime.now().isoformat(),
+                    "image": {
+                        "url"       : "attachment://images_001.png"
+                    },
+                    "footer": {
+                        'text'      : 'Version: ' + '3.5'
+                                    + '#' + str( math.floor( os.path.getmtime( __file__ ) ) ) + '\n',
+                    },
+                    "fields": [
                         {
-                            "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
-                            "description": "複数枚画像投稿テスト",
-                            "author": {
-                                "name": "GrapeColor (@GrapeColorSoft)",
-                                "url": "https://twitter.com/GrapeColorSoft",
-                               "icon_url": "https://pbs.twimg.com/profile_images/1063236006135062528/493Dm2lD_bigger.jpg"
-                            },
-                            "image": {"url": "https://pbs.twimg.com/media/ELoMRwLVUAAFlm_.jpg:large"}
+                            'inline': False,
+                            'name'  : "原神 (Genshin Impact)",
+                            'value' : "- [HoYoLAB: Daily Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n"
+                                    + '- [Ver.3.5公式PV](https://youtu.be/M6g20c4a8Q4)'
+                                    + '',
                         },
                         {
-                            "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
-                            "image": {"url": "https://pbs.twimg.com/media/ELoMRwNU8AEMaoO.jpg:large"}
+                            'inline': False,
+                            'name'  : "HoYoLAB × Prime Gaming",
+                            'value' : '- [HoYoLAB: 原神(Genshin)公式](http://hoyo.link/1eyUCEAd)\n'
+                                    + '- [Prime Gaming: 原神コラム#6](https://gaming.amazon.com/genshin-impact-6?ref_=SM_GI02_P6_IGP)\n'
+                                    + 'Until: 4月13日(木)  0:59 (JST)\n'
+                                    + '',
                         },
                         {
-                            "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
-                            "image": {"url": "https://pbs.twimg.com/media/ELoMRwNUwAAWako.jpg:large"}
+                            'inline': False,
+                            'name'  : "予告番組最新情報",
+                            'value' : '- [HoYoLAB: Ver.3.6](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
+                                    + '- [Youtube](https://youtu.be/uda3T168Wpg)\n'
+                                    + '- [bilibili](http://live.bilibili.com/21987615)\n'
+                                    + '- [twitch](https://www.twitch.tv/genshinimpactofficial)\n'
+                                    + 'Time:  3月31日(金) 21:00 (JST)\n'
+                                    + '',
                         },
                         {
-                            "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
-                            "image": {"url": "https://pbs.twimg.com/media/ELoMRwMU8AELiyj.jpg:large"}
-                        }
-                    ]
+                            'inline': False,
+                            'name'  : '',
+                            'value' : '',
+                        },
+                        {
+                            'inline': True,
+                            'name'  : '( ๑╹⌓╹ )',
+                            'value' : '[' + 'DevOps Server' + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
+                                    + '[' + 'Build Status (DEV)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_dev.yml)\n'
+                                    + '[' + 'Build Status (PRD)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_prd.yml)\n'
+                                    + '',
+                        },
+                        {
+                            'inline': True,
+                            'name'  : 'ヾ(๑╹◡╹)ﾉ"',
+                            'value' : '(๑•̀ㅂ•́)و✧\n'
+                                    + '(๑•̀ㅂ•́)و✧\n'
+                                    + '(๑•̀ㅂ•́)و✧\n'
+                                    + '',
+                        },
+                        {
+                            'inline': False,
+                            'name'  : '',
+                            'value' : '',
+                        },
+                    ],
+                },
+                {
+                    "color"         : 5620992,
+                    "image": {
+                        "url"       : "attachment://images_002.png"
+                    },
                 }
             ]
         }
