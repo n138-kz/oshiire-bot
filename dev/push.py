@@ -78,12 +78,8 @@ def main():
 
     msg_text += arr_text[random.randint(0,(len(arr_text)-1))]
 
-    msg_text += '原神 (Genshin Impact)\n'
-    msg_text += '- [HoYoLAB: Daily Login Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n'
-    msg_text += '\n'
-
     msg_text += 'HoYoLAB × Prime Gaming\n'
-    msg_text += '- [HoYoLAB: 原神（Genshin）公式](http://hoyo.link/1eyUCEAd)\n'
+    msg_text += '- \n'
     msg_text += '- [Prime Gaming: 原神コラム#6](https://gaming.amazon.com/genshin-impact-6?ref_=SM_GI02_P6_IGP)\n'
     msg_text += '\n'
 
@@ -105,6 +101,17 @@ def main():
                                         + "/" + str( datetime.datetime.fromtimestamp( math.floor( os.path.getmtime( __file__ ) ), datetime.timezone(datetime.timedelta(hours=9)) ) ) + "\n ",
                     },
                     "fields": [
+                        {
+                            "name"  : "原神 (Genshin Impact)",
+                            "value" : "[HoYoLAB: Daily Login Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n",
+                            "inline": True
+                        },
+                        {
+                            "name"  : "HoYoLAB × Prime Gaming",
+                            "value" : '- [HoYoLAB: 原神（Genshin）公式](http://hoyo.link/1eyUCEAd)\n'
+                                    + '- [Prime Gaming: 原神コラム#6](https://gaming.amazon.com/genshin-impact-6?ref_=SM_GI02_P6_IGP)\n'
+                            "inline": True
+                        },
                         {
                             "name"  : "md5",
                             "value" : md5calc(__file__),
