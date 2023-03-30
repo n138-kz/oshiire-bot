@@ -89,8 +89,8 @@ def main():
             'content' : 'here ',
             "embeds": [
                 {
-                    "description"   : msg_text,
                     "url"           : "https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp\n",
+                    "description"   : msg_text,
                     "color"         : 5620992,
                     "timestamp"     : datetime.datetime.now().isoformat(),
                     "image": {
