@@ -109,7 +109,8 @@ def main():
                         },
                         {
                             "name"  : "md5",
-                            "value" : md5calc(__file__),
+                            "value" : '[' + md5calc(__file__) + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')',
+                            'inline': True
                         },
                     ],
                 }
