@@ -10,6 +10,13 @@ import math
 # refs docs: https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
 # refs docs: https://qiita.com/ABBBB/items/e6bdf7fc94b8f6f72a01
 
+def md5calc(file):
+    import hashlib
+    with open(file, 'rb') as fp:
+        fileData = file.read()
+        hash = hashlib.md5(fileData).hexdigest()
+    return hash
+
 def main():
     config = { 'credential': { 'endpoint': '' } }
     if not os.path.isfile('secret.yml'):
