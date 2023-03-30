@@ -123,7 +123,8 @@ def main():
                                     + '- [Youtube](https://youtu.be/uda3T168Wpg)\n'
                                     + '- [bilibili](http://live.bilibili.com/21987615)\n'
                                     + '- [twitch](https://www.twitch.tv/genshinimpactofficial)\n'
-                                    + 'Time: 3月31日(金) 21:00 (JST)\n',
+                                    + 'Time: 3月31日(金) 21:00 (JST)\n'
+                                    + '',
                         },
                         {
                             'inline': False,
