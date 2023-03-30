@@ -30,4 +30,4 @@ jobs:
     - name: Test RUN the Docker image
       working-directory: ./dev/
       run: |
-        set -x && docker run n138-kz/oshiire-bot
+        set -x && docker run --rm n138-kz/oshiire-bot
