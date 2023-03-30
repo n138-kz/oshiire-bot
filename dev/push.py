@@ -91,6 +91,11 @@ def main():
                 {
                     "url"           : "https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp\n",
                     "description"   : msg_text,
+                    "author": {
+                        "name": "みんなのまま (BOT)",
+                        "url": "https://github.com/n138-kz/oshiire-bot",
+                        "icon_url": "https://pbs.twimg.com/profile_images/1605047778899812354/GjiKQ9pH_200x200.jpg"
+                    },
                     "color"         : 5620992,
                     "timestamp"     : datetime.datetime.now().isoformat(),
                     "image": {
