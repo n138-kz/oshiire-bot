@@ -157,10 +157,6 @@ def main():
                         },
                     ],
                 },
-                { "color": 5620992, "image": {"url": "attachment://images_002.png"},},
-                { "color": 5620992, "image": {"url": "attachment://images_003.png"},},
-                { "color": 5620992, "image": {"url": "attachment://images_004.png"},},
-                { "color": 5620992, "image": {"url": "attachment://images_005.png"},},
             ]
         }
     }
@@ -179,6 +175,9 @@ def main():
                         file_name: ( file_name, file_binary ),
                     }
                 )
+            payload2['payload_json']['embeds'].append(
+                { "color": 5620992, "image": {"url": 'attachment://' + file_name}, },
+            )
 
 
 
