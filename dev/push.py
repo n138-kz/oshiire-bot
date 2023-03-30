@@ -163,15 +163,13 @@ def main():
     for i in range(100):
         file_name = 'images_{num}.png'
         file_name = file_name.replace('{num}', str(i+1).zfill(3))
-        print(file_name, file=sys.stderr, end=': ')
         if os.path.isfile(file_name):
-            print('Exist', file=sys.stderr)
+            print(file_name, file=sys.stderr, end=': ')
             with open(file_name, 'rb') as f:
                 file_binary = f.read()
                 files_images  = {
-                    'logo_effect' : ( file_name, file_binary ),
+                    file_name : ( file_name, file_binary ),
                 }
-                print(file_name)
         else:
             print('NOT Exist', file=sys.stderr)
 
