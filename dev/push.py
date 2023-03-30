@@ -166,7 +166,7 @@ def main():
         print(file_name, file=sys.stderr, end=': ')
         if os.path.isfile(file_name):
             print('Exist', file=sys.stderr)
-            with open("images_001.png", 'rb') as f:
+            with open(file_name, 'rb') as f:
                 file_bin_logoeffect = f.read()
                 files_images  = {
                     'logo_effect' : ( file_name, file_bin_logoeffect ),
