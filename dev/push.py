@@ -160,11 +160,6 @@ def main():
 
     ### embed付き
     files_images = {}
-    with open("images_001.png", 'rb') as f:
-        file_bin_logoeffect = f.read()
-        files_images  = {
-            "logo_effect" : ( "images_001.png", file_bin_logoeffect ),
-        }
     for i in range(100):
         file_name = 'images_{num}.png'
         file_name = file_name.replace('{num}', str(i+1).zfill(3))
