@@ -129,6 +129,7 @@ elif( main_result.status_code >= 200 and main_result.status_code < 300 ):
 elif( main_result.status_code >= 400 and main_result.status_code < 500 ):
     pass
 elif( main_result.status_code >= 500 ):
+    pass
 
 def test_main():
     main()
