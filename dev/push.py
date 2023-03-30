@@ -164,6 +164,15 @@ def main():
         files_images  = {
             "logo_effect" : ( "images_001.png", file_bin_logoeffect ),
         }
+    for i in range(100):
+        file_name = 'images_{num}.png'
+        file_name = file_name.replace('{num}', '')
+        if os.path.isfile(file_name):
+            with open("images_001.png", 'rb') as f:
+                file_bin_logoeffect = f.read()
+                files_images  = {
+                    'logo_effect' + i : ( file_name, file_bin_logoeffect ),
+                }
 
     payload2['payload_json'] = json.dumps( payload2['payload_json'], ensure_ascii=False )
     curl_res = requests.post(api_url, files = files_images  , data = payload2 )
