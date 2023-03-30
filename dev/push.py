@@ -178,6 +178,7 @@ def main():
                 }
         else:
             print('NOT Exist', file=sys.stderr)
+    print(files_images, file=sys.stderr)
 
 
     payload2['payload_json'] = json.dumps( payload2['payload_json'], ensure_ascii=False )
