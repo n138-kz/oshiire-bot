@@ -94,7 +94,7 @@ def main():
                         "url"       : "attachment://images_001.png"
                     },
                     "footer": {
-                        "text"      : "Rev: "+str( math.floor( os.path.getmtime( __file__ ) ) ),
+                        "text"      : "Rev: " + str( math.floor( os.path.getmtime( __file__ ) ) ),
                     },
                     "fields": [
                         {
