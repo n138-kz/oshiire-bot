@@ -170,7 +170,9 @@ def main():
                 files_images  = {
                     file_name : ( file_name, file_binary ),
                 }
+    print('>')
     print(files_images)
+    print('>')
 
 
 
