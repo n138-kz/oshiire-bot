@@ -126,6 +126,8 @@ if(False):
     pass
 elif( main_result.status_code >= 200 and main_result.status_code < 300 ):
     pass
+elif( main_result.status_code >= 300 and main_result.status_code < 400 ):
+    pass
 elif( main_result.status_code >= 400 and main_result.status_code < 500 ):
     pass
 elif( main_result.status_code >= 500 ):
