@@ -94,7 +94,7 @@ def main():
                     "color"         : 5620992,
                     "timestamp"     : datetime.datetime.now().isoformat(),
                     "image": {
-                        "url"       : ["attachment://images_001.png"]
+                        "url"       : "attachment://images_001.png"
                     },
                     "footer": {
                         'text'      : 'Version: ' + '3.5'
