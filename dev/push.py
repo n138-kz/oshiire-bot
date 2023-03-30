@@ -92,7 +92,7 @@ def main():
                         "url"       : "attachment://images_001.png"
                     },
                     "footer": {
-                        'text'      : 'Version: ' + '1.0'
+                        'text'      : 'Version: ' + '3.5'
                                     + '#' + str( math.floor( os.path.getmtime( __file__ ) ) ) + '\n'
                                     + 'Update:' + str( datetime.datetime.fromtimestamp( math.floor( os.path.getmtime( __file__ ) ), datetime.timezone(datetime.timedelta(hours=9)) ) ) + "\n ",
                     },
