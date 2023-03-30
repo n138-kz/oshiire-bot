@@ -113,7 +113,6 @@ def main():
                             'name'  : "Ver.3.6予告番組最新情報",
                             'value' : '[HoYoLAB: 原神(Genshin)公式](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
                                     + '[Youtube channel](https://youtu.be/uda3T168Wpg)\n'
-                                    + 'https://webstatic.hoyoverse.com/upload/op-public/2023/03/29/46662c4742b02e88e218384adf395f3b_8860534905048955210.jpg\n'
                                     + 'Time: 3月31日(金) 21:00 (JST)\n',
                         },
                         {
