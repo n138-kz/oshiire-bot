@@ -171,6 +171,7 @@ def main():
                 files_images  = {
                     'logo_effect' : ( file_name, file_bin_logoeffect ),
                 }
+                print(file_name)
         else:
             print('NOT Exist', file=sys.stderr)
 
