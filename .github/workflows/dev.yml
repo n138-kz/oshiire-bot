@@ -25,5 +25,9 @@ jobs:
     - name: Build the Docker image
       working-directory: ./dev/
       run: |
-        docker build . --file Dockerfile --tag n138-kz/oshiire-bot:latest --tag n138-kz/oshiire-bot:$(date +%s)
-        docker run n138-kz/oshiire-bot
+        set -x && docker build . --file Dockerfile --tag n138-kz/oshiire-bot:latest --tag n138-kz/oshiire-bot:$(date +%s)
+
+    - name: Test RUN the Docker image
+      working-directory: ./dev/
+      run: |
+        set -x && docker run n138-kz/oshiire-bot
