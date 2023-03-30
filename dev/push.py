@@ -155,9 +155,9 @@ def main():
     ### embed付き
     with open("images_001.png", 'rb') as f:
         file_bin_logoeffect = f.read()
-    files_images  = {
-        "logo_effect" : ( "images_001.png", file_bin_logoeffect ),
-    }
+        files_images  = {
+            "logo_effect" : ( "images_001.png", file_bin_logoeffect ),
+        }
 
     payload2['payload_json'] = json.dumps( payload2['payload_json'], ensure_ascii=False )
     curl_res = requests.post(api_url, files = files_images  , data = payload2 )
