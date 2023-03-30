@@ -63,5 +63,6 @@ credential:
 ## Refs links
 
 - [Discord Webhooks Guide | Structure of Webhook](https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html)
-- [pythonからDiscordのwebhookでメッセージ投稿する備忘録](https://qiita.com/ABBBB/items/e6bdf7fc94b8f6f72a01)
+- [pythonからDiscordのwebhookでメッセージ投稿する備忘録 - Qiita](https://qiita.com/ABBBB/items/e6bdf7fc94b8f6f72a01)
+- [（小ネタ）Discord WebhookでTwitterみたいな4枚画像を表示してみる - Qiita](https://qiita.com/GrapeColor/items/bdcf8431b13091447028)
 - [Discord Developer Portal — Documentation — Webhook][waitEqTrue]
