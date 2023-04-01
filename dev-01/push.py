@@ -50,7 +50,8 @@ def main():
                     "author": {
                     "name": "GrapeColor (@GrapeColorSoft)",
                     "url": "https://twitter.com/GrapeColorSoft",
-                    "icon_url": "https://pbs.twimg.com/profile_images/1063236006135062528/493Dm2lD_bigger.jpg"
+                    "icon_url": "https://pbs.twimg.com/profile_images/1063236006135062528/493Dm2lD_bigger.jpg",
+                    "fields": [],
                 },
                     "image": {"url": "https://pbs.twimg.com/media/ELoMRwLVUAAFlm_.jpg:large"}
                 },
