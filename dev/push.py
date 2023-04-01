@@ -208,7 +208,7 @@ def main():
     )
 
     curl_res = requests.get( 'https://api.github.com/repos/n138-kz/oshiire-bot/commits?per_page=1' )
-    print( json.loads( curl_res.text )[0]['sha'][:6] )
+    print( json.loads( curl_res.text )[0]['sha'][:7] )
 
 
     payload2['payload_json'] = json.dumps( payload2['payload_json'], ensure_ascii=False )
