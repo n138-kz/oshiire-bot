@@ -170,7 +170,7 @@ def main():
             ],
         }
     )
-    payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
+    payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
             'name'  : "原神 (Genshin Impact)",
