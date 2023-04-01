@@ -189,7 +189,7 @@ def main():
                     + '[' + 'DevOps Server' + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
                     + '[' + 'Build Status (DEV)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_dev.yml)\n'
                     + '[' + 'Build Status (PRD)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_prd.yml)\n'
-                    + '[' + 'コードポイント' + ':' + json.loads( curl_res.text )[0]['sha'][:7] + '](https://github.com/n138-kz/oshiire-bot/commit/' + json.loads( curl_res.text )[0]['sha'] + ')\n'
+                    + '[' + 'Github sha' + ':' + json.loads( curl_res.text )[0]['sha'][:7] + '](https://github.com/n138-kz/oshiire-bot/commit/' + json.loads( curl_res.text )[0]['sha'] + ')\n'
                     + '',
         },
     )
