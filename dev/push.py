@@ -87,26 +87,58 @@ def main():
             'username': 'みんなのまま',
             'content' : 'here ',
             "avatar_url": "https://upload-os-bbs.hoyolab.com/upload/2022/11/24/21d71c44827fa664a6a21977d9a3dd1c_6799685155050732642.png?x-oss-process=image/resize,s_1000/quality,q_80/auto-orient,0/interlace,1/format,png",
-            "embeds": [
-                {
-                    "author": {
-                        "name": "みんなのまま",
-                        "url": "https://github.com/n138-kz/oshiire-bot",
-                        "icon_url": "https://upload-os-bbs.hoyolab.com/upload/2022/11/24/21d71c44827fa664a6a21977d9a3dd1c_6799685155050732642.png?x-oss-process=image/resize,s_1000/quality,q_80/auto-orient,0/interlace,1/format,png",
-                    },
-                    "color"         : 5620992,
-                    "timestamp"     : datetime.datetime.now().isoformat(),
-                    "description"   : msg_text,
-                    "url"           : "https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp\n",
-                    "footer": {
-                        'text'      : 'Version: ' + '3.5'
-                                    + '#' + str( math.floor( os.path.getmtime( __file__ ) ) ) + '\n',
-                    },
-                    "fields": [],
-                },
-            ]
+            "embeds": [],
         }
     }
+
+    try:
+        pass
+    except:
+        pass
+
+    payload2['payload_json']['embeds'].append(
+        {
+            'color': 5620992,
+            'timestamp': datetime.datetime.now().isoformat(),
+            'footer': {
+                'text': 'Version: ' + '3.5'
+                    + '#' + str( math.floor( os.path.getmtime( __file__ ) ) ) + '\n',
+            },
+            "fields": [
+                {
+                    'inline': False,
+                    'name'  : "",
+                    'value' : msg_text
+                            + '',
+                }
+            ],
+        }
+    )
+
+    # 画像ファイル
+    files_images = {}
+    for i in range(100):
+        file_name = 'images_{num}.png'
+        file_name = file_name.replace('{num}', str(i+1).zfill(3))
+        if os.path.isfile(file_name):
+            with open(file_name, 'rb') as f:
+                file_binary = f.read()
+                files_images.update(
+                    {
+                        file_name: ( file_name, file_binary ),
+                    }
+                )
+            payload2['payload_json']['embeds'].append(
+                {
+                    'url': 'https://twitter.com/Genshin_7',
+                    "image": {
+                        "url": 'attachment://' + file_name
+                    },
+                },
+            )
+
+    print(payload2['payload_json'])
+
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
@@ -174,24 +206,6 @@ def main():
             'value' : '',
         },
     )
-    print(payload2['payload_json']['embeds'])
-
-    # 画像ファイル
-    files_images = {}
-    for i in range(100):
-        file_name = 'images_{num}.png'
-        file_name = file_name.replace('{num}', str(i+1).zfill(3))
-        if os.path.isfile(file_name):
-            with open(file_name, 'rb') as f:
-                file_binary = f.read()
-                files_images.update(
-                    {
-                        file_name: ( file_name, file_binary ),
-                    }
-                )
-            payload2['payload_json']['embeds'].append(
-                { "color": 5620992, "image": {"url": 'attachment://' + file_name}, },
-            )
 
 
 
