@@ -104,48 +104,12 @@ def main():
                     "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
                     "image": {"url": "https://pbs.twimg.com/media/ELoMRwMU8AELiyj.jpg:large"}
                 },
-                {
-                    "color"         : 5620992,
-                    "timestamp"     : datetime.datetime.now().isoformat(),
-                    "footer": {
-                        'text'      : 'Version: ' + '3.5'
-                                    + '#' + str( math.floor( os.path.getmtime( __file__ ) ) ) + '\n',
-                    },
-                    "fields": [],
-                },
             ],
         }
     }
 
-    # 画像ファイル
-    files_images = {}
-    for i in range(100):
-        file_name = 'images_{num}.png'
-        file_name = file_name.replace('{num}', str(i+1).zfill(3))
-        if os.path.isfile(file_name):
-            with open(file_name, 'rb') as f:
-                file_binary = f.read()
-                files_images.update(
-                    {
-                        file_name: ( file_name, file_binary ),
-                    }
-                )
-            payload2['payload_json']['embeds'].append(
-                { "color": 5620992, "image": {"url": 'attachment://' + file_name}, },
-            )
-
-    payload2['payload_json']['embeds'].append(
-        {
-            'url': '',
-            'image': {
-                'url': '',
-            },
-        },
-    )
-    print(payload2['payload_json'])
-
     try:
-        payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)].append(
+        payload2['payload_json']['embeds'].append(
             {
                 'color': 5620992,
                 'timestamp': datetime.datetime.now().isoformat(),
@@ -163,6 +127,31 @@ def main():
                 ],
             }
         )
+
+        # 画像ファイル
+        files_images = {}
+        for i in range(100):
+            file_name = 'images_{num}.png'
+            file_name = file_name.replace('{num}', str(i+1).zfill(3))
+            if os.path.isfile(file_name):
+                with open(file_name, 'rb') as f:
+                    file_binary = f.read()
+                    files_images.update(
+                        {
+                            file_name: ( file_name, file_binary ),
+                        }
+                    )
+                payload2['payload_json']['embeds'].append(
+                    {
+                        'url': 'https://twitter.com/Genshin_7',
+                        "image": {
+                            "url": 'attachment://' + file_name
+                        },
+                    },
+                )
+
+        print(payload2['payload_json'])
+
         payload2['payload_json']['embeds'][0]['fields'].append(
             {
                 'inline': False,
@@ -172,7 +161,7 @@ def main():
                         + '',
             },
         )
-        payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
+        payload2['payload_json']['embeds'][0]['fields'].append(
             {
                 'inline': False,
                 'name'  : "HoYoLAB × Prime Gaming",
@@ -183,7 +172,7 @@ def main():
             },
         )
         """ This Block is disabled
-        payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
+        payload2['payload_json']['embeds'][0]['fields'].append(
             {
                 'inline': False,
                 'name'  : "予告番組最新情報",
@@ -196,14 +185,14 @@ def main():
             },
         )
         """
-        payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
+        payload2['payload_json']['embeds'][0]['fields'].append(
             {
                 'inline': False,
                 'name'  : '',
                 'value' : '',
             },
         )
-        payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
+        payload2['payload_json']['embeds'][0]['fields'].append(
             {
                 'inline': True,
                 'name'  : '( ๑╹⌓╹ )',
@@ -213,7 +202,7 @@ def main():
                         + '',
             },
         )
-        payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
+        payload2['payload_json']['embeds'][0]['fields'].append(
             {
                 'inline': True,
                 'name'  : 'ヾ(๑╹◡╹)ﾉ"',
@@ -223,7 +212,7 @@ def main():
                         + '',
             },
         )
-        payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
+        payload2['payload_json']['embeds'][0]['fields'].append(
             {
                 'inline': False,
                 'name'  : '',
