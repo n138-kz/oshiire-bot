@@ -65,37 +65,7 @@ def main():
             }
         ]
     }
-    payload2['payload_json']['embeds'][0]['fields'].append(
-        {
-            'inline': False,
-            'name'  : '',
-            'value' : '',
-        },
-    )
-    payload2['payload_json']['embeds'][0]['fields'].append(
-        {
-            'inline': False,
-            'name'  : '',
-            'value' : '',
-        },
-    )
-    payload2['payload_json']['embeds'][0]['fields'].append(
-        {
-            'inline': False,
-            'name'  : '( ๑╹⌓╹ )',
-            'value' : '[' + 'DevOps Server' + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
-                    + '[' + 'Build Status (DEV)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_dev.yml)\n'
-                    + '[' + 'Build Status (PRD)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_prd.yml)\n'
-                    + '',
-        },
-    )
-    payload2['payload_json']['embeds'][0]['fields'].append(
-        {
-            'inline': False,
-            'name'  : '',
-            'value' : '',
-        },
-    )
+
     print(payload2['payload_json']['embeds'])
 
 
