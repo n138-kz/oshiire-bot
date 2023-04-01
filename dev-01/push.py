@@ -77,7 +77,13 @@ def main():
                     "image": {"url": "https://pbs.twimg.com/media/ELoMRwMU8AELiyj.jpg:large"}
                 },
                 {
-        
+                    "color"         : 5620992,
+                    "timestamp"     : datetime.datetime.now().isoformat(),
+                    "footer": {
+                        'text'      : 'Version: ' + '3.5'
+                                    + '#' + str( math.floor( os.path.getmtime( __file__ ) ) ) + '\n',
+                    },
+                    "fields": [],
                 },
             ],
         }
