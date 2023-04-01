@@ -138,13 +138,37 @@ def main():
                 { "color": 5620992, "image": {"url": 'attachment://' + file_name}, },
             )
 
-    payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
+    payload2['payload_json']['embeds'].append(
         {
-            'inline': False,
-            'name'  : "",
-            'value' : msg_text
-                    + '',
+            'author': {
+                'name': payload2['payload_json']['username'],
+                'icon_url': payload2['payload_json']['avatar_url'],
+                'url': 'https://github.com/n138-kz/oshiire-bot',
+            },
+            'url': '',
+            'image': {
+                'url': '',
+            },
         },
+    )
+
+    payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)].append(
+        {
+            'color': 5620992,
+            'timestamp': datetime.datetime.now().isoformat(),
+            'footer': {
+                'text': 'Version: ' + '3.5'
+                    + '#' + str( math.floor( os.path.getmtime( __file__ ) ) ) + '\n',
+            },
+            "fields": [
+                {
+                    'inline': False,
+                    'name'  : "",
+                    'value' : msg_text
+                            + '',
+                }
+            ],
+        }
     )
     payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
         {
