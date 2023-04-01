@@ -120,6 +120,23 @@ def main():
             ],
         }
     }
+    # 画像ファイル
+    files_images = {}
+    for i in range(100):
+        file_name = 'images_{num}.png'
+        file_name = file_name.replace('{num}', str(i+1).zfill(3))
+        if os.path.isfile(file_name):
+            with open(file_name, 'rb') as f:
+                file_binary = f.read()
+                files_images.update(
+                    {
+                        file_name: ( file_name, file_binary ),
+                    }
+                )
+            payload2['payload_json']['embeds'].append(
+                { "color": 5620992, "image": {"url": 'attachment://' + file_name}, },
+            )
+
     payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
         {
             'inline': False,
@@ -195,23 +212,6 @@ def main():
             'value' : '',
         },
     )
-
-    # 画像ファイル
-    files_images = {}
-    for i in range(100):
-        file_name = 'images_{num}.png'
-        file_name = file_name.replace('{num}', str(i+1).zfill(3))
-        if os.path.isfile(file_name):
-            with open(file_name, 'rb') as f:
-                file_binary = f.read()
-                files_images.update(
-                    {
-                        file_name: ( file_name, file_binary ),
-                    }
-                )
-            payload2['payload_json']['embeds'].append(
-                { "color": 5620992, "image": {"url": 'attachment://' + file_name}, },
-            )
 
 
 
