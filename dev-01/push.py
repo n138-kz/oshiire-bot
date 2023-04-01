@@ -153,92 +153,94 @@ def main():
     )
     print(payload2['payload_json'])
 
-    payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)].append(
-        {
-            'color': 5620992,
-            'timestamp': datetime.datetime.now().isoformat(),
-            'footer': {
-                'text': 'Version: ' + '3.5'
-                    + '#' + str( math.floor( os.path.getmtime( __file__ ) ) ) + '\n',
+    try:
+        payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)].append(
+            {
+                'color': 5620992,
+                'timestamp': datetime.datetime.now().isoformat(),
+                'footer': {
+                    'text': 'Version: ' + '3.5'
+                        + '#' + str( math.floor( os.path.getmtime( __file__ ) ) ) + '\n',
+                },
+                "fields": [
+                    {
+                        'inline': False,
+                        'name'  : "",
+                        'value' : msg_text
+                                + '',
+                    }
+                ],
+            }
+        )
+        payload2['payload_json']['embeds'][0]['fields'].append(
+            {
+                'inline': False,
+                'name'  : "原神 (Genshin Impact)",
+                'value' : "- [HoYoLAB: Daily Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n"
+                        + '- [Ver.3.5公式PV](https://youtu.be/M6g20c4a8Q4)'
+                        + '',
             },
-            "fields": [
-                {
-                    'inline': False,
-                    'name'  : "",
-                    'value' : msg_text
-                            + '',
-                }
-            ],
-        }
-    )
-    payload2['payload_json']['embeds'][0]['fields'].append(
-        {
-            'inline': False,
-            'name'  : "原神 (Genshin Impact)",
-            'value' : "- [HoYoLAB: Daily Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n"
-                    + '- [Ver.3.5公式PV](https://youtu.be/M6g20c4a8Q4)'
-                    + '',
-        },
-    )
-    payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
-        {
-            'inline': False,
-            'name'  : "HoYoLAB × Prime Gaming",
-            'value' : '- [HoYoLAB: 原神(Genshin)公式](http://hoyo.link/1eyUCEAd)\n'
-                    + '- [Prime Gaming: 原神コラム#6](https://gaming.amazon.com/genshin-impact-6?ref_=SM_GI02_P6_IGP)\n'
-                    + 'Until: 4月13日(木)  0:59 (JST)\n'
-                    + '',
-        },
-    )
-    """ This Block is disabled
-    payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
-        {
-            'inline': False,
-            'name'  : "予告番組最新情報",
-            'value' : '- [HoYoLAB: Ver.3.6](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
-                    + '- [Youtube](https://youtu.be/uda3T168Wpg)\n'
-                    + '- [bilibili](http://live.bilibili.com/21987615)\n'
-                    + '- [twitch](https://www.twitch.tv/genshinimpactofficial)\n'
-                    + 'Time:  3月31日(金) 21:00 (JST)\n'
-                    + '',
-        },
-    )
-    """
-    payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
-        {
-            'inline': False,
-            'name'  : '',
-            'value' : '',
-        },
-    )
-    payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
-        {
-            'inline': True,
-            'name'  : '( ๑╹⌓╹ )',
-            'value' : '[' + 'DevOps Server' + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
-                    + '[' + 'Build Status (DEV)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_dev.yml)\n'
-                    + '[' + 'Build Status (PRD)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_prd.yml)\n'
-                    + '',
-        },
-    )
-    payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
-        {
-            'inline': True,
-            'name'  : 'ヾ(๑╹◡╹)ﾉ"',
-            'value' : '(๑•̀ㅂ•́)و✧\n'
-                    + '(๑•̀ㅂ•́)و✧\n'
-                    + '(๑•̀ㅂ•́)و✧\n'
-                    + '',
-        },
-    )
-    payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
-        {
-            'inline': False,
-            'name'  : '',
-            'value' : '',
-        },
-    )
-
+        )
+        payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
+            {
+                'inline': False,
+                'name'  : "HoYoLAB × Prime Gaming",
+                'value' : '- [HoYoLAB: 原神(Genshin)公式](http://hoyo.link/1eyUCEAd)\n'
+                        + '- [Prime Gaming: 原神コラム#6](https://gaming.amazon.com/genshin-impact-6?ref_=SM_GI02_P6_IGP)\n'
+                        + 'Until: 4月13日(木)  0:59 (JST)\n'
+                        + '',
+            },
+        )
+        """ This Block is disabled
+        payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
+            {
+                'inline': False,
+                'name'  : "予告番組最新情報",
+                'value' : '- [HoYoLAB: Ver.3.6](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
+                        + '- [Youtube](https://youtu.be/uda3T168Wpg)\n'
+                        + '- [bilibili](http://live.bilibili.com/21987615)\n'
+                        + '- [twitch](https://www.twitch.tv/genshinimpactofficial)\n'
+                        + 'Time:  3月31日(金) 21:00 (JST)\n'
+                        + '',
+            },
+        )
+        """
+        payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
+            {
+                'inline': False,
+                'name'  : '',
+                'value' : '',
+            },
+        )
+        payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
+            {
+                'inline': True,
+                'name'  : '( ๑╹⌓╹ )',
+                'value' : '[' + 'DevOps Server' + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
+                        + '[' + 'Build Status (DEV)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_dev.yml)\n'
+                        + '[' + 'Build Status (PRD)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_prd.yml)\n'
+                        + '',
+            },
+        )
+        payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
+            {
+                'inline': True,
+                'name'  : 'ヾ(๑╹◡╹)ﾉ"',
+                'value' : '(๑•̀ㅂ•́)و✧\n'
+                        + '(๑•̀ㅂ•́)و✧\n'
+                        + '(๑•̀ㅂ•́)و✧\n'
+                        + '',
+            },
+        )
+        payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
+            {
+                'inline': False,
+                'name'  : '',
+                'value' : '',
+            },
+        )
+    except:
+        pass
 
 
     payload2['payload_json'] = json.dumps( payload2['payload_json'], ensure_ascii=False )
