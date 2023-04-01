@@ -117,6 +117,7 @@ def main():
                                     + 'Until: 4月13日(木)  0:59 (JST)\n'
                                     + '',
                         },
+""" This block is comment-out
                         {
                             'inline': False,
                             'name'  : "予告番組最新情報",
@@ -127,6 +128,7 @@ def main():
                                     + 'Time:  3月31日(金) 21:00 (JST)\n'
                                     + '',
                         },
+"""
                         {
                             'inline': False,
                             'name'  : '',
