@@ -146,6 +146,7 @@ def main():
             'value' : '',
         },
     )
+    print(len(payload2['payload_json']['embeds']))
 
     # 画像ファイル
     files_images = {}
