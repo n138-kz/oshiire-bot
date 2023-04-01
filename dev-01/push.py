@@ -33,37 +33,85 @@ def main():
     msg_text = ''
     msg_text += '\n'
 
+    arr_text = []
+
+    arr_text.append(
+        ''
+        + 'にぃにとねぇね、デイリーログイン報酬は受け取りましたか〜？\n'
+        + 'よしよし，ちゃんと忘れないように、教えてあげますからね〜\n'
+        + '\n'
+    ) # Yaoyao
+    arr_text.append(
+        ''
+        + 'ふふん…栄誉騎士、クレーは「火花騎士」として西風騎士団の先輩なんだよ？\n'
+        + 'だからね！だから…クレーが起こしたトラブル、内緒にしてくれないかな…\n'
+        + '\n'
+    ) # Klee
+    arr_text.append(
+        ''
+        + 'まだログボ受け取ってないとか言わないよね？\n'
+        + 'この僕が知らせてるんだ、もちろん受け取ってるよね？\n'
+        + 'あらら〜まだ受け取ってないの〜？へなちょこめ〜\n'
+        + '\n'
+    ) # Scaramouche
+    arr_text.append(
+        ''
+        + '相棒！ログボは受け取った？早くしないと無くなっちゃうよ〜？\n'
+        + '事件の予感がする…！ログボを受け取るのは君に任せたよ！\n'
+        + '\n'
+    ) # Heizo Shikanoin
+    arr_text.append(
+        ''
+        + '旅人じゃないか、お前も1杯飲みに来たか？…そうか、違うのか。まぁ今度時間がある時にでも飲もう。あぁそうだ、悪いことは言わない、ログインボーナスは受け取って行けよ。\n'
+        + '\n'
+    ) # Kaeya
+    arr_text.append(
+        ''
+        + 'あっ旅人さん、奇遇ですね。えっとその、これ…私からのプレゼントです。受け取って下さいますか？\n'
+        + '\n'
+    ) # Ayaka Kamisato
+    arr_text.append(
+        ''
+        + '丁度いいところに！お嬢がそわそわしたまま旅人の事探してたから、時間があったら神里屋敷に寄って行かないか？もちろんおもてなしさせてもらうよ\n'
+        + '\n'
+    ) # Thoma
+
+    msg_text += arr_text[random.randint(0,(len(arr_text)-1))]
     msg_text += '-----\n'
 
     for i in range(5):
         msg_text += '\n'
 
-    # https://qiita.com/GrapeColor/items/bdcf8431b13091447028
     payload2 = {
-        "embeds": [
-            {
-                "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
-                "description": "複数枚画像投稿テスト",
-                "author": {
-                "name": "GrapeColor (@GrapeColorSoft)",
-                "url": "https://twitter.com/GrapeColorSoft",
-                "icon_url": "https://pbs.twimg.com/profile_images/1063236006135062528/493Dm2lD_bigger.jpg"
-            },
-                "image": {"url": "https://pbs.twimg.com/media/ELoMRwLVUAAFlm_.jpg:large"}
-            },
-            {
-                "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
-                "image": {"url": "https://pbs.twimg.com/media/ELoMRwNU8AEMaoO.jpg:large"}
-            },
-            {
-                "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
-                "image": {"url": "https://pbs.twimg.com/media/ELoMRwNUwAAWako.jpg:large"}
-            },
-            {
-                "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
-                "image": {"url": "https://pbs.twimg.com/media/ELoMRwMU8AELiyj.jpg:large"}
-            }
-        ]
+        "payload_json" : {
+            'username': 'みんなのまま',
+            'content' : 'here ',
+            "avatar_url": "https://upload-os-bbs.hoyolab.com/upload/2022/11/24/21d71c44827fa664a6a21977d9a3dd1c_6799685155050732642.png?x-oss-process=image/resize,s_1000/quality,q_80/auto-orient,0/interlace,1/format,png",
+            "embeds": [
+                {
+                    "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
+                    "description": "複数枚画像投稿テスト",
+                    "author": {
+                    "name": "GrapeColor (@GrapeColorSoft)",
+                    "url": "https://twitter.com/GrapeColorSoft",
+                    "icon_url": "https://pbs.twimg.com/profile_images/1063236006135062528/493Dm2lD_bigger.jpg"
+                },
+                    "image": {"url": "https://pbs.twimg.com/media/ELoMRwLVUAAFlm_.jpg:large"}
+                },
+                {
+                    "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
+                    "image": {"url": "https://pbs.twimg.com/media/ELoMRwNU8AEMaoO.jpg:large"}
+                },
+                {
+                    "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
+                    "image": {"url": "https://pbs.twimg.com/media/ELoMRwNUwAAWako.jpg:large"}
+                },
+                {
+                    "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
+                    "image": {"url": "https://pbs.twimg.com/media/ELoMRwMU8AELiyj.jpg:large"}
+                }
+            ],
+        }
     }
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
@@ -82,11 +130,8 @@ def main():
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
-            'name'  : '( ๑╹⌓╹ )',
-            'value' : '[' + 'DevOps Server' + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
-                    + '[' + 'Build Status (DEV)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_dev.yml)\n'
-                    + '[' + 'Build Status (PRD)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_prd.yml)\n'
-                    + '',
+            'name'  : '',
+            'value' : '',
         },
     )
     payload2['payload_json']['embeds'][0]['fields'].append(
@@ -98,10 +143,27 @@ def main():
     )
     print(payload2['payload_json']['embeds'])
 
+    # 画像ファイル
+    files_images = {}
+    for i in range(100):
+        file_name = 'images_{num}.png'
+        file_name = file_name.replace('{num}', str(i+1).zfill(3))
+        if os.path.isfile(file_name):
+            with open(file_name, 'rb') as f:
+                file_binary = f.read()
+                files_images.update(
+                    {
+                        file_name: ( file_name, file_binary ),
+                    }
+                )
+            payload2['payload_json']['embeds'].append(
+                { "color": 5620992, "image": {"url": 'attachment://' + file_name}, },
+            )
+
 
 
     payload2['payload_json'] = json.dumps( payload2['payload_json'], ensure_ascii=False )
-    curl_res = requests.post(api_url, data = payload2 )
+    curl_res = requests.post(api_url, files = files_images, data = payload2 )
     #print(curl_res.status_code) # HTTPのステータスコード取得
     #print(curl_res.text)        # レスポンスのHTMLを文字列で取得
 
