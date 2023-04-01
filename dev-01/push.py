@@ -79,7 +79,7 @@ def main():
             ],
         }
     }
-    payload2['payload_json']['embeds'][4]['fields'].append(
+    payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
         {
             'inline': False,
             'name'  : "原神 (Genshin Impact)",
@@ -88,7 +88,7 @@ def main():
                     + '',
         },
     )
-    payload2['payload_json']['embeds'][4]['fields'].append(
+    payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
         {
             'inline': False,
             'name'  : "HoYoLAB × Prime Gaming",
@@ -99,7 +99,7 @@ def main():
         },
     )
     """ This Block is disabled
-    payload2['payload_json']['embeds'][4]['fields'].append(
+    payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
         {
             'inline': False,
             'name'  : "予告番組最新情報",
@@ -112,14 +112,14 @@ def main():
         },
     )
     """
-    payload2['payload_json']['embeds'][4]['fields'].append(
+    payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
         {
             'inline': False,
             'name'  : '',
             'value' : '',
         },
     )
-    payload2['payload_json']['embeds'][4]['fields'].append(
+    payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
         {
             'inline': True,
             'name'  : '( ๑╹⌓╹ )',
@@ -129,7 +129,7 @@ def main():
                     + '',
         },
     )
-    payload2['payload_json']['embeds'][4]['fields'].append(
+    payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
         {
             'inline': True,
             'name'  : 'ヾ(๑╹◡╹)ﾉ"',
@@ -139,14 +139,13 @@ def main():
                     + '',
         },
     )
-    payload2['payload_json']['embeds'][4]['fields'].append(
+    payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
         {
             'inline': False,
             'name'  : '',
             'value' : '',
         },
     )
-    print(len(payload2['payload_json']['embeds']))
 
     # 画像ファイル
     files_images = {}
