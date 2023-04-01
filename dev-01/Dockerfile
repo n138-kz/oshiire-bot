@@ -10,5 +10,6 @@ RUN set -x && \
 
 COPY push.py /tmp/
 COPY secret.yml /tmp/
+COPY images_*.png /tmp/
 
 CMD ["python3", "push.py"]
