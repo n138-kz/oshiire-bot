@@ -88,7 +88,6 @@ def main():
             ],
         }
     }
-    print(payload2['payload_json']['embeds'])
 
     # 画像ファイル
     files_images = {}
