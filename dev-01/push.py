@@ -45,23 +45,23 @@ def main():
             "avatar_url": "https://upload-os-bbs.hoyolab.com/upload/2022/11/24/21d71c44827fa664a6a21977d9a3dd1c_6799685155050732642.png?x-oss-process=image/resize,s_1000/quality,q_80/auto-orient,0/interlace,1/format,png",
             "embeds": [
                 {
-                    "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
                     "description": "複数枚画像投稿テスト",
                     "author": {
-                    "name": "GrapeColor (@GrapeColorSoft)",
-                    "url": "https://twitter.com/GrapeColorSoft",
-                    "icon_url": "https://pbs.twimg.com/profile_images/1063236006135062528/493Dm2lD_bigger.jpg",
-                    "fields": [
-                        {
-                            'inline': False,
-                            'name'  : '( ๑╹⌓╹ )',
-                            'value' : '[' + 'DevOps Server' + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
-                                    + '[' + 'Build Status (DEV)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_dev.yml)\n'
-                                    + '[' + 'Build Status (PRD)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_prd.yml)\n'
-                                    + '',
-                        },
-                    ],
-                },
+                        "name": "GrapeColor (@GrapeColorSoft)",
+                        "url": "https://twitter.com/GrapeColorSoft",
+                        "icon_url": "https://pbs.twimg.com/profile_images/1063236006135062528/493Dm2lD_bigger.jpg",
+                        "fields": [
+                            {
+                                'inline': False,
+                                'name'  : '( ๑╹⌓╹ )',
+                                'value' : '[' + 'DevOps Server' + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
+                                        + '[' + 'Build Status (DEV)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_dev.yml)\n'
+                                        + '[' + 'Build Status (PRD)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_prd.yml)\n'
+                                        + '',
+                            },
+                        ],
+                    },
+                    "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
                     "image": {"url": "https://pbs.twimg.com/media/ELoMRwLVUAAFlm_.jpg:large"}
                 },
                 {
