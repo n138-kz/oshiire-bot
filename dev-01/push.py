@@ -50,16 +50,7 @@ def main():
                         "name": "みんなのまま",
                         "url": "https://twitter.com/GrapeColorSoft",
                         "icon_url": "https://pbs.twimg.com/profile_images/1063236006135062528/493Dm2lD_bigger.jpg",
-                        "fields": [
-                            {
-                                'inline': False,
-                                'name'  : '( ๑╹⌓╹ )',
-                                'value' : '[' + 'DevOps Server' + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
-                                        + '[' + 'Build Status (DEV)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_dev.yml)\n'
-                                        + '[' + 'Build Status (PRD)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_prd.yml)\n'
-                                        + '',
-                            },
-                        ],
+                        "fields": [],
                     },
                     "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
                     "image": {"url": "https://pbs.twimg.com/media/ELoMRwLVUAAFlm_.jpg:large"}
@@ -83,7 +74,16 @@ def main():
                         'text'      : 'Version: ' + '3.5'
                                     + '#' + str( math.floor( os.path.getmtime( __file__ ) ) ) + '\n',
                     },
-                    "fields": [],
+                    "fields": [
+                        {
+                            'inline': False,
+                            'name'  : '( ๑╹⌓╹ )',
+                            'value' : '[' + 'DevOps Server' + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
+                                    + '[' + 'Build Status (DEV)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_dev.yml)\n'
+                                    + '[' + 'Build Status (PRD)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_prd.yml)\n'
+                                    + '',
+                        },
+                    ],
                 },
             ],
         }
