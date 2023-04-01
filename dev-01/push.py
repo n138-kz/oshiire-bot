@@ -125,6 +125,14 @@ def main():
     payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
         {
             'inline': False,
+            'name'  : "",
+            'value' : msg_text
+                    + '',
+        },
+    )
+    payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)]['fields'].append(
+        {
+            'inline': False,
             'name'  : "原神 (Genshin Impact)",
             'value' : "- [HoYoLAB: Daily Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n"
                     + '- [Ver.3.5公式PV](https://youtu.be/M6g20c4a8Q4)'
