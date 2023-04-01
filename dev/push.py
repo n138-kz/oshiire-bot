@@ -77,6 +77,7 @@ def main():
     ) # Thoma
 
     msg_text += arr_text[random.randint(0,(len(arr_text)-1))]
+    msg_text += '-----\n'
 
     for i in range(5):
         msg_text += '\n'
