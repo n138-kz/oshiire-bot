@@ -89,10 +89,6 @@ def main():
             "avatar_url": "https://upload-os-bbs.hoyolab.com/upload/2022/11/24/21d71c44827fa664a6a21977d9a3dd1c_6799685155050732642.png?x-oss-process=image/resize,s_1000/quality,q_80/auto-orient,0/interlace,1/format,png",
             "embeds": [
                 {
-                    "author": {
-                        "url": "https://github.com/n138-kz/oshiire-bot",
-                        "icon_url": "https://upload-os-bbs.hoyolab.com/upload/2022/11/24/21d71c44827fa664a6a21977d9a3dd1c_6799685155050732642.png?x-oss-process=image/resize,s_1000/quality,q_80/auto-orient,0/interlace,1/format,png",
-                    },
                     "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
                     "image": {"url": "https://pbs.twimg.com/media/ELoMRwLVUAAFlm_.jpg:large"}
                 },
@@ -140,11 +136,6 @@ def main():
 
     payload2['payload_json']['embeds'].append(
         {
-            'author': {
-                'name': payload2['payload_json']['username'],
-                'icon_url': payload2['payload_json']['avatar_url'],
-                'url': 'https://github.com/n138-kz/oshiire-bot',
-            },
             'url': '',
             'image': {
                 'url': '',
