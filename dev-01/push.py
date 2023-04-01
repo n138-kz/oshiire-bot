@@ -65,42 +65,10 @@ def main():
             }
         ]
     }
-    payload2['payload_json']['embeds'][0]['fields'].append(
-        {
-            'inline': False,
-            'name'  : '',
-            'value' : '',
-        },
-    )
-    payload2['payload_json']['embeds'][0]['fields'].append(
-        {
-            'inline': False,
-            'name'  : '',
-            'value' : '',
-        },
-    )
-    payload2['payload_json']['embeds'][0]['fields'].append(
-        {
-            'inline': False,
-            'name'  : '( ๑╹⌓╹ )',
-            'value' : '[' + 'DevOps Server' + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
-                    + '[' + 'Build Status (DEV)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_dev.yml)\n'
-                    + '[' + 'Build Status (PRD)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_prd.yml)\n'
-                    + '',
-        },
-    )
-    payload2['payload_json']['embeds'][0]['fields'].append(
-        {
-            'inline': False,
-            'name'  : '',
-            'value' : '',
-        },
-    )
-    print(payload2['payload_json']['embeds'])
 
 
 
-    payload2['payload_json'] = json.dumps( payload2['payload_json'], ensure_ascii=False )
+    payload2['embeds'] = json.dumps( payload2['embeds'], ensure_ascii=False )
     curl_res = requests.post(api_url, data = payload2 )
     #print(curl_res.status_code) # HTTPのステータスコード取得
     #print(curl_res.text)        # レスポンスのHTMLを文字列で取得
