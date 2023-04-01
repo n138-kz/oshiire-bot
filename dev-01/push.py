@@ -47,7 +47,7 @@ def main():
                 {
                     "description": "複数枚画像投稿テスト",
                     "author": {
-                        "name": "GrapeColor (@GrapeColorSoft)",
+                        "name": "みんなのまま",
                         "url": "https://twitter.com/GrapeColorSoft",
                         "icon_url": "https://pbs.twimg.com/profile_images/1063236006135062528/493Dm2lD_bigger.jpg",
                         "fields": [
@@ -75,6 +75,9 @@ def main():
                 {
                     "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
                     "image": {"url": "https://pbs.twimg.com/media/ELoMRwMU8AELiyj.jpg:large"}
+                },
+                {
+        
                 },
             ],
         }
