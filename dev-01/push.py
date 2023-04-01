@@ -75,7 +75,7 @@ def main():
                 {
                     "url": "https://twitter.com/GrapeColorSoft/status/1205289368786620416",
                     "image": {"url": "https://pbs.twimg.com/media/ELoMRwMU8AELiyj.jpg:large"}
-                }
+                },
             ],
         }
     }
