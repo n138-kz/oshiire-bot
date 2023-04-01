@@ -77,78 +77,137 @@ def main():
     ) # Thoma
 
     msg_text += arr_text[random.randint(0,(len(arr_text)-1))]
+    msg_text += '-----\n'
+
+    for i in range(5):
+        msg_text += '\n'
 
     payload2 = {
         "payload_json" : {
             'username': 'みんなのまま',
-            'content' : '@here \<@768119883283169300>',
-            "embeds": [
+            'content' : '@here <@768119883283169300>',
+            "avatar_url": "https://upload-os-bbs.hoyolab.com/upload/2022/11/24/21d71c44827fa664a6a21977d9a3dd1c_6799685155050732642.png?x-oss-process=image/resize,s_1000/quality,q_80/auto-orient,0/interlace,1/format,png",
+            "embeds": [],
+        }
+    }
+
+    try:
+        pass
+    except:
+        pass
+
+    payload2['payload_json']['embeds'].append(
                 {
-                    "description"   : msg_text,
-                    "url"           : "https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp\n",
-                    "color"         : 5620992,
-                    "timestamp"     : datetime.datetime.now().isoformat(),
-                    "image": {
-                        "url"       : "attachment://images_001.png"
-                    },
-                    "footer": {
-                            "text"      : "Rev: " + str( math.floor( os.path.getmtime( __file__ ) ) ) + ""
-                                            + "/" + str( datetime.datetime.fromtimestamp( math.floor( os.path.getmtime( __file__ ) ), datetime.timezone(datetime.timedelta(hours=9)) ) ) + "\n ",
+            'color': 5620992,
+            'timestamp': datetime.datetime.now().isoformat(),
+            'footer': {
+                        'text'      : 'Version: ' + '3.5'
+                                    + '#' + str( math.floor( os.path.getmtime( __file__ ) ) ) + '\n',
                     },
                     "fields": [
                         {
-                            'inline': True,
+                            'inline': False,
+                    'name'  : "",
+                    'value' : msg_text
+                            + '',
+                }
+            ],
+        }
+    )
+
+    # 画像ファイル
+    files_images = {}
+    for i in range(100):
+        file_name = 'images_{num}.png'
+        file_name = file_name.replace('{num}', str(i+1).zfill(3))
+        if os.path.isfile(file_name):
+            with open(file_name, 'rb') as f:
+                file_binary = f.read()
+                files_images.update(
+                    {
+                        file_name: ( file_name, file_binary ),
+                    }
+                )
+            payload2['payload_json']['embeds'].append(
+                {
+                    'url': 'https://twitter.com/Genshin_7',
+                    "image": {
+                        "url": 'attachment://' + file_name
+                    },
+                },
+            )
+
+    print(payload2['payload_json'])
+
+    payload2['payload_json']['embeds'][0]['fields'].append(
+        {
+            'inline': False,
                             'name'  : "原神 (Genshin Impact)",
-                            'value' : "[HoYoLAB: Daily Login Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n",
+                            'value' : "- [HoYoLAB: Daily Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n"
+                                    + '- [Ver.3.5公式PV](https://youtu.be/M6g20c4a8Q4)'
+                                    + '',
                         },
+    )
+    payload2['payload_json']['embeds'][0]['fields'].append(
                         {
-                            'inline': True,
+                            'inline': False,
                             'name'  : "HoYoLAB × Prime Gaming",
-                            'value' : '[HoYoLAB: 原神（Genshin）公式](http://hoyo.link/1eyUCEAd)\n'
-                                    + '[Prime Gaming: 原神コラム#6](https://gaming.amazon.com/genshin-impact-6?ref_=SM_GI02_P6_IGP)\n',
+                            'value' : '- [HoYoLAB: 原神(Genshin)公式](http://hoyo.link/1eyUCEAd)\n'
+                                    + '- [Prime Gaming: 原神コラム#6](https://gaming.amazon.com/genshin-impact-6?ref_=SM_GI02_P6_IGP)\n'
+                                    + 'Until: 4月13日(木)  0:59 (JST)\n'
+                                    + '',
                         },
+    )
+    """ This Block is disabled
+    payload2['payload_json']['embeds'][0]['fields'].append(
+                        {
+                            'inline': False,
+                            'name'  : "予告番組最新情報",
+                            'value' : '- [HoYoLAB: Ver.3.6](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
+                                    + '- [Youtube](https://youtu.be/uda3T168Wpg)\n'
+                                    + '- [bilibili](http://live.bilibili.com/21987615)\n'
+                                    + '- [twitch](https://www.twitch.tv/genshinimpactofficial)\n'
+                                    + 'Time:  3月31日(金) 21:00 (JST)\n'
+                                    + '',
+                        },
+    )
+    """
+    payload2['payload_json']['embeds'][0]['fields'].append(
                         {
                             'inline': False,
                             'name'  : '',
                             'value' : '',
                         },
+    )
+    payload2['payload_json']['embeds'][0]['fields'].append(
                         {
                             'inline': True,
                             'name'  : '( ๑╹⌓╹ )',
-                            'value' : '[' + md5calc(__file__) + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
-                                    + '[n138-kz/oshiire-bot](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_dev.yml)\n',
+                            'value' : '[' + 'DevOps Server' + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
+                                    + '[' + 'Build Status (DEV)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_dev.yml)\n'
+                                    + '[' + 'Build Status (PRD)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_prd.yml)\n'
+                                    + '',
                         },
+    )
+    payload2['payload_json']['embeds'][0]['fields'].append(
                         {
                             'inline': True,
                             'name'  : 'ヾ(๑╹◡╹)ﾉ"',
                             'value' : '(๑•̀ㅂ•́)و✧\n'
                                     + '(๑•̀ㅂ•́)و✧\n'
-                                    + '(๑•̀ㅂ•́)و✧\n',
+                                    + '(๑•̀ㅂ•́)و✧\n'
+                                    + '',
                         },
-                        {
-                            'inline': True,
-                            'name'  : '(๑•̀ㅂ•́)و✧',
-                            'value' : 'ヾ(๑╹◡╹)ﾉ"\n'
-                                    + 'ヾ(๑╹◡╹)ﾉ"\n'
-                                    + 'ヾ(๑╹◡╹)ﾉ"\n',
-                        },
+    )
+    payload2['payload_json']['embeds'][0]['fields'].append(
                         {
                             'inline': False,
                             'name'  : '',
                             'value' : '',
                         },
-                    ],
-                }
-            ]
-        }
-    }
+                )
 
-    ### embed付き
-    with open("images_001.png", 'rb') as f:
-        file_bin_logoeffect = f.read()
-    files_images  = {
-        "logo_effect" : ( "images_001.png", file_bin_logoeffect ),
-    }
+
 
     payload2['payload_json'] = json.dumps( payload2['payload_json'], ensure_ascii=False )
     curl_res = requests.post(api_url, files = files_images  , data = payload2 )
