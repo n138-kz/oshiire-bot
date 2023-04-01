@@ -53,7 +53,7 @@ def main():
                     "icon_url": "https://pbs.twimg.com/profile_images/1063236006135062528/493Dm2lD_bigger.jpg",
                     "fields": [
                         {
-                            'inline': True,
+                            'inline': False,
                             'name'  : '( ๑╹⌓╹ )',
                             'value' : '[' + 'DevOps Server' + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
                                     + '[' + 'Build Status (DEV)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_dev.yml)\n'
