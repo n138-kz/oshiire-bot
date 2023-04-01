@@ -151,6 +151,7 @@ def main():
             },
         },
     )
+    print(payload2['payload_json'])
 
     payload2['payload_json']['embeds'][(len(payload2['payload_json']['embeds'])-1)].append(
         {
