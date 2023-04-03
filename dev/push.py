@@ -182,23 +182,13 @@ def main():
     curl_res = requests.get( 'https://api.github.com/repos/n138-kz/oshiire-bot/commits?per_page=1' )
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
-            'inline': True,
+            'inline': False,
             'name'  : '( ๑╹⌓╹ )',
             'value' : ''
                     + '[' + 'DevOps Server' + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
                     + '[' + 'Build Status (DEV)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_dev.yml)\n'
                     + '[' + 'Build Status (PRD)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_prd.yml)\n'
                     + '[' + 'Github sha' + ':' + json.loads( curl_res.text )[0]['sha'][:7] + '](https://github.com/n138-kz/oshiire-bot/commit/' + json.loads( curl_res.text )[0]['sha'] + ')\n'
-                    + '',
-        },
-    )
-    payload2['payload_json']['embeds'][0]['fields'].append(
-        {
-            'inline': True,
-            'name'  : 'ヾ(๑╹◡╹)ﾉ"',
-            'value' : '(๑•̀ㅂ•́)و✧\n'
-                    + '(๑•̀ㅂ•́)و✧\n'
-                    + '(๑•̀ㅂ•́)و✧\n'
                     + '',
         },
     )
