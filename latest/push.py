@@ -106,7 +106,7 @@ def main():
             'color': 5620992,
             'timestamp': datetime.datetime.now().isoformat(),
             'footer': {
-                'text': 'Version: ' + '3.5'
+                'text': 'Version: ' + '3.6'
                     + '#' + str( math.floor( os.path.getmtime( __file__ ) ) ) + '\n',
             },
             "fields": [
@@ -149,10 +149,11 @@ def main():
             'inline': False,
             'name'  : "原神 (Genshin Impact)",
             'value' : "- [HoYoLAB: Daily Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n"
-                    + '- [Ver.3.5公式PV](https://youtu.be/M6g20c4a8Q4)'
+                    + '- [Ver.3.6公式PV](https://youtu.be/WdHXunBjx8U)'
                     + '',
         },
     )
+    """ This Block is disabled
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
@@ -163,6 +164,7 @@ def main():
                     + '',
         },
     )
+    """
     """ This Block is disabled
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
@@ -177,6 +179,7 @@ def main():
         },
     )
     """
+    """ This Block is disabled
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
@@ -189,6 +192,7 @@ def main():
                     + '',
         },
     )
+    """
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
@@ -196,6 +200,7 @@ def main():
             'value' : '',
         },
     )
+    """ This Block is disabled
     curl_res = requests.get( 'https://api.github.com/repos/n138-kz/oshiire-bot/commits?per_page=1' )
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
@@ -209,6 +214,7 @@ def main():
                     + '',
         },
     )
+    """
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
