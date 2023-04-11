@@ -200,6 +200,7 @@ def main():
             'value' : '',
         },
     )
+    """ This Block is disabled
     curl_res = requests.get( 'https://api.github.com/repos/n138-kz/oshiire-bot/commits?per_page=1' )
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
@@ -213,6 +214,7 @@ def main():
                     + '',
         },
     )
+    """
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
