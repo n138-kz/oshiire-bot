@@ -165,6 +165,13 @@ def main():
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
+            'name'  : '',
+            'value' : '',
+        },
+    )
+    payload2['payload_json']['embeds'][0]['fields'].append(
+        {
+            'inline': False,
             'name'  : "HoYoLAB × Prime Gaming",
             'value' : ''
                     + '- [Prime Gaming: 原神コラム#7](https://gaming.amazon.com/genshin-impact-7)\n'
