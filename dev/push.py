@@ -167,9 +167,8 @@ def main():
             'inline': False,
             'name'  : "HoYoLAB × Prime Gaming",
             'value' : ''
-                    + '- [HoYoLAB: 原神(Genshin)公式](http://hoyo.link/1eyUCEAd)\n'
-                    + '- [Prime Gaming: 原神コラム#6](https://gaming.amazon.com/genshin-impact-6)\n'
-                    + 'Until: 4月13日(木)  0:59 (JST)\n'
+                    + '- [Prime Gaming: 原神コラム#7](https://gaming.amazon.com/genshin-impact-7)\n'
+                    + '終了日: 2023年5月4日 0:59 (JST)\n'
                     + '',
         },
     )
