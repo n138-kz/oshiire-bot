@@ -156,7 +156,7 @@ def main():
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': True,
-            'name'  : "",
+            'name'  : chr(0),
             'value' : ''
                     + '- [Ver.3.6公式PV](https://youtu.be/WdHXunBjx8U)'
                     + '',
