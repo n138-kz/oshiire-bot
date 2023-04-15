@@ -167,8 +167,9 @@ def main():
         {
             'inline': False,
             'name'  : "HoYoLAB × Prime Gaming",
-            'value' : '- [HoYoLAB: 原神(Genshin)公式](http://hoyo.link/1eyUCEAd)\n'
-                    + '- [Prime Gaming: 原神コラム#6](https://gaming.amazon.com/genshin-impact-6?ref_=SM_GI02_P6_IGP)\n'
+            'value' : ''
+                    + '- [HoYoLAB: 原神(Genshin)公式](http://hoyo.link/1eyUCEAd)\n'
+                    + '- [Prime Gaming: 原神コラム#6](https://gaming.amazon.com/genshin-impact-6)\n'
                     + 'Until: 4月13日(木)  0:59 (JST)\n'
                     + '',
         },
@@ -179,7 +180,8 @@ def main():
         {
             'inline': False,
             'name'  : "予告番組最新情報",
-            'value' : '- [HoYoLAB: Ver.3.6](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
+            'value' : ''
+                    + '- [HoYoLAB: Ver.3.6](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
                     + '- [Youtube](https://youtu.be/uda3T168Wpg)\n'
                     + '- [bilibili](http://live.bilibili.com/21987615)\n'
                     + '- [twitch](https://www.twitch.tv/genshinimpactofficial)\n'
