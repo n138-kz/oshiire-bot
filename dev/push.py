@@ -90,7 +90,7 @@ def main():
     payload2 = {
         "payload_json" : {
             'username': 'みんなのまま',
-            'content' : 'here ',
+            'content' : chr(0),
             "avatar_url": "https://upload-os-bbs.hoyolab.com/upload/2022/11/24/21d71c44827fa664a6a21977d9a3dd1c_6799685155050732642.png?x-oss-process=image/resize,s_1000/quality,q_80/auto-orient,0/interlace,1/format,png",
             "embeds": [],
         }
