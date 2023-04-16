@@ -142,8 +142,6 @@ def main():
                 },
             )
 
-    print(payload2['payload_json'])
-
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': True,
@@ -162,24 +160,30 @@ def main():
                     + '',
         },
     )
-    """ This Block is disabled
+    payload2['payload_json']['embeds'][0]['fields'].append(
+        {
+            'inline': False,
+            'name'  : '',
+            'value' : chr(0),
+        },
+    )
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
             'name'  : "HoYoLAB × Prime Gaming",
-            'value' : '- [HoYoLAB: 原神(Genshin)公式](http://hoyo.link/1eyUCEAd)\n'
-                    + '- [Prime Gaming: 原神コラム#6](https://gaming.amazon.com/genshin-impact-6?ref_=SM_GI02_P6_IGP)\n'
-                    + 'Until: 4月13日(木)  0:59 (JST)\n'
+            'value' : ''
+                    + '- [Prime Gaming: #7](https://gaming.amazon.com/genshin-impact-7)\n'
+                    + '終了日: 2023年5月4日 0:59 (JST)\n'
                     + '',
         },
     )
-    """
     """ This Block is disabled
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
             'name'  : "予告番組最新情報",
-            'value' : '- [HoYoLAB: Ver.3.6](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
+            'value' : ''
+                    + '- [HoYoLAB: Ver.3.6](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
                     + '- [Youtube](https://youtu.be/uda3T168Wpg)\n'
                     + '- [bilibili](http://live.bilibili.com/21987615)\n'
                     + '- [twitch](https://www.twitch.tv/genshinimpactofficial)\n'
@@ -206,7 +210,7 @@ def main():
         {
             'inline': False,
             'name'  : '',
-            'value' : '',
+            'value' : chr(0),
         },
     )
     """ This Block is disabled
