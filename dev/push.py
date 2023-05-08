@@ -178,7 +178,7 @@ def main():
                     + '\n'
                     + ''
                     + '- [Prime Gaming: #8](https://gaming.amazon.com/genshin-impact-8)\n'
-                    + '終了日: 2023年5月--日 0:59 (JST)\n'
+                    + '終了日: 2023年5月25日 0:59 (JST)\n'
                     + '',
         },
     )
