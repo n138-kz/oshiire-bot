@@ -147,6 +147,7 @@ def main():
             'inline': True,
             'name'  : "原神 (Genshin Impact)",
             'value' : ''
+                    + ''
                     + "- [HoYoLAB: Daily Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n"
                     + '',
         },
@@ -156,6 +157,7 @@ def main():
             'inline': True,
             'name'  : chr(0),
             'value' : ''
+                    + ''
                     + '- [Ver.3.6公式PV](https://youtu.be/WdHXunBjx8U)'
                     + '',
         },
@@ -184,6 +186,7 @@ def main():
             'inline': False,
             'name'  : "予告番組最新情報",
             'value' : ''
+                    + ''
                     + '- [HoYoLAB: Ver.3.6](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
                     + '- [Youtube](https://youtu.be/uda3T168Wpg)\n'
                     + '- [bilibili](http://live.bilibili.com/21987615)\n'
@@ -199,6 +202,7 @@ def main():
             'inline': False,
             'name'  : "最新バージョン情報",
             'value' : ''
+                    + ''
                     + '- [【原神】Ver.3.6公式PV「盛典と慧業」](https://youtu.be/WdHXunBjx8U)\n'
                     + '- [Ver.3.6「盛典と慧業」予告番組アプデ情報まとめ](https://genshin.hoyoverse.com/ja/news/detail/110902)\n'
                     + '- [Ver.3.6「盛典と慧業」特設ページ公開](https://hoyo.link/e2J2CBAd)\n'
@@ -219,7 +223,7 @@ def main():
             'inline': True,
             'name'  : "",
             'value' : ''
-                    + ""
+                    + ''
                     + '',
         },
     )
