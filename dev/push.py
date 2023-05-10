@@ -221,7 +221,7 @@ def main():
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': True,
-            'name'  : "",
+            'name'  : '',
             'value' : ''
                     + ''
                     + '',
