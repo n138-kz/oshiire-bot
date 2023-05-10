@@ -25,7 +25,7 @@
 ## Docker Build
 
 ```bash:docker-build
-docker build -t n138-kz/oshiire-bot:dev dev/
+docker build -t n138-kz/oshiire-bot:dev dev/ ;
 docker build -t n138-kz/oshiire-bot latest/
 ```
 
