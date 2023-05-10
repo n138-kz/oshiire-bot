@@ -147,7 +147,8 @@ def main():
             'inline': True,
             'name'  : "原神 (Genshin Impact)",
             'value' : ''
-                    + "- [HoYoLAB: Daily Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n"
+                    + ''
+                    + '- [HoYoLAB: Daily Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n'
                     + '',
         },
     )
@@ -156,6 +157,7 @@ def main():
             'inline': True,
             'name'  : chr(0),
             'value' : ''
+                    + ''
                     + '- [Ver.3.6公式PV](https://youtu.be/WdHXunBjx8U)'
                     + '',
         },
@@ -170,7 +172,7 @@ def main():
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
-            'name'  : "HoYoLAB × Prime Gaming",
+            'name'  : "原神 × Prime Gaming",
             'value' : ''
                     + ''
                     + '- [Prime Gaming: #8](https://gaming.amazon.com/genshin-impact-8)\n'
@@ -184,6 +186,7 @@ def main():
             'inline': False,
             'name'  : "予告番組最新情報",
             'value' : ''
+                    + ''
                     + '- [HoYoLAB: Ver.3.6](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
                     + '- [Youtube](https://youtu.be/uda3T168Wpg)\n'
                     + '- [bilibili](http://live.bilibili.com/21987615)\n'
@@ -199,6 +202,7 @@ def main():
             'inline': False,
             'name'  : "最新バージョン情報",
             'value' : ''
+                    + ''
                     + '- [【原神】Ver.3.6公式PV「盛典と慧業」](https://youtu.be/WdHXunBjx8U)\n'
                     + '- [Ver.3.6「盛典と慧業」予告番組アプデ情報まとめ](https://genshin.hoyoverse.com/ja/news/detail/110902)\n'
                     + '- [Ver.3.6「盛典と慧業」特設ページ公開](https://hoyo.link/e2J2CBAd)\n'
@@ -214,26 +218,30 @@ def main():
             'value' : chr(0),
         },
     )
-    """ This Block is disabled
-    curl_res = requests.get( 'https://api.github.com/repos/n138-kz/oshiire-bot/commits?per_page=1' )
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
-            'inline': False,
-            'name'  : '( ๑╹⌓╹ )',
+            'inline': True,
+            'name'  : '崩壊：スターレイル',
             'value' : ''
-                    + '[' + 'DevOps Server' + '](' + 'https://discord.gg/9Y5TXp2Rx2' + ')\n'
-                    + '[' + 'Build Status (DEV)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_dev.yml)\n'
-                    + '[' + 'Build Status (PRD)' + '](https://github.com/n138-kz/oshiire-bot/actions/workflows/Docker-test_prd.yml)\n'
-                    + '[' + 'Github sha' + ':' + json.loads( curl_res.text )[0]['sha'][:7] + '](https://github.com/n138-kz/oshiire-bot/commit/' + json.loads( curl_res.text )[0]['sha'] + ')\n'
+                    + ''
+                    + '- [HoYoLAB: Daily Bounus](https://act.hoyolab.com/bbs/event/signin/hkrpg/index.html?act_id=e202303301540311)\n'
                     + '',
         },
     )
-    """
+    payload2['payload_json']['embeds'][0]['fields'].append(
+        {
+            'inline': True,
+            'name'  : chr(0),
+            'value' : ''
+                    + '- [Ver.1.0公式PV](https://www.youtube.com/watch?v=xrxDFaQJ4-I)'
+                    + '',
+        },
+    )
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
             'name'  : '',
-            'value' : '',
+            'value' : chr(0),
         },
     )
 
