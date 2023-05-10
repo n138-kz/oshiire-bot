@@ -244,13 +244,6 @@ def main():
             'value' : chr(0),
         },
     )
-    payload2['payload_json']['embeds'][0]['fields'].append(
-        {
-            'inline': False,
-            'name'  : '',
-            'value' : chr(0),
-        },
-    )
 
 
 
