@@ -183,7 +183,7 @@ def main():
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
-            'name'  : "予告番組最新情報",
+            'name'  : "原神予告番組最新情報",
             'value' : ''
                     + ''
                     + '- [HoYoLAB: Ver.3.7](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
