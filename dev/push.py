@@ -180,21 +180,21 @@ def main():
                     + '',
         },
     )
-    """ This Block is disabled
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
             'name'  : "予告番組最新情報",
             'value' : ''
                     + ''
-                    + '- [HoYoLAB: Ver.3.6](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
+                    + '- [HoYoLAB: Ver.3.7](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
                     + '- [Youtube](https://youtu.be/uda3T168Wpg)\n'
                     + '- [bilibili](http://live.bilibili.com/21987615)\n'
                     + '- [twitch](https://www.twitch.tv/genshinimpactofficial)\n'
-                    + 'Time:  3月31日(金) 21:00 (JST)\n'
+                    + 'Time:  5月13日(土) 21:00 (JST)\n'
                     + '',
         },
     )
+    """ This Block is disabled
     """
     """ This Block is disabled
     payload2['payload_json']['embeds'][0]['fields'].append(
