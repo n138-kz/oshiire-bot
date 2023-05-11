@@ -186,7 +186,7 @@ def main():
             'name'  : "原神予告番組最新情報",
             'value' : ''
                     + ''
-                    + '- [HoYoLAB: Ver.3.7](https://genshin.hoyoverse.com/ja/news/detail/110865)\n'
+                    + '- [HoYoLAB: Ver.3.7](https://genshin.hoyoverse.com/ja/news/detail/111406)\n'
                     + '- [Youtube](https://youtu.be/uda3T168Wpg)\n'
                     + '- [bilibili](http://live.bilibili.com/21987615)\n'
                     + '- [twitch](https://www.twitch.tv/genshinimpactofficial)\n'
