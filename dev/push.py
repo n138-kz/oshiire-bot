@@ -234,25 +234,6 @@ def main():
     """
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
-            'inline': True,
-            'name'  : '崩壊：スターレイル',
-            'value' : ''
-                    + ''
-                    + '- [HoYoLAB: Daily Bounus](https://act.hoyolab.com/bbs/event/signin/hkrpg/index.html?act_id=e202303301540311)\n'
-                    + '',
-        },
-    )
-    payload2['payload_json']['embeds'][0]['fields'].append(
-        {
-            'inline': True,
-            'name'  : chr(0),
-            'value' : ''
-                    + '- [Ver.1.0公式PV](https://www.youtube.com/watch?v=xrxDFaQJ4-I)'
-                    + '',
-        },
-    )
-    payload2['payload_json']['embeds'][0]['fields'].append(
-        {
             'inline': False,
             'name'  : '',
             'value' : chr(0),
