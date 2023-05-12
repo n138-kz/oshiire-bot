@@ -210,10 +210,10 @@ def main():
             'name'  : "最新バージョン情報",
             'value' : ''
                     + ''
-                    + '- [【原神】Ver.3.6公式PV「盛典と慧業」](https://youtu.be/WdHXunBjx8U)\n'
-                    + '- [Ver.3.6「盛典と慧業」予告番組アプデ情報まとめ](https://genshin.hoyoverse.com/ja/news/detail/110902)\n'
-                    + '- [Ver.3.6「盛典と慧業」特設ページ公開](https://hoyo.link/e2J2CBAd)\n'
-                    + 'Time:  4月12日(水)  7:00 (JST)\n'
+                    + '- [【原神】Ver.3.7公式PV「盛典と慧業」](https://youtu.be/WdHXunBjx8U)\n'
+                    + '- [Ver.3.7「盛典と慧業」予告番組アプデ情報まとめ](https://genshin.hoyoverse.com/ja/news/detail/110902)\n'
+                    + '- [Ver.3.7「盛典と慧業」特設ページ公開](https://hoyo.link/e2J2CBAd)\n'
+                    + 'Time:  5月31日(水)  7:00 (JST)\n'
                     + '',
         },
     )
