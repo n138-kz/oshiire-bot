@@ -183,6 +183,13 @@ def main():
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
+            'name'  : '',
+            'value' : chr(0),
+        },
+    )
+    payload2['payload_json']['embeds'][0]['fields'].append(
+        {
+            'inline': False,
             'name'  : "原神予告番組最新情報",
             'value' : ''
                     + ''
