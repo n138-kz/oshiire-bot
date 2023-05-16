@@ -216,8 +216,8 @@ def main():
             'name'  : "最新バージョン情報",
             'value' : ''
                     + ''
-                    + 'Ver.3.7「決闘！召喚の頂！」特設ページhttps://hoyo.link/7ainCGAd\n'
                     + '[【原神】Ver.3.7公式PV「決闘！召喚の頂！」](https://youtu.be/_NHRNC_lMV0)\n'
+                    + '[Ver.3.7「決闘！召喚の頂！」特設ページ](https://hoyo.link/7ainCGAd)\n'
                     + 'Time:  5月24日(水)  7:00 (JST)\n'
                     + '',
         },
