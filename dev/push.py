@@ -210,17 +210,15 @@ def main():
         },
     )
     """
-    """ This Block is disabled
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
             'name'  : "最新バージョン情報",
             'value' : ''
                     + ''
-                    + '- [【原神】Ver.3.7公式PV「盛典と慧業」](https://youtu.be/WdHXunBjx8U)\n'
-                    + '- [Ver.3.7「盛典と慧業」予告番組アプデ情報まとめ](https://genshin.hoyoverse.com/ja/news/detail/110902)\n'
-                    + '- [Ver.3.7「盛典と慧業」特設ページ公開](https://hoyo.link/e2J2CBAd)\n'
-                    + 'Time:  5月31日(水)  7:00 (JST)\n'
+                    + '[【原神】Ver.3.7公式PV「決闘！召喚の頂！」](https://youtu.be/_NHRNC_lMV0)\n'
+                    + '[Ver.3.7「決闘！召喚の頂！」特設ページ](https://hoyo.link/7ainCGAd)\n'
+                    + 'Time:  5月24日(水)  7:00 (JST)\n'
                     + '',
         },
     )
@@ -231,6 +229,7 @@ def main():
             'value' : chr(0),
         },
     )
+    """ This Block is disabled
     """
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
