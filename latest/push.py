@@ -176,6 +176,7 @@ def main():
             'value' : ''
                     + ''
                     + '- [Prime Gaming: #8](https://gaming.amazon.com/genshin-impact-8)\n'
+                    + '- [シリアルコード引換](https://genshin.hoyoverse.com/ja/gift)\n'
                     + '終了日: 2023年 5月25日 0:59 (JST)\n'
                     + '',
         },
