@@ -6,6 +6,7 @@ import os
 import sys
 import yaml
 import math
+import zlib
 
 # refs docs: https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
 # refs docs: https://qiita.com/ABBBB/items/e6bdf7fc94b8f6f72a01
@@ -96,18 +97,13 @@ def main():
         }
     }
 
-    try:
-        pass
-    except:
-        pass
-
     payload2['payload_json']['embeds'].append(
         {
             'color': 5620992,
             'timestamp': datetime.datetime.now().isoformat(),
             'footer': {
                 'text': 'Version: ' + '3.6'
-                    + '#' + str( math.floor( os.path.getmtime( __file__ ) ) ) + '\n',
+                    + '#' + str( hex( zlib.crc32( str( math.floor( os.path.getmtime( __file__ ) ) ).encode() ) )[2:] ) + '',
             },
             "fields": [
                 {
