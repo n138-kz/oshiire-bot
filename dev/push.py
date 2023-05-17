@@ -96,11 +96,6 @@ def main():
         }
     }
 
-    try:
-        pass
-    except:
-        pass
-
     payload2['payload_json']['embeds'].append(
         {
             'color': 5620992,
