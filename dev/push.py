@@ -154,7 +154,7 @@ def main():
             'name'  : chr(0),
             'value' : ''
                     + ''
-                    + '- [Ver.3.6公式PV](https://youtu.be/WdHXunBjx8U)'
+                    + '- [Ver.3.7公式PV](https://youtu.be/_NHRNC_lMV0)'
                     + '',
         },
     )
