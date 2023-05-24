@@ -26,8 +26,11 @@ def main():
             json.dump(config, secret, ensure_ascii=False)
         sys.exit(1)
 
-    with open('secret.json', 'r') as secret:
-        config = json.load(secret)
+    if False :
+        pass
+    elif os.path.isfile('secret.json'):
+        with open('secret.json', 'r') as secret:
+            config = json.load(secret)
 
     api_url = config['credential']['endpoint']
 
