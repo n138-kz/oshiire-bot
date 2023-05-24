@@ -207,6 +207,7 @@ def main():
         },
     )
     """
+    """ This Block is disabled
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
@@ -226,7 +227,6 @@ def main():
             'value' : chr(0),
         },
     )
-    """ This Block is disabled
     """
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
