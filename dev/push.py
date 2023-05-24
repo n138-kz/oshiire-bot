@@ -39,6 +39,13 @@ def main():
         except yaml.scanner.ScannerError:
             print('Error: UnableToLoadConfig: ' + config_file)
             sys.exit(1)
+    else:
+        print('Error: NoSuchFileOrDirectory: secret.json, secret.yml')
+        print('Hint: Require config file(secret.json or secret.yml)')
+        print('Hint: Load priority: ')
+        print('   1. secret.json')
+        print('   2. secret.yml')
+        sys.exit(1)
 
     api_url = config['credential']['endpoint']
 
