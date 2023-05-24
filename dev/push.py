@@ -20,15 +20,42 @@ def md5calc(file):
 
 def main():
     config = { 'credential': { 'endpoint': '' } }
-    if not os.path.isfile('secret.yml'):
-        print('Error: NoSuchFileOrDirectory: secret.yml')
-        with open('secret.yml', 'w') as secret:
-            yaml.dump(config, secret)
+    config_file = ''
+    if False :
+        pass
+    elif os.path.isfile('secret.json'):
+        config_file = 'secret.json'
+        try:
+            with open(config_file, 'r') as secret:
+                config = json.load(secret)
+        except json.decoder.JSONDecodeError:
+            print('Error: UnableToLoadConfig: ' + config_file)
+            sys.exit(1)
+    elif os.path.isfile('secret.yml'):
+        config_file = 'secret.yml'
+        try:
+            with open(config_file, 'r') as secret:
+                config = yaml.safe_load(secret)
+        except yaml.scanner.ScannerError:
+            print('Error: UnableToLoadConfig: ' + config_file)
+            sys.exit(1)
+    else:
+        print('Error: NoSuchFileOrDirectory: secret.json, secret.yml')
+        print('Hint: Require config file(secret.json or secret.yml)')
+        print('Hint: Load priority: ')
+        print('   1. secret.json')
+        print('   2. secret.yml')
         sys.exit(1)
 
-    with open('secret.yml', 'r') as secret:
-        config = yaml.safe_load(secret)
-        
+    try:
+        config['credential']['endpoint']
+    except NameError:
+        print('Error: UnableToLoadConfig: ' + config_file)
+        sys.exit(1)
+    except KeyError:
+        print('Error: UnableToLoadConfig: ' + config_file)
+        sys.exit(1)
+
     api_url = config['credential']['endpoint']
 
     msg_text = ''
