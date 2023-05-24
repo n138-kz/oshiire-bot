@@ -31,6 +31,9 @@ def main():
     elif os.path.isfile('secret.json'):
         with open('secret.json', 'r') as secret:
             config = json.load(secret)
+    elif os.path.isfile('secret.yml'):
+        with open('secret.yml', 'r') as secret:
+            config = yaml.safe_load(secret)
 
     api_url = config['credential']['endpoint']
 
