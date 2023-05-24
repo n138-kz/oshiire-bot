@@ -22,12 +22,12 @@ def main():
     config = { 'credential': { 'endpoint': '' } }
     if not os.path.isfile('secret.yml'):
         print('Error: NoSuchFileOrDirectory: secret.yml')
-        with open('secret.yml', 'w') as yml:
-            yaml.dump(config, yml)
+        with open('secret.yml', 'w') as secret:
+            yaml.dump(config, secret)
         sys.exit(1)
 
-    with open('secret.yml', 'r') as yml:
-        config = yaml.safe_load(yml)
+    with open('secret.yml', 'r') as secret:
+        config = yaml.safe_load(secret)
         
     api_url = config['credential']['endpoint']
 
