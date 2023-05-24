@@ -20,14 +20,25 @@ def md5calc(file):
 
 def main():
     config = { 'credential': { 'endpoint': '' } }
+    config_file = ''
     if False :
         pass
     elif os.path.isfile('secret.json'):
-        with open('secret.json', 'r') as secret:
-            config = json.load(secret)
+        config_file = 'secret.json'
+        try:
+            with open(config_file, 'r') as secret:
+                config = json.load(secret)
+        except json.decoder.JSONDecodeError:
+            print('Error: UnableToLoadConfig: ' + config_file)
+            sys.exit(1)
     elif os.path.isfile('secret.yml'):
-        with open('secret.yml', 'r') as secret:
-            config = yaml.safe_load(secret)
+        config_file = 'secret.yml'
+        try:
+            with open(config_file, 'r') as secret:
+                config = yaml.safe_load(secret)
+        except yaml.scanner.ScannerError:
+            print('Error: UnableToLoadConfig: ' + config_file)
+            sys.exit(1)
 
     api_url = config['credential']['endpoint']
 
