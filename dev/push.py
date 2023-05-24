@@ -83,7 +83,7 @@ def main():
     ) # Thoma
 
     msg_text += arr_text[random.randint(0,(len(arr_text)-1))]
-    msg_text += '-----\n'
+    msg_text += '-----\n\n'
 
     for i in range(5):
         msg_text += '\n'
@@ -102,7 +102,7 @@ def main():
             'color': 5620992,
             'timestamp': datetime.datetime.now().isoformat(),
             'footer': {
-                'text': 'Version: ' + '3.6'
+                'text': 'Version: ' + '3.7'
                     + '#' + str( hex( zlib.crc32( str( math.floor( os.path.getmtime( __file__ ) ) ).encode() ) )[2:] ) + '',
             },
             "fields": [
@@ -144,17 +144,8 @@ def main():
             'name'  : "原神 (Genshin Impact)",
             'value' : ''
                     + ''
-                    + '- [HoYoLAB: Daily Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n'
-                    + '',
-        },
-    )
-    payload2['payload_json']['embeds'][0]['fields'].append(
-        {
-            'inline': True,
-            'name'  : chr(0),
-            'value' : ''
-                    + ''
-                    + '- [Ver.3.6公式PV](https://youtu.be/WdHXunBjx8U)'
+                    + '- [HoYoLAB: Daily Login Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n'
+                    + '- [Ver.3.7公式PV](https://youtu.be/_NHRNC_lMV0)'
                     + '',
         },
     )
@@ -207,6 +198,7 @@ def main():
         },
     )
     """
+    """ This Block is disabled
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
@@ -226,7 +218,6 @@ def main():
             'value' : chr(0),
         },
     )
-    """ This Block is disabled
     """
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
