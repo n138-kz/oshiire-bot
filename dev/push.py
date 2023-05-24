@@ -26,9 +26,9 @@ def main():
             json.dump(config, secret, ensure_ascii=False)
         sys.exit(1)
 
-    with open('secret.yml', 'r') as secret:
-        config = yaml.safe_load(secret)
-        
+    with open('secret.json', 'r') as secret:
+        config = json.load(secret)
+
     api_url = config['credential']['endpoint']
 
     msg_text = ''
