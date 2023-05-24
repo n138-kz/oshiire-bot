@@ -20,10 +20,10 @@ def md5calc(file):
 
 def main():
     config = { 'credential': { 'endpoint': '' } }
-    if not os.path.isfile('secret.yml'):
-        print('Error: NoSuchFileOrDirectory: secret.yml')
-        with open('secret.yml', 'w') as secret:
-            yaml.dump(config, secret)
+    if not os.path.isfile('secret.json'):
+        print('Error: NoSuchFileOrDirectory: secret.json')
+        with open('secret.json', 'w') as secret:
+            json.dump(config, secret, ensure_ascii=False)
         sys.exit(1)
 
     with open('secret.yml', 'r') as secret:
