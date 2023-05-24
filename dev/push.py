@@ -20,12 +20,6 @@ def md5calc(file):
 
 def main():
     config = { 'credential': { 'endpoint': '' } }
-    if not os.path.isfile('secret.json'):
-        print('Error: NoSuchFileOrDirectory: secret.json')
-        with open('secret.json', 'w') as secret:
-            json.dump(config, secret, ensure_ascii=False)
-        sys.exit(1)
-
     if False :
         pass
     elif os.path.isfile('secret.json'):
