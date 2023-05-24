@@ -18,7 +18,7 @@
 1. Get Webhook URI [https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
 ![Images](https://support.discord.com/hc/article_attachments/1500000463501/Screen_Shot_2020-12-15_at_4.41.53_PM.png)
 ![Images](https://support.discord.com/hc/article_attachments/360101553853/Screen_Shot_2020-12-15_at_4.51.38_PM.png)
-1. Create [`secret.yml`](#secretyml-gitignore) file to under `dev/` or `latest/`.
+1. Create [`secret.yml`](#secretyml-gitignore) file to under `dev/` or `prd/`.
 1. Run command the below ([#docker-build](#docker-build))
 1. Run command the below ([#docker-run](#docker-run))
 
@@ -26,7 +26,8 @@
 
 ```bash:docker-build
 docker build -t n138-kz/oshiire-bot:dev dev/ ;
-docker build -t n138-kz/oshiire-bot latest/
+docker build -t n138-kz/oshiire-bot:prd prd/ ;
+docker build -t n138-kz/oshiire-bot:    prd/ ;
 ```
 
 ## Docker Run
