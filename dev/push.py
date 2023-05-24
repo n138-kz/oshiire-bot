@@ -47,6 +47,15 @@ def main():
         print('   2. secret.yml')
         sys.exit(1)
 
+    try:
+        config['credential']['endpoint']
+    except NameError:
+        print('Error: UnableToLoadConfig: ' + config_file)
+        sys.exit(1)
+    except KeyError:
+        print('Error: UnableToLoadConfig: ' + config_file)
+        sys.exit(1)
+
     api_url = config['credential']['endpoint']
 
     msg_text = ''
