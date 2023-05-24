@@ -144,7 +144,7 @@ def main():
             'name'  : "原神 (Genshin Impact)",
             'value' : ''
                     + ''
-                    + '- [HoYoLAB: Daily Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n'
+                    + '- [HoYoLAB: Daily Login Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n'
                     + '- [Ver.3.7公式PV](https://youtu.be/_NHRNC_lMV0)'
                     + '',
         },
