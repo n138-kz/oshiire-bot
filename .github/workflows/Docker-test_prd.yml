@@ -27,4 +27,9 @@ jobs:
     - name: Build the Docker image
       working-directory: ./prd/
       run: |
-        set -x && docker build . --file Dockerfile --tag n138-kz/oshiire-bot:latest --tag n138-kz/oshiire-bot:prd --tag n138-kz/oshiire-bot:$(date +%s)
+        set -x && docker build . --file Dockerfile --tag n138-kz/oshiire-bot:latest --tag n138-kz/oshiire-bot:$(date +%s)
+
+    - name: Build the Docker image
+      working-directory: ./prd/
+      run: |
+        set -x && docker build . --file Dockerfile --tag n138-kz/oshiire-bot:latest --tag n138-kz/oshiire-bot:prd
