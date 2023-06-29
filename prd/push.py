@@ -160,6 +160,7 @@ def main():
                 )
             payload2['payload_json']['embeds'].append(
                 {
+                    'color': 5620992,
                     'url': 'https://twitter.com/Genshin_7',
                     "image": {
                         "url": 'attachment://' + file_name
