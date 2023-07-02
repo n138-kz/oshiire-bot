@@ -60,6 +60,30 @@ credential:
 [http204]: https://developer.mozilla.org/ja/docs/Web/HTTP/Status/204
 [waitEqTrue]: https://discord.com/developers/docs/resources/webhook#execute-webhook
 
+---
+
+```bash
+[n138-kz@localhost oshiire-bot]$ date ; ls -lA *
+Mon Jul  3 04:26:26 JST 2023
+-rw-r--r-- 1 komiya komiya 1067 May  3 12:12 License
+-rw-r--r-- 1 komiya komiya 3681 Jun  4 02:40 README.md
+
+dev:
+total 1212
+-rw-r--r-- 1 komiya komiya     196 May 24 18:41 Dockerfile
+-rw-r--r-- 1 komiya komiya 1216787 Jul  3 04:18 images_001.png
+-rw-r--r-- 1 komiya komiya   10168 Jul  3 04:18 push.py
+-rw-r--r-- 1 komiya komiya     156 Jun  4 19:07 secret.yml
+
+prd:
+total 1212
+-rw-r--r-- 1 komiya komiya     196 May 24 18:43 Dockerfile
+-rw-r--r-- 1 komiya komiya 1216787 Jul  3 04:18 images_001.png
+-rw-r--r-- 1 komiya komiya   10199 Jul  3 04:18 push.py
+-rw-r--r-- 1 komiya komiya     156 May  3 15:06 secret.yml
+[n138-kz@localhost oshiire-bot]$
+```
+
 ## Refs links
 
 - [Discord Webhooks Guide | Structure of Webhook](https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html)
