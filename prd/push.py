@@ -110,7 +110,9 @@ def main():
     ) # Thoma
 
     msg_text += arr_text[random.randint(0,(len(arr_text)-1))]
-    msg_text += '-----\n\n'
+    msg_text += '～～～～～♪♫♪♫'
+    msg_text += chr(0)
+    msg_text += '\n\n'
 
     for i in range(5):
         msg_text += '\n'
@@ -129,7 +131,7 @@ def main():
             'color': 5620992,
             'timestamp': datetime.datetime.now().isoformat(),
             'footer': {
-                'text': 'Version: ' + '3.7'
+                'text': 'Version: ' + '3.8'
                     + '#' + str( hex( zlib.crc32( str( math.floor( os.path.getmtime( __file__ ) ) ).encode() ) )[2:] ) + '',
             },
             "fields": [
@@ -158,6 +160,7 @@ def main():
                 )
             payload2['payload_json']['embeds'].append(
                 {
+                    'color': 5620992,
                     'url': 'https://twitter.com/Genshin_7',
                     "image": {
                         "url": 'attachment://' + file_name
@@ -172,9 +175,8 @@ def main():
             'value' : ''
                     + ''
                     + '- [HoYoLAB: Daily Login Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n'
-                    + '- [Ver.3.7公式PV](https://youtu.be/_NHRNC_lMV0)\n'
-                    + '- [Ver.3.7特設ページ](https://hoyo.link/7ainCGAd)\n'
-                    + '- [ヒルチャールの宝箱(5/24~7/2 24:59 JST)](https://act.hoyolab.com/puzzle/bbs/pz_piCJiKMQnV/index.html?game_biz=bbs_oversea&hyl_presentation_style=fullscreen&hyl_auth_required=true&utm_id=2&utm_medium=task&utm_source=tool&utm_campaign=checkin)\n'
+                    + '- [Ver.3.8公式PV](https://youtu.be/3tFzKzqFST8)\n'
+                    + '- [Ver.3.8特設ページ](https://hoyo.link/63UKDGAd)\n'
                     + '',
         },
     )
