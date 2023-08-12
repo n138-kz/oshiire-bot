@@ -128,7 +128,7 @@ def main():
 
     payload2['payload_json']['embeds'].append(
         {
-            'color': 5620992,
+            'color': 0x3556ca,
             'timestamp': datetime.datetime.now().isoformat(),
             'footer': {
                 'text': 'Version: ' + '4.0'
@@ -160,7 +160,7 @@ def main():
                 )
             payload2['payload_json']['embeds'].append(
                 {
-                    'color': 5620992,
+                    'color': 0x3556ca,
                     'url': 'https://twitter.com/Genshin_7',
                     "image": {
                         "url": 'attachment://' + file_name
