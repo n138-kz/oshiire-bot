@@ -175,6 +175,9 @@ def main():
             'value' : ''
                     + ''
                     + '- [HoYoLAB: Daily Login Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n'
+                    + '> - [Ver.3.8公式PV](https://youtu.be/3tFzKzqFST8)\n'
+                    + '> - [Ver.3.8特設ページ](https://hoyo.link/63UKDGAd)\n'
+                    + '\n'
                     + '- [Ver.4.0公式PV](https://youtu.be/OlxaEK9K1Cs)\n'
                     + '- [Ver.4.0特設ページ](https://act.hoyoverse.com/ys/event/e20230805preview/index.html?game_biz=hk4e_global&hyl_presentation_style=fullscreen&hyl_landscape=true&hyl_hide_status_bar=true&utm_source=hoyolab&utm_medium=post)\n'
                     + '- [Ver.4.0新武器紹介](https://www.hoyolab.com/article/20789175)\n'
@@ -239,9 +242,9 @@ def main():
             'name'  : "最新バージョン情報",
             'value' : ''
                     + ''
-                    + '[Ver.4.0公式PV](https://youtu.be/OlxaEK9K1Cs)\n'
+                    + '- [Ver.4.0公式PV](https://youtu.be/OlxaEK9K1Cs)\n'
                     + '- [Ver.4.0特設ページ](https://act.hoyoverse.com/ys/event/e20230805preview/index.html?game_biz=hk4e_global&hyl_presentation_style=fullscreen&hyl_landscape=true&hyl_hide_status_bar=true&utm_source=hoyolab&utm_medium=post)\n'
-                    + 'Time:  8月16日(水)  11:30 (JST)\n'
+                    + 'Time:  8月16日(水) Noon (JST)\n'
                     + 'Maintenance:  8月16日(水)  7:00 to 12:00 (JST)\n'
                     + '',
         },
