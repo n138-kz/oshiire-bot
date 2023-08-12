@@ -233,16 +233,16 @@ def main():
         },
     )
     """
-    """ This Block is disabled
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
             'name'  : "最新バージョン情報",
             'value' : ''
                     + ''
-                    + '[【原神】Ver.3.7公式PV「決闘！召喚の頂！」](https://youtu.be/_NHRNC_lMV0)\n'
-                    + '[Ver.3.7「決闘！召喚の頂！」特設ページ](https://hoyo.link/7ainCGAd)\n'
-                    + 'Time:  5月24日(水)  7:00 (JST)\n'
+                    + '[Ver.4.0公式PV](https://youtu.be/OlxaEK9K1Cs)\n'
+                    + '- [Ver.4.0特設ページ](https://act.hoyoverse.com/ys/event/e20230805preview/index.html?game_biz=hk4e_global&hyl_presentation_style=fullscreen&hyl_landscape=true&hyl_hide_status_bar=true&utm_source=hoyolab&utm_medium=post)\n'
+                    + 'Time:  8月16日(水)  11:30 (JST)\n'
+                    + 'Maintenance:  8月16日(水)  7:00 to 12:00 (JST)\n'
                     + '',
         },
     )
@@ -253,6 +253,7 @@ def main():
             'value' : chr(0),
         },
     )
+    """ This Block is disabled
     """
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
