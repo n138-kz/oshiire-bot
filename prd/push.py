@@ -128,10 +128,10 @@ def main():
 
     payload2['payload_json']['embeds'].append(
         {
-            'color': 5620992,
+            'color': 0x3556ca,
             'timestamp': datetime.datetime.now().isoformat(),
             'footer': {
-                'text': 'Version: ' + '3.8'
+                'text': 'Version: ' + '4.0'
                     + '#' + str( hex( zlib.crc32( str( math.floor( os.path.getmtime( __file__ ) ) ).encode() ) )[2:] ) + '',
             },
             "fields": [
@@ -160,7 +160,7 @@ def main():
                 )
             payload2['payload_json']['embeds'].append(
                 {
-                    'color': 5620992,
+                    'color': 0x3556ca,
                     'url': 'https://twitter.com/Genshin_7',
                     "image": {
                         "url": 'attachment://' + file_name
@@ -175,8 +175,13 @@ def main():
             'value' : ''
                     + ''
                     + '- [HoYoLAB: Daily Login Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n'
-                    + '- [Ver.3.8公式PV](https://youtu.be/3tFzKzqFST8)\n'
-                    + '- [Ver.3.8特設ページ](https://hoyo.link/63UKDGAd)\n'
+                    + '> - [Ver.3.8公式PV](https://youtu.be/3tFzKzqFST8)\n'
+                    + '> - [Ver.3.8特設ページ](https://hoyo.link/63UKDGAd)\n'
+                    + '\n'
+                    + '- [Ver.4.0公式PV](https://youtu.be/OlxaEK9K1Cs)\n'
+                    + '- [Ver.4.0特設ページ](https://act.hoyoverse.com/ys/event/e20230805preview/index.html?game_biz=hk4e_global&hyl_presentation_style=fullscreen&hyl_landscape=true&hyl_hide_status_bar=true&utm_source=hoyolab&utm_medium=post)\n'
+                    + '- [Ver.4.0新武器紹介](https://www.hoyolab.com/article/20789175)\n'
+                    + '- [Ver.4.0新聖遺物紹介](https://www.hoyolab.com/article/20789174)\n'
                     + '',
         },
     )
@@ -231,16 +236,16 @@ def main():
         },
     )
     """
-    """ This Block is disabled
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
             'inline': False,
             'name'  : "最新バージョン情報",
             'value' : ''
                     + ''
-                    + '[【原神】Ver.3.7公式PV「決闘！召喚の頂！」](https://youtu.be/_NHRNC_lMV0)\n'
-                    + '[Ver.3.7「決闘！召喚の頂！」特設ページ](https://hoyo.link/7ainCGAd)\n'
-                    + 'Time:  5月24日(水)  7:00 (JST)\n'
+                    + '- [Ver.4.0公式PV](https://youtu.be/OlxaEK9K1Cs)\n'
+                    + '- [Ver.4.0特設ページ](https://act.hoyoverse.com/ys/event/e20230805preview/index.html?game_biz=hk4e_global&hyl_presentation_style=fullscreen&hyl_landscape=true&hyl_hide_status_bar=true&utm_source=hoyolab&utm_medium=post)\n'
+                    + 'Time:  8月16日(水) Noon (JST)\n'
+                    + 'Maintenance:  8月16日(水)  7:00 to 12:00 (JST)\n'
                     + '',
         },
     )
@@ -251,6 +256,7 @@ def main():
             'value' : chr(0),
         },
     )
+    """ This Block is disabled
     """
     payload2['payload_json']['embeds'][0]['fields'].append(
         {
