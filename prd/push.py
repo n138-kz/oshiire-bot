@@ -179,6 +179,7 @@ def main():
 					+ '- [Ver.4.0特設ページ](https://act.hoyoverse.com/ys/event/e20230805preview/index.html?game_biz=hk4e_global&hyl_presentation_style=fullscreen&hyl_landscape=true&hyl_hide_status_bar=true&utm_source=hoyolab&utm_medium=post)\n'
 					+ '- [Ver.4.0新武器紹介](https://www.hoyolab.com/article/20789175)\n'
 					+ '- [Ver.4.0新聖遺物紹介](https://www.hoyolab.com/article/20789174)\n'
+					+ '- [Ver.4.1公式PV](https://www.youtube.com/watch?v=LsZx11uXVEw)\n'
 					+ '',
 		},
 	)
