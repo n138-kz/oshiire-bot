@@ -179,9 +179,27 @@ def main():
 					+ '- [Ver.4.0特設ページ](https://act.hoyoverse.com/ys/event/e20230805preview/index.html?game_biz=hk4e_global&hyl_presentation_style=fullscreen&hyl_landscape=true&hyl_hide_status_bar=true&utm_source=hoyolab&utm_medium=post)\n'
 					+ '- [Ver.4.0新武器紹介](https://www.hoyolab.com/article/20789175)\n'
 					+ '- [Ver.4.0新聖遺物紹介](https://www.hoyolab.com/article/20789174)\n'
+					+ '- [Ver.4.1公式PV](https://www.youtube.com/watch?v=LsZx11uXVEw)\n'
+					+ '- [Ver.4.1特設ページ](https://hoyo.link/azPeFHAL)\n'
+					+ '- [Ver.4.1「七聖召喚」アップデート詳細](https://genshin.hoyoverse.com/ja/news/detail/113079)\n'
 					+ '',
 		},
 	)
+	payload2['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': False,
+			'name'  : "",
+			'value' : ''
+					+ ''
+					+ '- [PS5 / PS4](https://www.playstation.com/ja-jp/games/genshin-impact/)\n'
+					+ '- [Windows PC](https://sg-public-api.hoyoverse.com/event/download_porter/trace/ys_global/genshinimpactpc/default)\n'
+					+ '- [Apple Store](https://apps.apple.com/app/id1517783697)\n'
+					+ '- [Google Play](https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact)\n'
+					+ '- [Epicgames](https://www.epicgames.com/store/p/genshin-impact)\n'
+					+ '',
+		},
+	)
+
 	payload2['payload_json']['embeds'][0]['fields'].append(
 		{
 			'inline': False,
