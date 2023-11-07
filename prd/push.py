@@ -175,13 +175,54 @@ def main():
 			'value' : ''
 					+ ''
 					+ '- [HoYoLAB: Daily Login Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n'
+					+ '',
+		},
+	)
+	payload2['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': False,
+			'name'  : "",
+			'value' : ''
+					+ ''
+					+ '- [Ver.4.2公式PV](https://youtu.be/gnG7XjEFnm4)\n'
+					+ '- [Ver.4.2特設ページ](https://hoyo.link/0iyeFBAL)\n'
+					+ '- [Ver.4.2バージョンアップのお知らせ](https://hoyo.link/5NNfFBAL)\n'
+					+ '- [Ver.4.2「七聖召喚」アップデート詳細](https://www.hoyolab.com/article/22739313)\n'
+					+ '- [Ver.4.2【原神】キャラクター実戦紹介 シャルロット(CV:和氣あず未)「特ダネよ！」](https://www.hoyolab.com/article/22740727)\n'
+					+ '- [Ver.4.2真実を求める曇りなきモノクル・シャルロット](https://www.hoyolab.com/article/22740882)\n'
+					+ '- [Ver.4.2「罪人の円舞曲」新武器紹介](https://www.hoyolab.com/article/22762070)\n'
+					+ '- [Ver.4.2【原神】エピソード フリーナ「劇中人」](https://www.hoyolab.com/article/22762071)\n'
+					+ '- [Ver.4.2【スチームバード新聞特集】Ver.4.2新エリア展示ページリリース！](https://www.hoyolab.com/article/22762122)\n'
+					+ '- [Ver.4.2不休のソリスト・フリーナ](https://www.hoyolab.com/article/22762201)\n'
+					+ '- [Ver.4.2フリーナ・不休のソリスト](https://www.hoyolab.com/article/22780913)\n'
+					+ '- [Ver.4.2「七聖召喚」鋳境の研鑽：無限疾戦イベント予告](https://www.hoyolab.com/article/22782129)\n'
+					+ '- [Ver.4.2スペシャル“名探偵”——『原神』新キャラクター:フリーナのWebイベント正式リリース](https://www.hoyolab.com/article/22782130)\n'
+					+ '- [Ver.4.2Ver.4.2任務お知らせのまとめ](https://www.hoyolab.com/article/22782131)\n'
+					+ '',
+		},
+	)
+	payload2['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': False,
+			'name'  : "",
+			'value' : ''
+					+ ''
+					+ '- [Ver.4.1公式PV](https://www.youtube.com/watch?v=LsZx11uXVEw)\n'
+					+ '- [Ver.4.1特設ページ](https://hoyo.link/azPeFHAL)\n'
+					+ '- [Ver.4.1「七聖召喚」アップデート詳細](https://genshin.hoyoverse.com/ja/news/detail/113079)\n'
+					+ '',
+		},
+	)
+	payload2['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': False,
+			'name'  : "",
+			'value' : ''
+					+ ''
 					+ '- [Ver.4.0公式PV](https://youtu.be/OlxaEK9K1Cs)\n'
 					+ '- [Ver.4.0特設ページ](https://act.hoyoverse.com/ys/event/e20230805preview/index.html?game_biz=hk4e_global&hyl_presentation_style=fullscreen&hyl_landscape=true&hyl_hide_status_bar=true&utm_source=hoyolab&utm_medium=post)\n'
 					+ '- [Ver.4.0新武器紹介](https://www.hoyolab.com/article/20789175)\n'
 					+ '- [Ver.4.0新聖遺物紹介](https://www.hoyolab.com/article/20789174)\n'
-					+ '- [Ver.4.1公式PV](https://www.youtube.com/watch?v=LsZx11uXVEw)\n'
-					+ '- [Ver.4.1特設ページ](https://hoyo.link/azPeFHAL)\n'
-					+ '- [Ver.4.1「七聖召喚」アップデート詳細](https://genshin.hoyoverse.com/ja/news/detail/113079)\n'
 					+ '',
 		},
 	)
