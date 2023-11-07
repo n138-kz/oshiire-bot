@@ -46,10 +46,14 @@ jobs:
 
     - name: Prepare the secret
       working-directory: ./dev/
+      env: # Or as an environment variable
+        super_secret: ${{ secrets.DISCORD_KEY }}
+      with:
+        super_secret: ${{ secrets.DISCORD_KEY }}
       run: |
         touch secret.yml
-        echo 'credential:' > secret.yml
-        echo '   endpoint: https://discord.com/api/webhooks/xxxxxxxxxxxxxxxxxxx?wait=true' >> secret.yml
+        echo 'credential:' | tee secret.yml
+        echo '   endpoint: $super_secret' | tee -a secret.yml
 
     - name: Prepare the python
       working-directory: ./dev/
