@@ -220,8 +220,6 @@ def main():
 			'value' : ''
 					+ ''
 					+ '- [Ver.4.0公式PV](https://youtu.be/OlxaEK9K1Cs)\n'
-					+ '- [Ver.4.0新武器紹介](https://www.hoyolab.com/article/20789175)\n'
-					+ '- [Ver.4.0新聖遺物紹介](https://www.hoyolab.com/article/20789174)\n'
 					+ '- [Ver.4.0特設ページ](https://hoyo.link/1Ko9CBAL)\n'
 					+ '',
 		},
