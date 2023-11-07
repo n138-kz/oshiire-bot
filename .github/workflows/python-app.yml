@@ -48,8 +48,6 @@ jobs:
       working-directory: ./dev/
       env: # Or as an environment variable
         super_secret: ${{ secrets.DISCORD_KEY }}
-      with:
-        super_secret: ${{ secrets.DISCORD_KEY }}
       run: |
         touch secret.yml
         echo 'credential:' | tee secret.yml
