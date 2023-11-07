@@ -198,10 +198,6 @@ def main():
 					+ '- [Ver.4.2「七聖召喚」鋳境の研鑽：無限疾戦イベント予告](https://www.hoyolab.com/article/22782129)\n'
 					+ '- [Ver.4.2スペシャル“名探偵”——『原神』新キャラクター:フリーナのWebイベント正式リリース](https://www.hoyolab.com/article/22782130)\n'
 					+ '- [Ver.4.2Ver.4.2任務お知らせのまとめ](https://www.hoyolab.com/article/22782131)\n'
-					+ '- [Ver.4.2「衆の水の頌歌」「心珠循琅」「神鋳賦形」祈願予告](https://www.hoyolab.com/article/22782167)\n'
-					+ '- [Ver.4.2「罪人の円舞曲」イベント速報001](https://www.hoyolab.com/article/22782228)\n'
-					+ '- [Ver.4.2ナヴィア・舵を這うラディアントローズ](https://www.hoyolab.com/article/22786532)\n'
-					+ '- [Ver.4.2シュヴルーズ・厳罰を与える法の通暁者](https://www.hoyolab.com/article/22786617)\n'
 					+ '',
 		},
 	)
