@@ -348,6 +348,11 @@ def main():
 		# Server errors
 		pass
 
+
+
+	url = ''
+	
+	
 	return curl_res
 
 def test_main():
