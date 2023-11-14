@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  oshiire:
+    container_name: oshiire
+    build: ./
+    volume:
+      - oshiire-vault
+volumes:
+  - oshiire-vault
