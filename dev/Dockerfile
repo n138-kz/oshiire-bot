@@ -8,4 +8,8 @@ RUN set -x && \
 RUN set -x && \
 	pip install pyyaml
 
-CMD ["python3", "/usr/oshiire_bin/push.py"]
+COPY push.py /tmp/
+COPY secret.* /tmp/
+COPY images_*.png /tmp/
+
+CMD ["python3", "push.py"]
