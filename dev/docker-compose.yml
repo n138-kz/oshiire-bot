@@ -2,7 +2,7 @@ version: '3.9'
 services:
   oshiire_sh:
     container_name: oshiire_sh
-    build: ./
+    build: ./sh/
     volume:
       - type: volume
         source: oshiire-etc
