@@ -14,7 +14,7 @@
 
 ## 基本設計 / Basic Design Documents
 
-- Discord serverに対し指定したメッセージをPOSTするプログラムである。
+- Discord server に対し指定したメッセージをPOSTするプログラムである。
 - プログラム開発言語は `python3` とする。(`python2`との互換性は無い)
 
 ## Refs links
