@@ -12,7 +12,10 @@
 [![GitHub language count](https://img.shields.io/github/languages/count/n138-kz/oshiire-bot)](/../../)
 [![GitHub top language](https://img.shields.io/github/languages/top/n138-kz/oshiire-bot)](/../../)
 
+## 基本設計 / Basic Design Documents
 
+- Discord serverに対し指定したメッセージをPOSTするプログラムである。
+- プログラム開発言語は `python3` とする。(`python2`との互換性は無い)
 
 ## Refs links
 
