@@ -4,6 +4,8 @@ services:
     container_name: oshiire_sh
     build: ./
     volume:
-      - oshiire-vault
+      - type: volume
+        source: oshiire-etc
+        target: /etc/oshiire/
 volumes:
-  - oshiire-vault
+  - oshiire-etc
