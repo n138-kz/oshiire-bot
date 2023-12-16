@@ -186,18 +186,6 @@ def main():
 					+ ''
 					+ '- [Ver.4.2公式PV](https://youtu.be/gnG7XjEFnm4)\n'
 					+ '- [Ver.4.2特設ページ](https://hoyo.link/0iyeFBAL)\n'
-					+ '- [Ver.4.2バージョンアップのお知らせ](https://hoyo.link/5NNfFBAL)\n'
-					+ '- [Ver.4.2「七聖召喚」アップデート詳細](https://www.hoyolab.com/article/22739313)\n'
-					+ '- [Ver.4.2【原神】キャラクター実戦紹介 シャルロット(CV:和氣あず未)「特ダネよ！」](https://www.hoyolab.com/article/22740727)\n'
-					+ '- [Ver.4.2真実を求める曇りなきモノクル・シャルロット](https://www.hoyolab.com/article/22740882)\n'
-					+ '- [Ver.4.2「罪人の円舞曲」新武器紹介](https://www.hoyolab.com/article/22762070)\n'
-					+ '- [Ver.4.2【原神】エピソード フリーナ「劇中人」](https://www.hoyolab.com/article/22762071)\n'
-					+ '- [Ver.4.2【スチームバード新聞特集】Ver.4.2新エリア展示ページリリース！](https://www.hoyolab.com/article/22762122)\n'
-					+ '- [Ver.4.2不休のソリスト・フリーナ](https://www.hoyolab.com/article/22762201)\n'
-					+ '- [Ver.4.2フリーナ・不休のソリスト](https://www.hoyolab.com/article/22780913)\n'
-					+ '- [Ver.4.2「七聖召喚」鋳境の研鑽：無限疾戦イベント予告](https://www.hoyolab.com/article/22782129)\n'
-					+ '- [Ver.4.2スペシャル“名探偵”——『原神』新キャラクター:フリーナのWebイベント正式リリース](https://www.hoyolab.com/article/22782130)\n'
-					+ '- [Ver.4.2Ver.4.2任務お知らせのまとめ](https://www.hoyolab.com/article/22782131)\n'
 					+ '',
 		},
 	)
