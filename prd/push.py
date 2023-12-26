@@ -131,7 +131,7 @@ def main():
 			'color': 0x3556ca,
 			'timestamp': datetime.datetime.now().isoformat(),
 			'footer': {
-				'text': 'Version: ' + '4.3'
+				'text': 'Version: ' + '4.3.0'
 					+ '#' + str( hex( zlib.crc32( str( math.floor( os.path.getmtime( __file__ ) ) ).encode() ) )[2:] ) + '',
 			},
 			"fields": [
