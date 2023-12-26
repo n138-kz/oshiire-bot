@@ -184,6 +184,17 @@ def main():
 			'name'  : "",
 			'value' : ''
 					+ ''
+					+ '- [Ver.4.3公式PV](https://youtu.be/l60SIb7ndso)\n'
+					+ '- [Ver.4.3特設ページ](https://hoyo.link/2ztfFBAL)\n'
+					+ '',
+		},
+	)
+	payload2['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': False,
+			'name'  : "",
+			'value' : ''
+					+ ''
 					+ '- [Ver.4.2公式PV](https://youtu.be/gnG7XjEFnm4)\n'
 					+ '- [Ver.4.2特設ページ](https://hoyo.link/0iyeFBAL)\n'
 					+ '',
