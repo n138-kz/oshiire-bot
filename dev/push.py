@@ -131,7 +131,7 @@ def main():
 			'color': 0x3556ca,
 			'timestamp': datetime.datetime.now().isoformat(),
 			'footer': {
-				'text': 'Version: ' + '4.0'
+				'text': 'Version: ' + '4.3.0'
 					+ '#' + str( hex( zlib.crc32( str( math.floor( os.path.getmtime( __file__ ) ) ).encode() ) )[2:] ) + '',
 			},
 			"fields": [
@@ -175,6 +175,17 @@ def main():
 			'value' : ''
 					+ ''
 					+ '- [HoYoLAB: Daily Login Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n'
+					+ '',
+		},
+	)
+	payload2['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': False,
+			'name'  : "",
+			'value' : ''
+					+ ''
+					+ '- [Ver.4.3公式PV](https://youtu.be/l60SIb7ndso)\n'
+					+ '- [Ver.4.3特設ページ](https://hoyo.link/2ztfFBAL)\n'
 					+ '',
 		},
 	)
