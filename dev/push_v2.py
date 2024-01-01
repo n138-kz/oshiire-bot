@@ -72,6 +72,7 @@ def main():
 				phrase_arr = json.load(phrase)
 		except json.decoder.JSONDecodeError:
 			print('Error: Unable-To-Load-Phrase: ' + phrase_file)
+			print('\t', end='')
 			time.sleep(5)
 			sys.exit(1)
 	else:
@@ -82,13 +83,21 @@ def main():
 			with open(phrase_file, 'w') as phrase:
 				json.dumps(d)
 
+		except json.decoder.JSONDecodeError:
+			print('Error: Unable-To-Write-File: ' + phrase_file)
+			print('\t', end='')
+			print('Encode error')
+			time.sleep(5)
+			sys.exit(1)
 		except:
+			print('Error: Unable-To-Write-File: ' + phrase_file)
+			print('\t', end='')
+			print('Unkown error')
 			time.sleep(5)
 			sys.exit(1)
 
 		time.sleep(5)
 		sys.exit(1)
-	
 
 	msg_text = ''
 	msg_text += '\n'
