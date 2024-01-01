@@ -47,11 +47,11 @@ def main():
 	try:
 		config['credential']['endpoint']
 	except NameError:
-		print('Error: UnableToLoadConfig: ' + config_file)
+		print('Error: Unable-To-Load-Config: ' + config_file)
 		time.sleep(5)
 		sys.exit(1)
 	except KeyError:
-		print('Error: UnableToLoadConfig: ' + config_file)
+		print('Error: Unable-To-Load-Config: ' + config_file)
 		time.sleep(5)
 		sys.exit(1)
 		
