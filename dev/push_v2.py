@@ -4,6 +4,7 @@ import json
 import yaml
 import time
 import sqlite3
+import random
 
 def md5calc(file):
 	import hashlib
