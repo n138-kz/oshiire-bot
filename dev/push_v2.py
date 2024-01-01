@@ -22,6 +22,7 @@ def main():
 				config = json.load(secret)
 		except json.decoder.JSONDecodeError:
 			print('Error: Unable-To-Load-Config: ' + config_file)
+			print('exit...')
 			time.sleep(5)
 			sys.exit(1)
 	elif os.path.isfile('secret.yml'):
@@ -31,6 +32,7 @@ def main():
 				config = yaml.safe_load(secret)
 		except yaml.scanner.ScannerError:
 			print('Error: Unable-To-Load-Config: ' + config_file)
+			print('exit...')
 			time.sleep(5)
 			sys.exit(1)
 	else:
@@ -41,6 +43,7 @@ def main():
 		print('1. secret.json')
 		print('\t', end='')
 		print('2. secret.yml')
+		print('exit...')
 		time.sleep(5)
 		sys.exit(1)
 
@@ -48,10 +51,12 @@ def main():
 		config['credential']['endpoint']
 	except NameError:
 		print('Error: Unable-To-Load-Config: ' + config_file)
+		print('exit...')
 		time.sleep(5)
 		sys.exit(1)
 	except KeyError:
 		print('Error: Unable-To-Load-Config: ' + config_file)
+		print('exit...')
 		time.sleep(5)
 		sys.exit(1)
 		
@@ -73,6 +78,7 @@ def main():
 		except json.decoder.JSONDecodeError:
 			print('Error: Unable-To-Load-Phrase: ' + phrase_file)
 			print('\t', end='')
+			print('exit...')
 			time.sleep(5)
 			sys.exit(1)
 	else:
@@ -87,12 +93,14 @@ def main():
 			print('Error: Unable-To-Write-File: ' + phrase_file)
 			print('\t', end='')
 			print('Encode error')
+			print('exit...')
 			time.sleep(5)
 			sys.exit(1)
 		except:
 			print('Error: Unable-To-Write-File: ' + phrase_file)
 			print('\t', end='')
 			print('Unkown error')
+			print('exit...')
 			time.sleep(5)
 			sys.exit(1)
 
@@ -101,6 +109,7 @@ def main():
 		else:
 			print('Error: Unable-To-Create-File: ' + phrase_file)
 		
+		print('exit...')
 		time.sleep(5)
 		sys.exit(1)
 	
