@@ -80,9 +80,9 @@ def main():
 		print('Hint: Require phrase file(phrase.json)')
 		print('Hint: Making a phrase file... ')
 		try:
+			phrase_raw = json.dumps(phrase_arr)
 			with open(phrase_file, 'w') as phrase:
-				json.dumps(d)
-
+				phrase.write(phrase_raw)
 		except json.decoder.JSONDecodeError:
 			print('Error: Unable-To-Write-File: ' + phrase_file)
 			print('\t', end='')
