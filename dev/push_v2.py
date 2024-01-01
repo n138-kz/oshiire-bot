@@ -138,6 +138,8 @@ def main():
 	
 	
 	# main()
+	print('Debug: main()')
+	
 	msg_text = ''
 	msg_text += '\n'
 
