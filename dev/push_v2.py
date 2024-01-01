@@ -103,7 +103,10 @@ def main():
 		
 		time.sleep(5)
 		sys.exit(1)
-
+	
+	
+	
+	# main()
 	msg_text = ''
 	msg_text += '\n'
 
