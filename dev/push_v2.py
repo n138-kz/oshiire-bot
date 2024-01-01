@@ -96,6 +96,11 @@ def main():
 			time.sleep(5)
 			sys.exit(1)
 
+		if os.path.isfile('phrase.json'):
+			print('Info: Succeed-Create-File: ' + phrase_file)
+		else:
+			print('Error: Unable-To-Create-File: ' + phrase_file)
+		
 		time.sleep(5)
 		sys.exit(1)
 
