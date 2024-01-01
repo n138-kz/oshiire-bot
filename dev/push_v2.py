@@ -1,6 +1,7 @@
 import json
 import yaml
 import time
+import sqlite3
 
 def md5calc(file):
 	import hashlib
@@ -112,6 +113,27 @@ def main():
 		print('exit...')
 		time.sleep(5)
 		sys.exit(1)
+	
+	
+	
+	# sqlite3
+	database_file = 'result.db'
+	database_dsn = sqlite3.connect(database_file)
+	
+	database_cur = database_dsn.cursor()
+	try:
+		database_cur.execute('CREATE TABLE runResult(iat INTEGER PRIMARY KEY, detail STRING)')
+		database_dsn.commit()
+		
+		print('Info: Initilized database: ' + database_file)
+		print('\t', end='')
+		print('exit...')
+		
+		time.sleep(5)
+		sys.exit(1)
+	except sqlite3.OperationalError as e:
+		pass
+	database_dsn.close()
 	
 	
 	
