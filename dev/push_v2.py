@@ -146,7 +146,12 @@ def main():
 	msg_text = ''
 	msg_text += '\n'
 
-	arr_text = []
+	msg_text += phrase_arr[random.randint(0,(len(phrase_arr)-1))][0]
+	msg_text += '～～～～～♪♫♪♫'
+
+	for i in range(5):
+		msg_text += '\n'
+
 
 
 main()
