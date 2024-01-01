@@ -61,8 +61,8 @@ def main():
 	
 	# Phrase
 	phrase_raw = ''
-	phrase_arr = []
-	phrase_file = ''
+	phrase_arr = [[]]
+	phrase_file = 'phrase.json'
 	if False :
 		pass
 	elif os.path.isfile('phrase.json'):
