@@ -19,7 +19,7 @@ def main():
 	elif os.path.isfile('secret.json'):
 		config_file = 'secret.json'
 		try:
-			with open(config_file, 'r') as secret:
+			with open(config_file, 'r', encoding='utf-8') as secret:
 				config = json.load(secret)
 		except json.decoder.JSONDecodeError:
 			print('Error: Unable-To-Load-Config: ' + config_file)
@@ -29,7 +29,7 @@ def main():
 	elif os.path.isfile('secret.yml'):
 		config_file = 'secret.yml'
 		try:
-			with open(config_file, 'r') as secret:
+			with open(config_file, 'r', encoding='utf-8') as secret:
 				config = yaml.safe_load(secret)
 		except yaml.scanner.ScannerError:
 			print('Error: Unable-To-Load-Config: ' + config_file)
@@ -74,7 +74,7 @@ def main():
 	elif os.path.isfile('phrase.json'):
 		phrase_file = 'phrase.json'
 		try:
-			with open(phrase_file, 'r') as phrase:
+			with open(phrase_file, 'r', encoding='utf-8') as phrase:
 				phrase_arr = json.load(phrase)
 		except json.decoder.JSONDecodeError:
 			print('Error: Unable-To-Load-Phrase: ' + phrase_file)
@@ -88,7 +88,7 @@ def main():
 		print('Hint: Making a phrase file... ')
 		try:
 			phrase_raw = json.dumps(phrase_arr)
-			with open(phrase_file, 'w') as phrase:
+			with open(phrase_file, 'w', encoding='utf-8') as phrase:
 				phrase.write(phrase_raw)
 		except json.decoder.JSONDecodeError:
 			print('Error: Unable-To-Write-File: ' + phrase_file)
