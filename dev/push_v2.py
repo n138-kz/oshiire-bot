@@ -168,7 +168,7 @@ def main():
 		}
 	}
 
-	# メッセージ本体
+	# contents
 	payload['payload_json']['embeds'].append(
 		{
 			'color': 0x3556ca,
