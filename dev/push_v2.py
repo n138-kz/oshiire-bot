@@ -158,7 +158,7 @@ def main():
 
 
 
-	# 発信情報
+	# author
 	payload = {
 		"payload_json" : {
 			'username': 'みんなのまま',
