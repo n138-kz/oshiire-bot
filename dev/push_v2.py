@@ -188,6 +188,14 @@ def main():
 	
 	payload['payload_json']['embeds'][0]['fields'].append(
 		{
+			'inline': False,
+			'name'  : '',
+			'value' : chr(0),
+		},
+	)
+
+	payload['payload_json']['embeds'][0]['fields'].append(
+		{
 			'inline': True,
 			'name'  : "原神 (Genshin Impact)",
 			'value' : ''
@@ -248,6 +256,14 @@ def main():
 	payload['payload_json']['embeds'][0]['fields'].append(
 		{
 			'inline': False,
+			'name'  : '',
+			'value' : chr(0),
+		},
+	)
+	
+	payload['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': False,
 			'name'  : "",
 			'value' : ''
 					+ ''
@@ -257,6 +273,22 @@ def main():
 					+ '- [Google Play](https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact)\n'
 					+ '- [Epicgames](https://www.epicgames.com/store/p/genshin-impact)\n'
 					+ '',
+		},
+	)
+	
+	payload['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': False,
+			'name'  : '',
+			'value' : chr(0),
+		},
+	)
+	
+	payload['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': False,
+			'name'  : '',
+			'value' : chr(0),
 		},
 	)
 	
