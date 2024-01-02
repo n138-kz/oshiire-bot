@@ -197,7 +197,7 @@ def main():
 		},
 	)
 	
-	payload2['payload_json']['embeds'][0]['fields'].append(
+	payload['payload_json']['embeds'][0]['fields'].append(
 		{
 			'inline': False,
 			'name'  : "",
@@ -209,7 +209,7 @@ def main():
 		},
 	)
 	
-	payload2['payload_json']['embeds'][0]['fields'].append(
+	payload['payload_json']['embeds'][0]['fields'].append(
 		{
 			'inline': False,
 			'name'  : "",
@@ -221,7 +221,7 @@ def main():
 		},
 	)
 	
-	payload2['payload_json']['embeds'][0]['fields'].append(
+	payload['payload_json']['embeds'][0]['fields'].append(
 		{
 			'inline': False,
 			'name'  : "",
@@ -233,7 +233,7 @@ def main():
 		},
 	)
 	
-	payload2['payload_json']['embeds'][0]['fields'].append(
+	payload['payload_json']['embeds'][0]['fields'].append(
 		{
 			'inline': False,
 			'name'  : "",
