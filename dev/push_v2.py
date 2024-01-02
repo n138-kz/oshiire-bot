@@ -186,4 +186,28 @@ def main():
 		}
 	)
 	
+	# 画像ファイル
+	files_images = {}
+	for i in range(10):
+		file_name = 'images_{num}.png'
+		file_name = file_name.replace('{num}', str(i+1).zfill(3))
+		if os.path.isfile(file_name):
+			with open(file_name, 'rb') as f:
+				file_binary = f.read()
+				files_images.update(
+					{
+						file_name: ( file_name, file_binary ),
+					}
+				)
+			payload['payload_json']['embeds'].append(
+				{
+					'color': 0x3556ca,
+					'url': 'https://twitter.com/Genshin_7',
+					"image": {
+						"url": 'attachment://' + file_name
+					},
+				},
+			)
+
+
 main()
