@@ -233,6 +233,18 @@ def main():
 		},
 	)
 	
+	payload2['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': False,
+			'name'  : "",
+			'value' : ''
+					+ ''
+					+ '- [Ver.4.0公式PV](https://youtu.be/OlxaEK9K1Cs)\n'
+					+ '- [Ver.4.0特設ページ](https://hoyo.link/1Ko9CBAL)\n'
+					+ '',
+		},
+	)
+	
 	# 画像ファイル
 	files_images = {}
 	for i in range(10):
