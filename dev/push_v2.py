@@ -245,6 +245,21 @@ def main():
 		},
 	)
 	
+	payload['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': False,
+			'name'  : "",
+			'value' : ''
+					+ ''
+					+ '- [PS5 / PS4](https://www.playstation.com/ja-jp/games/genshin-impact/)\n'
+					+ '- [Windows PC](https://sg-public-api.hoyoverse.com/event/download_porter/trace/ys_global/genshinimpactpc/default)\n'
+					+ '- [Apple Store](https://apps.apple.com/app/id1517783697)\n'
+					+ '- [Google Play](https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact)\n'
+					+ '- [Epicgames](https://www.epicgames.com/store/p/genshin-impact)\n'
+					+ '',
+		},
+	)
+	
 	# 画像ファイル
 	files_images = {}
 	for i in range(10):
