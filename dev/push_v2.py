@@ -186,6 +186,17 @@ def main():
 		}
 	)
 	
+	payload['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': True,
+			'name'  : "原神 (Genshin Impact)",
+			'value' : ''
+					+ ''
+					+ '- [HoYoLAB: Daily Login Bounus](https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&lang=ja-jp)\n'
+					+ '',
+		},
+	)
+	
 	# 画像ファイル
 	files_images = {}
 	for i in range(10):
