@@ -293,7 +293,7 @@ def main():
 		},
 	)
 	
-	# 画像ファイル
+	# image files
 	files_images = {}
 	for i in range(10):
 		file_name = 'images_{num}.png'
