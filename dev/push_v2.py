@@ -5,6 +5,7 @@ import yaml
 import time
 import sqlite3
 import random
+import datetime
 
 def md5calc(file):
 	import hashlib
@@ -164,4 +165,23 @@ def main():
 		}
 	}
 
+	# メッセージ本体
+	payload['payload_json']['embeds'].append(
+		{
+			'color': 0x3556ca,
+			'timestamp': datetime.datetime.now().isoformat(),
+			'footer': {
+				'text': 'Version: ' + '4.3.0'
+					+ '#' + str( hex( zlib.crc32( str( math.floor( os.path.getmtime( __file__ ) ) ).encode() ) )[2:] ) + '',
+			},
+			"fields": [
+				{
+					'inline': False,
+					'name'  : "",
+					'value' : msg_text,
+				}
+			],
+		}
+	)
+	
 main()
