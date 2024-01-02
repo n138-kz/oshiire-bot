@@ -7,6 +7,7 @@ import sqlite3
 import random
 import datetime
 import math
+import zlib
 
 def md5calc(file):
 	import hashlib
