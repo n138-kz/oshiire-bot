@@ -206,6 +206,18 @@ def main():
 		},
 	)
 	
+	payload2['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': False,
+			'name'  : "",
+			'value' : ''
+					+ ''
+					+ '- [Ver.4.4公式PV](https://youtu.be/Q6a9WuKSlUU)\n'
+					+ '- [Ver.4.4アプデ情報まとめ](https://t.co/HOOV1OMIXG)\n'
+					+ '',
+		},
+	)
+	
 	payload['payload_json']['embeds'][0]['fields'].append(
 		{
 			'inline': False,
