@@ -184,8 +184,22 @@ def main():
 			'name'  : "",
 			'value' : ''
 					+ ''
+					+ '- [Ver.4.4公式PV](https://youtu.be/Q6a9WuKSlUU)\n'
+					+ '- [Ver.4.4アプデ情報まとめ](https://t.co/HOOV1OMIXG)\n'
+					+ '- [原神×東京スカイツリー®コラボイベント開催中](https://t.co/Qj4ljxq8lY)\n'
+					+ '- [原神×スシロー®コラボイベント@2月中旬頃](https://t.co/Qj4ljxq8lY)\n'
+					+ '',
+		},
+	)
+	payload2['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': False,
+			'name'  : "",
+			'value' : ''
+					+ ''
 					+ '- [Ver.4.3公式PV](https://youtu.be/l60SIb7ndso)\n'
 					+ '- [Ver.4.3特設ページ](https://hoyo.link/2ztfFBAL)\n'
+					+ '- [原神×東京スカイツリー®コラボイベント開催中](https://t.co/Qj4ljxq8lY)\n'
 					+ '',
 		},
 	)
