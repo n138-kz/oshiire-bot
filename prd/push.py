@@ -131,7 +131,7 @@ def main():
 			'color': 0x3556ca,
 			'timestamp': datetime.datetime.now().isoformat(),
 			'footer': {
-				'text': 'Version: ' + '4.3.0'
+				'text': 'Version: ' + '4.4.1'
 					+ '#' + str( hex( zlib.crc32( str( math.floor( os.path.getmtime( __file__ ) ) ).encode() ) )[2:] ) + '',
 			},
 			"fields": [
@@ -199,7 +199,6 @@ def main():
 					+ ''
 					+ '- [Ver.4.3公式PV](https://youtu.be/l60SIb7ndso)\n'
 					+ '- [Ver.4.3特設ページ](https://hoyo.link/2ztfFBAL)\n'
-					+ '- [原神×東京スカイツリー®コラボイベント開催中](https://t.co/Qj4ljxq8lY)\n'
 					+ '',
 		},
 	)
