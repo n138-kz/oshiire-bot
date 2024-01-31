@@ -241,10 +241,10 @@ def main():
 			'name'  : "",
 			'value' : ''
 					+ ''
-					+ '- [PS5 / PS4](https://www.playstation.com/ja-jp/games/genshin-impact/)\n'
 					+ '- [Windows](https://genshin.hoyoverse.com/ja)\n'
 					+ '- [Apple Store](https://apps.apple.com/app/id1517783697)\n'
 					+ '- [Google Play](https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact)\n'
+					+ '- [PS5 / PS4](https://www.playstation.com/ja-jp/games/genshin-impact/)\n'
 					+ '- [Epicgames](https://www.epicgames.com/store/p/genshin-impact)\n'
 					+ '',
 		},
