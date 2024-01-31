@@ -131,7 +131,7 @@ def main():
 			'color': 0x3556ca,
 			'timestamp': datetime.datetime.now().isoformat(),
 			'footer': {
-				'text': 'Version: ' + '4.3.0'
+				'text': 'Version: ' + '4.4.1'
 					+ '#' + str( hex( zlib.crc32( str( math.floor( os.path.getmtime( __file__ ) ) ).encode() ) )[2:] ) + '',
 			},
 			"fields": [
@@ -199,7 +199,6 @@ def main():
 					+ ''
 					+ '- [Ver.4.3公式PV](https://youtu.be/l60SIb7ndso)\n'
 					+ '- [Ver.4.3特設ページ](https://hoyo.link/2ztfFBAL)\n'
-					+ '- [原神×東京スカイツリー®コラボイベント開催中](https://t.co/Qj4ljxq8lY)\n'
 					+ '',
 		},
 	)
@@ -242,10 +241,10 @@ def main():
 			'name'  : "",
 			'value' : ''
 					+ ''
-					+ '- [PS5 / PS4](https://www.playstation.com/ja-jp/games/genshin-impact/)\n'
-					+ '- [Windows PC](https://sg-public-api.hoyoverse.com/event/download_porter/trace/ys_global/genshinimpactpc/default)\n'
+					+ '- [Windows](https://genshin.hoyoverse.com/ja)\n'
 					+ '- [Apple Store](https://apps.apple.com/app/id1517783697)\n'
 					+ '- [Google Play](https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact)\n'
+					+ '- [PS5 / PS4](https://www.playstation.com/ja-jp/games/genshin-impact/)\n'
 					+ '- [Epicgames](https://www.epicgames.com/store/p/genshin-impact)\n'
 					+ '',
 		},
