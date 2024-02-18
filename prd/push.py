@@ -184,9 +184,15 @@ def main():
 			'name'  : "",
 			'value' : ''
 					+ ''
+					+ '## Ver 4.4'
+					+ ''
 					+ '- [Ver.4.4公式PV](https://youtu.be/Q6a9WuKSlUU)\n'
 					+ '- [Ver.4.4アプデ情報まとめ](https://t.co/HOOV1OMIXG)\n'
-					+ '- [原神×東京スカイツリー®コラボイベント開催中](https://t.co/Qj4ljxq8lY)\n'
+					+ ''
+					+ '### Ver 4.4 コラボイベント'
+					+ ''
+					+ '- [原神×東京スカイツリー®コラボイベント®1/17-3/6](https://www.tokyo-skytree.jp/event/special/genshin/?ts=20240120003636)\n'
+					+ ''
 					+ '- [原神×スシロー®コラボイベント@2/21-3/24](https://www.akindo-sushiro.co.jp/genshin/)\n'
 					+ '- [原神公式サイトのコード入力ページ](https://genshin.hoyoverse.com/ja/gift)\n'
 					+ '- [東京・大阪の2店を原神がジャック!](https://www.akindo-sushiro.co.jp/genshin/)\n'
@@ -201,6 +207,8 @@ def main():
 			'name'  : "",
 			'value' : ''
 					+ ''
+					+ '## Ver 4.3'
+					+ ''
 					+ '- [Ver.4.3公式PV](https://youtu.be/l60SIb7ndso)\n'
 					+ '- [Ver.4.3特設ページ](https://hoyo.link/2ztfFBAL)\n'
 					+ '',
@@ -211,6 +219,8 @@ def main():
 			'inline': False,
 			'name'  : "",
 			'value' : ''
+					+ ''
+					+ '## Ver 4.2'
 					+ ''
 					+ '- [Ver.4.2公式PV](https://youtu.be/gnG7XjEFnm4)\n'
 					+ '- [Ver.4.2特設ページ](https://hoyo.link/0iyeFBAL)\n'
@@ -223,6 +233,8 @@ def main():
 			'name'  : "",
 			'value' : ''
 					+ ''
+					+ '## Ver 4.1'
+					+ ''
 					+ '- [Ver.4.1公式PV](https://www.youtube.com/watch?v=LsZx11uXVEw)\n'
 					+ '- [Ver.4.1特設ページ](https://hoyo.link/azPeFHAL)\n'
 					+ '',
@@ -233,6 +245,8 @@ def main():
 			'inline': False,
 			'name'  : "",
 			'value' : ''
+					+ ''
+					+ '## Ver 4.0'
 					+ ''
 					+ '- [Ver.4.0公式PV](https://youtu.be/OlxaEK9K1Cs)\n'
 					+ '- [Ver.4.0特設ページ](https://hoyo.link/1Ko9CBAL)\n'
