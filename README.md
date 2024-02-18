@@ -45,14 +45,27 @@ docker run n138-kz/oshiire-bot:dev
   
 [![image](https://user-images.githubusercontent.com/8064928/226809337-e63f68b8-a846-4511-868f-f3c5f3e5bd5e.png)](/../../)
 
-## secret.yml (gitignore)
+### secret.json (gitignore)
 
-```yaml:config.yml
+```json:secret.json
+{
+  "credential": {
+    "endpoint": "https://discord.com/api/webhooks/xxxxxxxxxxxxxxxxxxx"
+  }
+}
+```
+
+### secret.yml (gitignore)
+
+```yaml:secret.yml
 credential:
-  endpoint: https://discord.com/api/webhooks/xxxxxxxxxxxxxxxxxxx?wait=true
+  endpoint: https://discord.com/api/webhooks/xxxxxxxxxxxxxxxxxxx
 ```
 
 [`?wait=true`][waitEqTrue] : [200OK][http200] の時 Responceを返すようになる。（デフォルトでは付いてない→ [204NoContent][http204]になる）
+**なくてもいい**
+
+---
 
 > waits for server confirmation of message send before response (defaults to `true`; when `false` a message that is not saved does not return an error)
 
