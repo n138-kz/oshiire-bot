@@ -185,7 +185,7 @@ def main():
 			'value' : ''
 					+ ''
 					+ '## Ver 4.4'
-					+ '  '
+					+ '\n'
 					+ ''
 					+ '- [Ver.4.4公式PV](https://youtu.be/Q6a9WuKSlUU)\n'
 					+ '- [Ver.4.4アプデ情報まとめ](https://t.co/HOOV1OMIXG)\n'
