@@ -259,6 +259,7 @@ def main():
 			'name'  : "",
 			'value' : ''
 					+ ''
+					+ '## TEYVAT'
 					+ '- [Windows](https://genshin.hoyoverse.com/ja)\n'
 					+ '- [Apple Store](https://apps.apple.com/app/id1517783697)\n'
 					+ '- [Google Play](https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact)\n'
