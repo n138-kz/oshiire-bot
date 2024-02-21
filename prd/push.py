@@ -374,8 +374,8 @@ def main():
 		print( curl_res.status_code )
 	elif( curl_res.status_code >= 400 ):
 		# All errors
-		print( curl_res.status_code)
-		print( curl_res.text)
+		print( curl_res.status_code )
+		print( curl_res.text )
 	elif( curl_res.status_code >= 400 and curl_res.status_code < 500 ):
 		# Client errors
 		pass
