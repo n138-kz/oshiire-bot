@@ -191,7 +191,7 @@ def main():
 					+ ''
 					+ '### Ver 4.4 コラボイベント'
 					+ ''
-					+ '- [原神×東京スカイツリー®コラボイベント®1/17-3/6](https://www.tokyo-skytree.jp/event/special/genshin/?ts=20240120003636)\n'
+					+ '- [原神×東京スカイツリー コラボイベント@1/17-3/6](https://www.tokyo-skytree.jp/event/special/genshin/?ts=20240120003636)\n'
 					+ ''
 					+ '- [原神×スシロー®コラボイベント@2/21-3/24](https://www.akindo-sushiro.co.jp/genshin/)\n'
 					+ '- [原神公式サイトのコード入力ページ](https://genshin.hoyoverse.com/ja/gift)\n'
