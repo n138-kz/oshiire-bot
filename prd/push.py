@@ -131,7 +131,7 @@ def main():
 			'color': 0x3556ca,
 			'timestamp': datetime.datetime.now().isoformat(),
 			'footer': {
-				'text': 'Version: ' + '4.4.1'
+				'text': 'Version: ' + '4.5.0'
 					+ '#' + str( hex( zlib.crc32( str( math.floor( os.path.getmtime( __file__ ) ) ).encode() ) )[2:] ) + '',
 			},
 			"fields": [
@@ -184,22 +184,31 @@ def main():
 			'name'  : "",
 			'value' : ''
 					+ ''
+					+ '## Ver 4.5'
+					+ '\n'
+					+ ''
+					+ '- [Ver.4.5公式PV](https://youtu.be/Z6ZKPOBbwkQ)\n'
+					+ '- [Ver.4.5アプデ情報まとめ](https://hoyo.link/0bSCBYAd)\n'
+					+ ''
+					+ '### Ver 4.4 コラボイベント'
+					+ '\n'
+					+ ''
+					+ '- [原神×スシロー コラボイベント@2/21-3/24](https://www.akindo-sushiro.co.jp/genshin/)\n'
+					+ '- [原神公式サイトのコード入力ページ](https://genshin.hoyoverse.com/ja/gift)\n'
+					+ '',
+		},
+	)
+	payload2['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': False,
+			'name'  : "",
+			'value' : ''
+					+ ''
 					+ '## Ver 4.4'
 					+ '\n'
 					+ ''
 					+ '- [Ver.4.4公式PV](https://youtu.be/Q6a9WuKSlUU)\n'
 					+ '- [Ver.4.4アプデ情報まとめ](https://t.co/HOOV1OMIXG)\n'
-					+ ''
-					+ '### Ver 4.4 コラボイベント'
-					+ '\n'
-					+ ''
-					+ '- [原神×東京スカイツリー コラボイベント@1/17-3/6](https://www.tokyo-skytree.jp/event/special/genshin/?ts=20240120003636)\n'
-					+ ''
-					+ '- [原神×スシロー コラボイベント@2/21-3/24](https://www.akindo-sushiro.co.jp/genshin/)\n'
-					+ '- [原神公式サイトのコード入力ページ](https://genshin.hoyoverse.com/ja/gift)\n'
-					+ '- [東京・大阪の2店を原神がジャック!](https://www.akindo-sushiro.co.jp/genshin/)\n'
-					+ '- [東京：スシロー浅草六区店](https://www.akindo-sushiro.co.jp/shop/detail.php?id=2413)\n'
-					+ '- [大阪：スシローお初天神通り店](https://www.akindo-sushiro.co.jp/shop/detail.php?id=2442)\n'
 					+ '',
 		},
 	)
