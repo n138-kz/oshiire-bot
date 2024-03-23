@@ -193,13 +193,8 @@ def main():
 					+ '### Ver 4.4 コラボイベント'
 					+ '\n'
 					+ ''
-					+ '- [原神×東京スカイツリー コラボイベント@1/17-3/6](https://www.tokyo-skytree.jp/event/special/genshin/?ts=20240120003636)\n'
-					+ ''
 					+ '- [原神×スシロー コラボイベント@2/21-3/24](https://www.akindo-sushiro.co.jp/genshin/)\n'
 					+ '- [原神公式サイトのコード入力ページ](https://genshin.hoyoverse.com/ja/gift)\n'
-					+ '- [東京・大阪の2店を原神がジャック!](https://www.akindo-sushiro.co.jp/genshin/)\n'
-					+ '- [東京：スシロー浅草六区店](https://www.akindo-sushiro.co.jp/shop/detail.php?id=2413)\n'
-					+ '- [大阪：スシローお初天神通り店](https://www.akindo-sushiro.co.jp/shop/detail.php?id=2442)\n'
 					+ '',
 		},
 	)
