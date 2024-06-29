@@ -131,7 +131,7 @@ def main():
 			'color': 0x3556ca,
 			'timestamp': datetime.datetime.now().isoformat(),
 			'footer': {
-				'text': 'Version: ' + '4.5.0'
+				'text': 'Version: ' + '4.7.0'
 					+ '#' + str( hex( zlib.crc32( str( math.floor( os.path.getmtime( __file__ ) ) ).encode() ) )[2:] ) + '',
 			},
 			"fields": [
@@ -189,12 +189,6 @@ def main():
 					+ ''
 					+ '- [Ver.4.5公式PV](https://youtu.be/Z6ZKPOBbwkQ)\n'
 					+ '- [Ver.4.5アプデ情報まとめ](https://hoyo.link/0bSCBYAd)\n'
-					+ ''
-					+ '### Ver 4.4 コラボイベント'
-					+ '\n'
-					+ ''
-					+ '- [原神×スシロー コラボイベント@2/21-3/24](https://www.akindo-sushiro.co.jp/genshin/)\n'
-					+ '- [原神公式サイトのコード入力ページ](https://genshin.hoyoverse.com/ja/gift)\n'
 					+ '',
 		},
 	)
