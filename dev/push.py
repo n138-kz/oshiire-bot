@@ -189,7 +189,6 @@ def main():
 					+ ''
 					+ '- [Ver.4.7公式PV](https://youtu.be/PLwJHG1Kt1g)\n'
 					+ '- [Ver.4.7アプデ情報まとめ](https://hoyo.link/8DKjFBAL)\n'
-					+ '- [壁紙:キービジュアル](https://hoyo.link/6d6jFBAL)\n'
 					+ '',
 		},
 	)
