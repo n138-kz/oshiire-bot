@@ -131,7 +131,7 @@ def main():
 			'color': 0x3556ca,
 			'timestamp': datetime.datetime.now().isoformat(),
 			'footer': {
-				'text': 'Version: ' + '4.5.0'
+				'text': 'Version: ' + '4.7.0'
 					+ '#' + str( hex( zlib.crc32( str( math.floor( os.path.getmtime( __file__ ) ) ).encode() ) )[2:] ) + '',
 			},
 			"fields": [
@@ -184,35 +184,42 @@ def main():
 			'name'  : "",
 			'value' : ''
 					+ ''
+					+ '## Ver 4.7'
+					+ '\n'
+					+ ''
+					+ '- [Ver.4.7公式PV](https://youtu.be/PLwJHG1Kt1g)\n'
+					+ '- [Ver.4.7アプデ情報まとめ](https://hoyo.link/8DKjFBAL)\n'
+					+ '- [壁紙:キービジュアル](https://hoyo.link/6d6jFBAL)\n'
+					+ '',
+		},
+	)
+	payload2['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': False,
+			'name'  : "",
+			'value' : ''
+					+ ''
+					+ '## Ver 4.6'
+					+ '\n'
+					+ ''
+					+ '- [Ver.4.6公式PV](https://youtu.be/iDC2Rwx8WxY)\n'
+					+ '- [Ver.4.6アプデ情報まとめ](https://hoyo.link/aQ4iFBAL)\n'
+					+ '- [Ver.4.6スタンプ配布](https://hoyo.link/bSmiFBAL)\n'
+					+ '- [壁紙:そよ風とドリンクの旅](https://hoyo.link/9y8iFBAL)\n'
+					+ '',
+		},
+	)
+	payload2['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': False,
+			'name'  : "",
+			'value' : ''
+					+ ''
 					+ '## Ver 4.5'
 					+ '\n'
 					+ ''
 					+ '- [Ver.4.5公式PV](https://youtu.be/Z6ZKPOBbwkQ)\n'
 					+ '- [Ver.4.5アプデ情報まとめ](https://hoyo.link/0bSCBYAd)\n'
-					+ ''
-					+ '### Ver 4.4 コラボイベント'
-					+ '\n'
-					+ '\n'
-					+ '\n'
-					+ '- [原神×スシロー コラボイベント@2/21-3/24](https://www.akindo-sushiro.co.jp/genshin/)\n'
-					+ '\n'
-					+ 'この度は『スシロー×原神』コラボ「回転の宴」キャンペーンにご応募いただきましてありがとうございます。\n'
-					+ '\n'
-					+ '原神ゲーム内アイテムに引換えることのできる交換コードをプレゼントいたします。\n'
-					+ '下記の交換コードをコピーして「交換コード入力」サイトにてお使いください。\n'
-					+ '\n'
-					+ '交換コード入力ページ\n'
-					+ 'https://genshin.hoyoverse.com/ja/gift\n'
-					+ '\n'
-					+ '●交換コードをお使いいただける期間は、2024年3月14日（木）14:00～2024年5月31日（金）00:00までとなります。\n'
-					+ '※バージョン4.5のアップデートに合わせてアイテムの交換が可能となります。\n'
-					+ '\n'
-					+ '\n'
-					+ '使用期限：2024年5月31日（金）00:00まで\n'
-					+ '\n'
-					+ '\n'
-					+ '\n'
-					+ '- [原神公式サイトのコード入力ページ](https://genshin.hoyoverse.com/ja/gift)\n'
 					+ '',
 		},
 	)
