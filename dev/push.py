@@ -184,6 +184,37 @@ def main():
 			'name'  : "",
 			'value' : ''
 					+ ''
+					+ '## Ver 4.7'
+					+ '\n'
+					+ ''
+					+ '- [Ver.4.7公式PV](https://youtu.be/PLwJHG1Kt1g)\n'
+					+ '- [Ver.4.7アプデ情報まとめ](https://hoyo.link/8DKjFBAL)\n'
+					+ '- [壁紙:キービジュアル](https://hoyo.link/6d6jFBAL)\n'
+					+ '',
+		},
+	)
+	payload2['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': False,
+			'name'  : "",
+			'value' : ''
+					+ ''
+					+ '## Ver 4.6'
+					+ '\n'
+					+ ''
+					+ '- [Ver.4.6公式PV](https://youtu.be/iDC2Rwx8WxY)\n'
+					+ '- [Ver.4.6アプデ情報まとめ](https://hoyo.link/aQ4iFBAL)\n'
+					+ '- [Ver.4.6スタンプ配布](https://hoyo.link/bSmiFBAL)\n'
+					+ '- [壁紙:そよ風とドリンクの旅](https://hoyo.link/9y8iFBAL)\n'
+					+ '',
+		},
+	)
+	payload2['payload_json']['embeds'][0]['fields'].append(
+		{
+			'inline': False,
+			'name'  : "",
+			'value' : ''
+					+ ''
 					+ '## Ver 4.5'
 					+ '\n'
 					+ ''
