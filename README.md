@@ -1,4 +1,4 @@
-# 押入れBOT
+# [押入れBOT](https://github.com/n138-kz/oshiire-bot)
 
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/w/n138-kz/oshiire-bot)](/../../)
 [![GitHub last commit](https://img.shields.io/github/last-commit/n138-kz/oshiire-bot)](/../../)
